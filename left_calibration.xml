@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<opencv_storage>
+<!--
+Manually Created for synthetic Blender, 8mm sensor size with 5mm focal length
+-->
+<cameraMatrix type_id="opencv-matrix">
+  <rows>3</rows>
+  <cols>3</cols>
+  <dt>d</dt>
+  <data>
+    2724.847 0. 548.607 
+    0. 2865.2757 845.6168 
+    0. 0. 1.</data></cameraMatrix>
+<distCoeffs type_id="opencv-matrix">
+  <rows>1</rows>
+  <cols>5</cols>
+  <dt>d</dt>
+  <data>
+    0.020678 
+    -5.539
+    0.0145 
+    0.05896
+    23.65999</data></distCoeffs>
+<calibImageSize>
+  1920 1200</calibImageSize>
+</opencv_storage>
