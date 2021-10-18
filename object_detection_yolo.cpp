@@ -31,14 +31,32 @@
 // add custom keys if you want to use the parser to your liking 
 const char* keys =
 "{help h usage ? | | Usage examples: \n\t\t./object_detection_yolo.out --image=dog.jpg \n\t\t./object_detection_yolo.out --video=run_sm.mp4}"
-"{image i        |<none>| input image   }"
-"{video v       |<none>| input video   }"
+"{left_image il        |<none>| input image   }"
+"{right_image ir       |<none>| input image  }"
+"{left_vid v       |<none>| input video   }"
 "{device d       |<cpu>| input device   }"
 "{is_left l     |<none>| input int      }"
+"{right_vid rv   |<none>| input video }"
 ;
 using namespace cv;
 using namespace dnn;
 using namespace std;
+using namespace cv::xfeatures2d;
+
+/**
+ * \brief Compute and draw the epipolar lines in two images
+ *      associated to each other by a fundamental matrix
+ *
+ * \param title     Title of the window to display
+ * \param F         Fundamental matrix
+ * \param img1      First image
+ * \param img2      Second image
+ * \param points1   Set of points in the first image
+ * \param points2   Set of points in the second image matching to the first set
+ * \param inlierDistance      Points with a high distance to the epipolar lines are
+ *                not displayed. If it is negative, all points are displayed
+ **/
+
 
 // Initialize the parameters
 float confThreshold = 0.5; // Confidence threshold
@@ -52,29 +70,38 @@ vector<string> classes_right;
 void postprocess(Mat& frame, const vector<Mat>& outs, Mat& frame_right, 
 const vector<Mat>& outs_right, int is_left, Mat cameraMatrix, Mat distCoeffs);
 
+void print_num_cones(vector<int> classIds, string image);
+
+void postprocess_yolo_right_img(Mat& frame, const vector<Mat>& outs, Mat& frame_right, 
+const vector<Mat>& outs_right, int is_left, Mat cameraMatrix, Mat distCoeffs);
+
+void draw_bounding_boxes(vector<int> indices, vector<Rect> boxes, vector<int> classIds, vector<float> confidences, Mat frame);
+
+void compute_bounding_box(const vector<Mat>& outs, Mat& frame, vector<int>& classIds, vector<float>& confidences, vector<Rect>& boxes, vector<int>& centerX, vector<int>& centerY);
+
+void keypoint_detection(vector<int>& indices, vector<Rect>& boxes, Mat& frame, vector<cv::KeyPoint>& final_keypoints, vector<int>& centerX, vector<int>& centerY);
+
+// void average_keypoint(vector<KeyPoint>& input, vector <Keypoint>& output);
+
+// template <typename T1, typename T2>
+// static void drawEpipolarLines(const std::string& title, const cv::Matx<T1,3,3> F,
+//                 const cv::Mat& img1, const cv::Mat& img2,
+//                 const std::vector<cv::Point_<T2>> points1,
+//                 const std::vector<cv::Point_<T2>> points2,
+//                 const float inlierDistance = -1);
+
+// template <typename T>
+// static float distancePointLine(const cv::Point_<T> point, const cv::Vec<T,3>& line);
+
 // Draw the predicted bounding box
-void drawPred(int classId, float conf, int left, int top, int right, int bottom, Mat& frame, float zEst, float xEst, float yEst);
+void drawPred(int classId, float conf, int left, int top, int right, int bottom, Mat& frame, float zEst, int show_coordinates); //  float xEst, float yEst);
+
+void print_inference_time(Net net, Mat& frame, string outputFile);
+
+void show_frame(Mat& frame, string frame_name);
 
 // Get the names of the output layers
 vector<String> getOutputsNames(const Net& net);
-
-// void featureDetectorExperimentation()
-// {
-//     // source: https://stackoverflow.com/questions/39887357/featuredetectors-not-in-opencv-3-0-0 
-//     cv::Mat image = imread("bird.jpg");
-
-//     std::vector<KeyPoint> keypoints;
-//     cv::Ptr<cv::FastFeatureDetector> fast = cv::FastFeatureDetector::create(40);
-//     // Above line compiler error: "Error    1   error C2259: 'cv::FastFeatureDetector' : cannot instantiate abstract class"
-
-//     fast->detect(image, keypoints);
-
-//     drawKeypoints(image, keypoints, image, Scalar(255, 255, 255), DrawMatchesFlags::DRAW_OVER_OUTIMG);
-
-//     imshow("Image", image);
-//     waitKey(1000);
-// }
-
 
 int main(int argc, char** argv)
 {   
@@ -98,11 +125,6 @@ int main(int argc, char** argv)
 
     fs.release();
 
-    // cout << imgCenter_x << endl;
-    // cout << focal_px_y << endl;
-
-    // cout << distCoeffs.at<double>(0, 4) << endl;
-
     CommandLineParser parser(argc, argv, keys);
     parser.about("Use this script to run object detection using YOLO3 in OpenCV.");
     if (parser.has("help"))
@@ -110,8 +132,6 @@ int main(int argc, char** argv)
         parser.printMessage();
         return 0;
     }
-    // Load names of classes
-    // string classesFile = "coco.names";
     
     string classesFile = "cones.names"; // use the list of class names for our cones i.e., blue, orange, and yellow 
     ifstream ifs(classesFile.c_str());
@@ -120,10 +140,6 @@ int main(int argc, char** argv)
 
     string device = "cpu";
     device = parser.get<String>("device");
-    
-    // Give the configuration and weight files for the model
-    // String modelConfiguration = "yolov3.cfg";
-    // String modelWeights = "yolov3.weights";
 
     String modelConfiguration = "yolov4-tiny.cfg";
     String modelWeights = "yolov4-tiny-best.weights";
@@ -132,7 +148,6 @@ int main(int argc, char** argv)
 
     // Load the network
     Net net = readNetFromDarknet(modelConfiguration, modelWeights);
-
     Net net_right = readNetFromDarknet(modelConfiguration, modelWeights);
 
     if (device == "cpu")
@@ -140,18 +155,6 @@ int main(int argc, char** argv)
         cout << "Using CPU device" << endl;
         net.setPreferableBackend(DNN_TARGET_CPU);
     }
-    // else if (device == "gpu")
-    // {
-    //     cout << "Using GPU device" << endl;
-    //     // net.setPreferableBackend(DNN_BACKEND_CUDA);
-    //     // net.setPreferableTarget(DNN_TARGET_CUDA);
-    
-    // // commented out because this part of the code doesn't work.
-    //     net.setPreferableBackend(dnn::DNN_BACKEND_CUDA);
-    //     net.setPreferableTarget(dnn::DNN_TARGET_CUDA);
-
-    // }
-
     
     // Open a video file or an image file or a camera stream.
     string str, outputFile;
@@ -167,45 +170,60 @@ int main(int argc, char** argv)
 
     int is_left = 0;
 
-    // if (parser.has("is_left")) {
-    //     str = parser.get<String>("is_left");
-    //     cout << str << endl;
-    //     is_left = stoi(str);
-    //     left_cam_only = is_left; 
-    // }
     try {
         
         outputFile = "yolo_out_cpp.avi";
-        if (parser.has("image"))
+        if (parser.has("left_image"))
         {
             // Open the image file
-            str = parser.get<String>("image");
+            str = parser.get<String>("left_image");
             ifstream ifile(str);
             if (!ifile) throw("error");
-            cap.open(str);
+            // cap.open(str);
+
+            frame = imread(str);
             str.replace(str.end()-4, str.end(), "_yolo_out_cpp.jpg");
             outputFile = str;
         }
-        else if (parser.has("video"))
+
+         if (parser.has("right_image"))
+        {
+            // Open the image file
+            str_right = parser.get<String>("right_image");
+            ifstream ifile(str_right);
+            if (!ifile) throw("error");
+            // cap_right.open(str_right);
+            frame_right = imread(str_right);
+
+            str_right.replace(str_right.end()-4, str_right.end(), "_yolo_out_cpp.jpg");
+            outputFile_right = str_right;
+        }
+        
+        
+        if (parser.has("left_vid"))
         {
             // Open the video file (left camera)
-            str = parser.get<String>("video");
+            str = parser.get<String>("left_vid");
             ifstream ifile(str);
             if (!ifile) throw("error");
             cap.open(str);
             str.replace(str.end()-4, str.end(), "_yolo_out_cpp.avi");
             outputFile = str;
 
-            // right camera
+           
+            
+        }
+        
+        if (parser.has("right_vid")) {
+             // right camera
             if (left_cam_only == 0) {
-                str_right = parser.get<String>("video");
+                str_right = parser.get<String>("right_vid");
                 ifstream ifile_right(str_right);
                 if (!ifile_right) throw("error");
                 cap_right.open(str_right);
                 str_right.replace(str_right.end()-4, str_right.end(), "_yolo_out_cpp.avi");
                 outputFile_right = str_right;
             }
-            
         }
         // Open the webcam
         else cap.open(parser.get<int>("device"));
@@ -217,7 +235,7 @@ int main(int argc, char** argv)
     }
     
     // Get the video writer initialized to save the output video
-    if (!parser.has("image")) {
+    if (parser.has("left_vid")) {
         video.open(outputFile, VideoWriter::fourcc('M','J','P','G'), FPS, Size(cap.get(CAP_PROP_FRAME_WIDTH), cap.get(CAP_PROP_FRAME_HEIGHT)));
         
         if (left_cam_only == 0) {
@@ -225,71 +243,117 @@ int main(int argc, char** argv)
         }
     }
     
-    // Create a window
-    static const string kWinName = "Deep learning object detection in OpenCV";
-    namedWindow(kWinName, WINDOW_NORMAL);
+    // process the images and videos 
+    if (parser.has("left_vid")) {
 
-    // Process frames.
-    while (waitKey(1) < 0)
-    {
-        // get frame from the video
-        cap >> frame;
+         // Create a window
+        static const string kWinName = "Deep learning object detection in OpenCV";
+        namedWindow(kWinName, WINDOW_NORMAL);
 
-        if (left_cam_only == 0) {
+        // Process frames.
+        while (waitKey(1) < 0)
+        {   
+            // get frame from the video
+            cap >> frame;
             cap_right >> frame_right;
-        }
 
-        // Stop the program if reached end of video
-        if (frame.empty()) {
-            cout << "Done processing !!!" << endl;
-            cout << "Output file is stored as " << outputFile << endl;
-            waitKey(3000);
-            break;
-        }
-        // Create a 4D blob from a frame.
-        blobFromImage(frame, blob, 1/255.0, cv::Size(inpWidth, inpHeight), Scalar(0,0,0), true, false);
-                
-        //Sets the input to the network 
-        // anything to do with "net" means it's dealing with darknet 
-        net.setInput(blob);
-        
-        // Runs the forward pass to get output of the output layers
-        vector<Mat> outs;
-        vector<Mat> outs_right;
-        
-        net.forward(outs, getOutputsNames(net));
-        
-        if (left_cam_only == 0) {
+            // Stop the program if reached end of video
+            if (frame.empty()) {
+                cout << "Done processing !!!" << endl;
+                cout << "Output file is stored as " << outputFile << endl;
+                waitKey(3000);
+                break;
+            }
+
+            // Runs the forward pass to get output of the output layers
+            vector<Mat> outs;
+            vector<Mat> outs_right;
+
+            // Create a 4D blob from a frame.
+            blobFromImage(frame, blob, 1/255.0, cv::Size(inpWidth, inpHeight), Scalar(0,0,0), true, false);
+            net.setInput(blob); // anything to do with "net" means it's dealing with darknet 
+            net.forward(outs, getOutputsNames(net));
+            
+
+            
             blobFromImage(frame_right, blob_right, 1/255.0, cv::Size(inpWidth, inpHeight), Scalar(0,0,0), true, false);
             net_right.setInput(blob_right);
             net_right.forward(outs_right, getOutputsNames(net_right));
-        }
-        // Remove the bounding boxes with low confidence
-        cout << "before postprocessing" << endl;
 
-        postprocess(frame, outs, frame_right, outs_right, is_left, cameraMatrix, distCoeffs);
-        
-        // Put efficiency information. The function getPerfProfile returns the overall time for inference(t) and the timings for each of the layers(in layersTimes)
-        vector<double> layersTimes;
-        double freq = getTickFrequency() / 1000;
-        double t = net.getPerfProfile(layersTimes) / freq;
-        string label = format("Inference time for a frame : %.2f ms", t);
-        putText(frame, label, Point(0, 15), FONT_HERSHEY_SIMPLEX, 0.5, Scalar(0, 0, 255));
-        
-        // Write the frame with the detection boxes
-        Mat detectedFrame;
-        frame.convertTo(detectedFrame, CV_8U);
-        if (parser.has("image")) imwrite(outputFile, detectedFrame);
-        else video.write(detectedFrame);
-        
-        imshow(kWinName, frame);
-        
+            // postprocess(frame, outs, frame_right, outs_right, is_left, cameraMatrix, distCoeffs);
+            postprocess_yolo_right_img(frame, outs, frame_right, outs_right, is_left, cameraMatrix, distCoeffs);
+            
+            print_inference_time(net, frame, outputFile);
+            print_inference_time(net_right, frame_right, outputFile_right);
+            
+            // Write the frame with the detection boxes
+            Mat detectedFrame;
+            frame.convertTo(detectedFrame, CV_8U);
+            if (parser.has("left_image")) imwrite(outputFile, detectedFrame);
+            else video.write(detectedFrame);
+
+            Mat detectedFrame_right;
+            frame_right.convertTo(detectedFrame_right, CV_8U);
+            // imshow("right image", detectedFrame_right);
+            // waitKey(0);
+            video_right.write(detectedFrame_right);
+
+            imshow(kWinName, detectedFrame);
+            
+        }
+    }
+    // supplied images! 
+    else {  
+
+        cv::String left_path("../../../../FPS_10_stereo_left/*.png"); 
+        cv::String right_path("../../../../FPS_10_stereo_right/*.png"); 
+        vector<cv::String> fn;
+        vector<cv::String> fn_right;
+        // vector<cv::Mat> data;
+        cv::glob(left_path,fn,true); // recurse
+        cv::glob(right_path, fn_right, true);
+
+        for (size_t k=0; k<fn.size(); ++k)
+        {
+            cv::Mat im = cv::imread(fn[k]);
+            cv::Mat im_right = cv::imread(fn_right[k]);
+            
+            if (im.empty()) continue; //only proceed if sucsessful
+            // you probably want to do some preprocessing
+
+            frame = im; 
+            outputFile = fn[k]; 
+
+            frame_right = im_right;
+            outputFile_right = fn_right[k];
+
+            // Runs the forward pass to get output of the output layers
+            vector<Mat> outs;
+            vector<Mat> outs_right;
+            // Create a 4D blob from a frame.
+            blobFromImage(frame, blob, 1/255.0, cv::Size(inpWidth, inpHeight), Scalar(0,0,0), true, false);
+            net.setInput(blob);       
+            net.forward(outs, getOutputsNames(net));
+
+            blobFromImage(frame_right, blob_right, 1/255.0, cv::Size(inpWidth, inpHeight), Scalar(0,0,0), true, false);
+            net_right.setInput(blob_right);
+            net_right.forward(outs_right, getOutputsNames(net_right));
+            
+            // postprocess(frame, outs, frame_right, outs_right, is_left, cameraMatrix, distCoeffs);
+            postprocess_yolo_right_img(frame, outs, frame_right, outs_right, is_left, cameraMatrix, distCoeffs);
+
+            print_inference_time(net, frame, outputFile);
+            print_inference_time(net_right, frame_right, outputFile_right);
+            
+            // show_frame(frame, "left_image");
+            // show_frame(frame_right, "right_image");
+        }
     }
     
     cap.release();
     cap_right.release();
 
-    if (!parser.has("image")) {
+    if (parser.has("left_vid")) {
         video.release();
         video_right.release();
     } 
@@ -297,6 +361,24 @@ int main(int argc, char** argv)
     return 0;
 }
 
+void show_frame(Mat& frame, string frame_name) {
+    // Write the frame with the detection boxes
+    Mat detectedFrame;
+    frame.convertTo(detectedFrame, CV_8U);
+    imshow(frame_name, detectedFrame);
+    waitKey(0);
+}
+
+void print_inference_time(Net net, Mat& frame, string outputFile) {
+    // Put efficiency information. The function getPerfProfile returns the overall time for inference(t) and the timings for each of the layers(in layersTimes)
+    vector<double> layersTimes;
+    double freq = getTickFrequency() / 1000;
+    double t = net.getPerfProfile(layersTimes) / freq;
+    string label = format("Inference time for a frame : %.2f ms", t);
+    putText(frame, label, Point(0, 15), FONT_HERSHEY_SIMPLEX, 0.5, Scalar(0, 0, 255));
+    cout << "Frame: " << outputFile << ", Inference Time: " << t << endl;
+}
+        
 // Remove the bounding boxes with low confidence using non-maxima suppression
 void postprocess(Mat& frame, const vector<Mat>& outs, Mat& frame_right, 
 const vector<Mat>& outs_right, int is_left, Mat cameraMatrix, Mat distCoeffs)
@@ -305,6 +387,13 @@ const vector<Mat>& outs_right, int is_left, Mat cameraMatrix, Mat distCoeffs)
     vector<int> classIds;
     vector<float> confidences;
     vector<Rect> boxes;
+
+    int centerX;
+    int centerY;
+    int width;
+    int height;
+
+    // cout << outs.size() << endl;
     
     for (size_t i = 0; i < outs.size(); ++i)
     {
@@ -320,22 +409,32 @@ const vector<Mat>& outs_right, int is_left, Mat cameraMatrix, Mat distCoeffs)
             // Get the value and location of the maximum score
             minMaxLoc(scores, 0, &confidence, 0, &classIdPoint);
             if (confidence > confThreshold)
-            {
-                int centerX = (int)(data[0] * frame.cols);
-                int centerY = (int)(data[1] * frame.rows);
-                int width = (int)(data[2] * frame.cols);
-                int height = (int)(data[3] * frame.rows);
-                int left = centerX - width / 2;
-                int top = centerY - height / 2;
+            {   
+                // manually resized the bounding box to encapsulate the entire cone
+                // tried training the object detection algorithm but didn't see an improvement in performance. 
+                centerX = (int)(data[0] * frame.cols);
+                centerY = (int)(data[1] * frame.rows);
+                width = (int)(data[2] * frame.cols)/2 - 20;
+                height = (int)(data[3] * frame.rows) + 95;
+                int left = centerX - width / 2 - 10;
+                int top = centerY - height / 2 - 15;
                 
+                // cout << "width is: " << width << endl;
+                // cout << "height is: " << height << endl;
+
+                // cout << "centerX is: " << centerX << endl;
+                // cout << "centerY is: " << centerY << endl;
+
                 classIds.push_back(classIdPoint.x);
                 confidences.push_back((float)confidence);
                 boxes.push_back(Rect(left, top, width, height));
+
+                
             }
         }
     }
 
-    cout << outs.size() << endl;
+    
     
     // Perform non maximum suppression to eliminate redundant overlapping boxes with
     // lower confidences
@@ -353,10 +452,11 @@ const vector<Mat>& outs_right, int is_left, Mat cameraMatrix, Mat distCoeffs)
     double rImgCenter_x = 921.35846;
     double rImgCenter_y = 616.6407;
 
-    cout << "after rImgCenter" << endl;
+    // cout << "after rImgCenter" << endl;
 
-    std::vector<std::vector<cv::Point3f>> conePointsVec; // empty vector of vectors after all 
-
+    std::vector<std::vector<cv::Point3f>> conePointsVec; 
+    
+    // define 7 points that shape a cone 
     std::vector<cv::Point3f> conePoints;
     conePoints.push_back(cv::Point3f(0, 0, 0));
     for (int i = 1; i <= 3; i++) {
@@ -379,181 +479,207 @@ const vector<Mat>& outs_right, int is_left, Mat cameraMatrix, Mat distCoeffs)
     conePointsVec.push_back(conePoints);
     conePointsVec.push_back(conePointsBig);
 
-    // cv::Mat roi(frame, boxes[0]);
-
     cv::Mat imgGray;
-    cv::cvtColor(frame, imgGray, cv::COLOR_BGR2GRAY);
+    cv::Mat roi_left_out;
 
-    string detectorType = "SIFT";
-    bool visDetector = true;
-  
-    vector<cv::KeyPoint> keypoints;
-
-    DetectorTypeIndex detectorTypeIndex = getDetectorTypeIndex(detectorType);
-
-    switch (detectorTypeIndex)
-        {
-            case DetectorTypeIndex::SHITOMASI:
-            {
-                detKeypointsShiTomasi(keypoints, imgGray, visDetector);
-                break;
-            }
-            case DetectorTypeIndex::HARRIS:
-            {
-                detKeypointsHarris(keypoints, imgGray, visDetector);
-                break;
-            }
-            case DetectorTypeIndex::FAST:
-            case DetectorTypeIndex::BRISK:
-            case DetectorTypeIndex::ORB:
-            case DetectorTypeIndex::AKAZE:
-            case DetectorTypeIndex::SIFT:
-            {
-                detKeypointsModern(keypoints, imgGray, detectorTypeIndex, visDetector);
-                break;
-            }
-            default:
-            {
-                throw invalid_argument("Invalid detector type");
-            }
-        }
-    
-    // cv::Mat imgGray_right;
-
-    // cv::Mat roi_right(frame_right, boxes[0]);
-
-    // cv::Mat imgGray;
-    // cv::cvtColor(roi, imgGray, cv::COLOR_BGR2GRAY);
-
-    // cv::cvtColor(frame_right, imgGray_right, cv::COLOR_BGR2GRAY);
-
-    // vector<cv::KeyPoint> keypoints_right;
-
-    // switch (detectorTypeIndex)
-    //     {
-    //         case DetectorTypeIndex::SHITOMASI:
-    //         {
-    //             detKeypointsShiTomasi(keypoints_right, imgGray_right, visDetector);
-    //             break;
-    //         }
-    //         case DetectorTypeIndex::HARRIS:
-    //         {
-    //             detKeypointsHarris(keypoints_right, imgGray_right, visDetector);
-    //             break;
-    //         }
-    //         case DetectorTypeIndex::FAST:
-    //         case DetectorTypeIndex::BRISK:
-    //         case DetectorTypeIndex::ORB:
-    //         case DetectorTypeIndex::AKAZE:
-    //         case DetectorTypeIndex::SIFT:
-    //         {
-    //             detKeypointsModern(keypoints_right, imgGray_right, detectorTypeIndex, visDetector);
-    //             break;
-    //         }
-    //         default:
-    //         {
-    //             throw invalid_argument("Invalid detector type");
-    //         }
-    //     }
-
-    //*************************************************************************************************
-    // keypoint regression 
-
-    // generate a vector of image crops for keypoint detector
-    // std::vector<cv::Mat> rois;
-
-    // for (const auto &bbox: bboxs)
-    // {
-    //     ConeROI coneROI;
-
-    //     int left    = std::max<float>(float(bbox.x), 0.0f);
-    //     int right   = std::min<float>(float(bbox.x + bbox.w), (float) imageFrame.cols);
-    //     int top     = std::max<float>(float(bbox.y), 0.0f);
-    //     int bot     = std::min<float>(float(bbox.y + bbox.h), (float) imageFrame.rows);
-
-    //     cv::Rect box(cv::Point(left, top), cv::Point(right, bot));
-    //     cv::Mat roi = imageFrame(box);
-    //     rois.push_back(roi);
-
-    //     coneROI.roiRect = box;
-    //     coneROI.x = bbox.x;
-    //     coneROI.y = bbox.y;
-    //     coneROI.w = bbox.w;
-    //     coneROI.h = bbox.h;
-
-    //     coneROIs.push_back(coneROI);
-    // }
-
-    // keypoint network inference
-    // std::vector<std::vector<cv::Point2f>> keypoints = keypointDetector->doInference(rois);
-
-    // if (previewArgs.valid) {
-    //     detNN->draw(batch_frame);
-    // }
-    // for (int i = 0; i < bboxs.size(); i++) {
-    //     for (int j = 0; j < keypoints[i].size(); j++) {
-    //         cv::Point2f &keypoint = keypoints[i][j];
-    //         keypoint.y += bboxs[i].y;
-    //         keypoint.x += bboxs[i].x;
-
-    //         if (previewArgs.valid) {
-    //             cv::circle(batch_frame[0], keypoint, 3, cv::Scalar(0, 255, 0), -1, 8);
-    //         }
-
-    //         coneROIs[i].keypoints.push_back(keypoint);
-    //         coneROIs[i].colorID = static_cast<ConeColorID>(bboxs[i].cl);
-    //     }
-
-    //****************************************************************************************************************
-    // std::unique_ptr<KeypointDetector> keypointDetector;
-
-    // keypointDetector.reset(new KeypointDetector("keypoint.onnx", "keypoint.trt", 80, 80, 100));
-    // std::vector<std::vector<cv::Point2f>> keypoints = keypointDetector->doInference(boxes);
-    // not going to work because I don't have tensorRT and it's a hassle to get last year's code to work. 
-
-    // template code
+    // crop the left frame with the bounding box of a cone from the left frame 
     for (size_t i = 0; i < indices.size(); ++i)
     {
         int idx = indices[i];
         Rect box = boxes[idx];
 
-        // need to add keypoint regression to get the keypoints 
-        // these keypoints help feature matching
-        // need feature matching to find the corresponding object in the right image
-        // then we can calculate the disparity error
-        Mat tvec;
-        Mat rvec;
+        // cout << "idx is: " << idx << endl;
 
-        double est_depth = 0;
+        // try {
+        //     cv::Mat roi(frame, box);
 
-        conePoints = conePointsVec[0]; // 0 for blue and yellow cones <-- this could be the error. 
+        //     if (roi.empty()) {
+        //         continue;
+        //     }
 
-        const std::vector<cv::Point3f> &conePts = conePoints;
+        //     cv::cvtColor(roi, imgGray, cv::COLOR_BGR2GRAY);
 
-        // this is the problem. Need the keypoints from the keypoint regression code. 
-        // const std::vector<cv::Point2f> keypoints; 
+        //     roi_left_out = roi; 
 
-        cout << "before solvePNP" << endl;
+        // } catch (const std::exception& e) { // reference to the base of a polymorphic object
+        //     std::cout << "roi not possible" << endl; // information from length_error printed
+        //     continue;
+        // }
+    
+        // // perform SIFT on it to find the keypoints 
+        // string detectorType = "SIFT";
+        // bool visDetector = false; // visualise the results 
+    
+        // vector<cv::KeyPoint> keypoints;
 
-        // ***************** edit from the SIFT code that I borrowed from Github ******************
-        // cv::Mat imgGray;
-        // cv::cvtColor(frame, imgGray, cv::COLOR_BGR2GRAY);
-        std::vector<cv::Point2f> keypoints_points;
+        // DetectorTypeIndex detectorTypeIndex = getDetectorTypeIndex(detectorType);
 
-        cv::KeyPoint::convert(keypoints, keypoints_points);
+        // detKeypointsModern(keypoints, imgGray, detectorTypeIndex, visDetector);
 
-        bool ret = cv::solvePnP(conePts, keypoints_points, cameraMatrix, distCoeffs, rvec, tvec, false, SolvePnPMethod::SOLVEPNP_ITERATIVE);
+        // vector<cv::Point2f> keypoints_new;
 
-         // source: https://stackoverflow.com/questions/45467927/camera-pose-estimation-using-opencv-c-solvepnp-function 
-        // solvePnP(front_object_pts, front_image_pts, cameraMatrix_Front,
-        //  Mat(4,1,CV_64FC1,Scalar(0)), rvec_front, tvec_front, false, CV_ITERATIVE);
+        // if (keypoints.size() == 0) {
+        //     continue;
+        // }
+        // // manually moves the keypoints to the cone 
+        // for (size_t i=0; i < keypoints.size(); i++) {
 
-        // this line won't work till the solvePnP line works. sigh. 
+        //     cv::Point2f keypoint = keypoints[i].pt;
+        //     keypoint.x = keypoint.x + centerX - 40;
+        //     keypoint.y = keypoint.y + centerY - 40; 
+
+        //     // if (keypoint.x > centerX + width/3 || keypoint.x < centerX - width/3) {
+        //     //     continue;
+        //     // }
+
+        //     // if (keypoint.y > centerY + height/3 || keypoint.y < centerY - height/3) {
+        //     //     continue;
+        //     // }
+
+        //     keypoints_new.push_back(keypoint);
+        // }
+
+        // // // cout << "size of keypoints new is: " << keypoints.size() << endl;
+
+        // vector<cv::KeyPoint> keypoints_temp;
+        // cv::KeyPoint::convert(keypoints_new, keypoints_temp);
+
+        // // // cout << keypoints_new << endl;
+
+        // // ****************************************************************************************************************
+        // // draw the keypoints on the entire frame
+        // // drawKeypoints(frame, keypoints_temp, frame, Scalar(255, 255, 255), DrawMatchesFlags::DRAW_OVER_OUTIMG);
+
+        // Mat tvec;
+        // Mat rvec;
+
+        // conePoints = conePointsVec[0]; 
+
+        // const std::vector<cv::Point3f> &conePts = conePoints;
+
+        // std::vector<cv::Point2f> keypoints_points;
+
+        // // cv::KeyPoint::convert(keypoints_temp, keypoints_points);
+        // cv::KeyPoint::convert(keypoints, keypoints_points);
+
+        // // cout << keypoints_points << endl;
+
+        // if (keypoints_points.size() < 7) {
+        //     cout << "less than 7" << endl;
+        //     continue;
+        // }
+
+        // std::vector<cv::Point2f> keypoints_points_tmp;
+
+        // // cout << keypoints_points << endl;
+
+        // keypoints_points_tmp.push_back(keypoints_points[0]);
+        // keypoints_points_tmp.push_back(keypoints_points[1]);
+        // keypoints_points_tmp.push_back(keypoints_points[2]);
+        // keypoints_points_tmp.push_back(keypoints_points[3]);
+        // keypoints_points_tmp.push_back(keypoints_points[4]);
+        // keypoints_points_tmp.push_back(keypoints_points[5]);
+        // keypoints_points_tmp.push_back(keypoints_points[6]);
+
+        // // cout << conePts << endl;
+
+        // // this won't work unless conePts and keypoints_points_tmp both have 7 elements each 
+        // bool ret = cv::solvePnP(conePts, keypoints_points_tmp, cameraMatrix, distCoeffs, rvec, tvec, false, SolvePnPMethod::SOLVEPNP_IPPE);
+
+        // // estimate depth 
+        // double est_depth = 0;
+
+        // // this line won't work till the solvePnP line works. sigh. 
+        // if (tvec.size().empty()) {
+        //     cout << "tvec size is [0x0]" << endl;
+        //     continue;
+        // }
+        
+        // // cout << tvec.size() << endl;
+
         // est_depth = tvec.at<double>(2, 0);
 
-        cout << "after solvingPNP" << endl;
-        // use the estimated area of where the right box might be to get the actual coordinates 
-        // Rect box_right = ;
+        // if (est_depth < 0) {
+        //     est_depth = abs(est_depth);
+        // }
+    
+        // cout << "est_depth is: " << est_depth << endl;
+
+        // cv::Mat imgGray_right;
+
+        // cv::Mat roi_right_out;
+        // cv::Rect projRect_out;
+
+        // //******************************************************************************************
+        // // bounding box for right image 
+        // try {
+
+        //      cv::Rect projRect(box);
+
+        //     int x_p = box.x - lImgCenter_x;
+        //     int x_pp = (f2/est_depth) * (est_depth/f1 * x_p - baseline);
+
+        //     projRect.x = x_pp + rImgCenter_x - 200;
+
+        //     // cout << "after projRect.x" << endl;
+            
+        //     cv::Mat roi_right(frame_right, projRect);
+
+        //     if (roi_right.empty()) {
+        //         continue;
+        //     }
+
+        //     cv::cvtColor(roi_right, imgGray_right, cv::COLOR_BGR2GRAY);
+
+        //     roi_right_out = roi_right;
+        //     projRect_out = projRect;
+
+        // } catch (const std::exception& e) { // reference to the base of a polymorphic object
+        //     std::cout << "roi not possible" << endl; // information from length_error printed
+        //     continue;
+        // }
+        
+        // vector<cv::KeyPoint> keypoints_right;
+
+        // detKeypointsModern(keypoints_right, imgGray_right, detectorTypeIndex, visDetector);
+
+        // // cout << "after keypoint_right" << endl;
+
+        // vector<cv::Point2f> keypoints_new_right;
+
+        // if (keypoints_right.size() < 7) {
+        //     cout << "less than 7" << endl;
+        //     continue;
+        // }
+
+        // // cout << "size of keypoints: " << keypoints.size() << endl;
+
+        // // manually moves the keypoints to the cone 
+        // for (size_t i=0; i < keypoints_right.size(); i++) {
+        //     cv::Point2f keypoint = keypoints_right[i].pt;
+        //     keypoint.x = keypoint.x + centerX - 40;
+        //     keypoint.y = keypoint.y + centerY - 40; 
+
+        //     // if (keypoint.x > centerX + width/3 || keypoint.x < centerX - width/3) {
+        //     //     continue;
+        //     // }
+
+        //     // if (keypoint.y > centerY + height/3 || keypoint.y < centerY - height/3) {
+        //     //     continue;
+        //     // }
+
+        //     keypoints_new_right.push_back(keypoint);
+        // }
+
+        // // cout << "after resizing keypoint" << endl;
+
+        // // cout << "size of keypoints new is: " << keypoints.size() << endl;
+
+        // vector<cv::KeyPoint> keypoints_temp_right;
+        // cv::KeyPoint::convert(keypoints_new_right, keypoints_temp_right);
+
+        // // draw the keypoints on the entire frame
+        // // drawKeypoints(frame_right, keypoints_temp_right, frame_right, Scalar(255, 255, 255), DrawMatchesFlags::DRAW_OVER_OUTIMG);
 
         // std::vector<cv::KeyPoint> featureKeypoints1;
         // std::vector<cv::KeyPoint> featureKeypoints2;
@@ -565,38 +691,18 @@ const vector<Mat>& outs_right, int is_left, Mat cameraMatrix, Mat distCoeffs)
 
         // // cv::Ptr<cv::Feature2D> featureDetector;
         // cv::Ptr<cv::DescriptorMatcher> descriptorMatcher;
-
-        // // featureDetector->detectAndCompute(box, cv::noArray(), featureKeypoints1, descriptors1);
-        
-        // // new code since the above line doesn't work 
-        // // Define features detector
-        // // cv::Ptr<cv::FastFeatureDetector> detector = cv::FastFeatureDetector::create(10, true);
-        // // // Detect the keypoints
-        // // std::vector<cv::KeyPoint> keypoints1, keypoints2;
-        // // detector->detect(box, keypoints1);
-        // // detector->detect(im2, keypoints2);
-        // // // Compute the keypoints descriptors
-        // // cv::Mat descriptors1, descriptors2;
-        // // cv::Ptr<cv::xfeatures2d::BriefDescriptorExtractor> brief = cv::xfeatures2d::BriefDescriptorExtractor::create(32);
-        // // brief->compute(im1, keypoints1, descriptors1);
-        // // brief->compute(im2, keypoints2, descriptors2);
-
-        // // featureDetector->detectAndCompute(box_right, cv::noArray(), featureKeypoints2, descriptors2);
         
         // cv::Ptr<cv::FastFeatureDetector> FeatureDetector = cv::FastFeatureDetector::create(40);
 
-        // // frame = imread("bird.jpg");
-
-        // FeatureDetector->detect(frame, featureKeypoints1);
-        // FeatureDetector->detect(frame_right, featureKeypoints2);
+        // FeatureDetector->detect(roi_left_out, featureKeypoints1);
+        // FeatureDetector->detect(roi_right_out, featureKeypoints2);
         
         // cv::Ptr<cv::xfeatures2d::BriefDescriptorExtractor> brief = cv::xfeatures2d::BriefDescriptorExtractor::create(32);
 
-        // brief->compute(frame, featureKeypoints1, descriptors1);
-        // brief->compute(frame_right, featureKeypoints2, descriptors2);
+        // brief->compute(roi_left_out, featureKeypoints1, descriptors1);
+        // brief->compute(roi_right_out, featureKeypoints2, descriptors2);
 
-
-        // // drawKeypoints(frame, featureKeypoints1, frame, Scalar(255, 255, 255), DrawMatchesFlags::DRAW_OVER_OUTIMG);
+        // drawKeypoints(frame, featureKeypoints1, frame, Scalar(255, 255, 255), DrawMatchesFlags::DRAW_OVER_OUTIMG);
 
         // // imshow("Image", frame);
         // // waitKey(1000);
@@ -607,110 +713,95 @@ const vector<Mat>& outs_right, int is_left, Mat cameraMatrix, Mat distCoeffs)
         // // Or plain ground textures, expecially in synthetic data
         // // */
         // if (descriptors1.empty() || descriptors2.empty()) {
+        //     cout << "descriptors empty" << endl;
+        //     continue;
+        // }
+
+        // cout << "before match ##################################################" << endl;
+
+        // // cout << descriptors1 << endl;
+        // // cout << descriptors2 << endl;
+
+        // if (descriptors2.size() != descriptors1.size()) {
+        //     cout << "description matrix size doesn't match" << endl;
         //     continue;
         // }
 
         // descriptorMatcher->match(descriptors1, descriptors2, matches);
 
-        // // *******************************************************************************
-        // // estimated rectangle in the right image 
-        // // box is the bounding box for the left image 
-        // cv::Rect projRect(box);
+        // cout << "after match ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl; 
 
-        // int x_p = box.x - lImgCenter_x;
-        // int x_pp = (f2/est_depth) * (est_depth/f1 * x_p - baseline);
-
-        // projRect.x = x_pp + rImgCenter_x;
-
-        // // Bounds checking
-        // // Should we implement reshaping if out of bounds?
-        // // if (!(0 <= projRect.x && projRect.x + projRect.width < rFrame.cols)) {
-        // //     continue;
-        // // }
-
-        // // if (!(0 <= projRect.y && projRect.y + projRect.height < rFrame.rows)) {
-        // //     continue;
-        // // }
-
-
-        // // // Filters for horizontal-ish matches only
-        // uint32_t yDelta = projRect.height * 0.1;
+        // // // this code is causing seg faults atm... 
+        // // // Filters for horizontal-ish matches only 
+        // uint32_t yDelta = projRect_out.height * 0.1;
         // for (const cv::DMatch &match : matches) {
         //     if (abs(featureKeypoints1[match.queryIdx].pt.y - featureKeypoints2[match.trainIdx].pt.y) < yDelta) {
         //         matchesFilt.push_back(match);
         //     }
         // }
 
-        // // Check if no valid matches
-        // if (matchesFilt.size() == 0) {
-        //     continue;
-        // }
+        // // // Check if no valid matches
+        // // if (matchesFilt.size() == 0) {
+        // //     cout << "matchesFilt size 0 " << endl;
+        // //     continue;
+        // // }
+        
+        // // cout << "matches" << endl;
 
-        // std::vector<float> disparity;
-        // for (const cv::DMatch &match : matchesFilt) {
-        //     float x1 = featureKeypoints1[match.queryIdx].pt.x;
-        //     x1 += box.x;
-        //     x1 -= lImgCenter_x;
+        // // std::vector<float> disparity;
+        // // for (const cv::DMatch &match : matchesFilt) {
+        // //     float x1 = featureKeypoints1[match.queryIdx].pt.x;
+        // //     x1 += box.x;
+        // //     x1 -= lImgCenter_x;
 
-        //     float x2 = featureKeypoints2[match.trainIdx].pt.x;
-        //     x2 += projRect.x;
-        //     x2 -= rImgCenter_x;
+        // //     float x2 = featureKeypoints2[match.trainIdx].pt.x;
+        // //     x2 += projRect.x;
+        // //     x2 -= rImgCenter_x;
 
-        //     disparity.push_back(x1*f2/f1 - x2);
-        // }
+        // //     disparity.push_back(x1*f2/f1 - x2);
+        // // }
 
-        // // // Performance loss from not using a sorted heap should be negligable
-        // std::sort(disparity.begin(), disparity.end());
+        // // // // Performance loss from not using a sorted heap should be negligable
+        // // std::sort(disparity.begin(), disparity.end());
 
-        // float medDisp = disparity[(int) disparity.size()/2];
-        // float zEst = baseline*f2/medDisp;
+        // // float medDisp = disparity[(int) disparity.size()/2];
+        // // float zEst = baseline*f2/medDisp;
 
-        // added by Kelvin 
-        // disparity = (left_box.x - lImgCenter_x)*f2/f1 - (right_box.x - rImgCenter_x);
-        // float zEst = _baseline*f2/disparity;
-        float zEst = 4400; // 4400mm
-        float xEst = 0;
-        float yEst = 0;
+        // // cout << "zEst is: " << zEst << endl;
 
-        // if (is_left == 1) {
-            // left image 
-            xEst = zEst*(box.x + box.width/2 - lImgCenter_x)/f1; // Andrew's code has a minus sign in front of zEst
-            yEst = zEst*(box.y + box.height - lImgCenter_y)/f1; // Andrew's code has a minus sign in front of zEst
-        // }
-        // else {
-            // right image 
-            xEst = zEst*(box.x + box.width/2 - rImgCenter_x)/f2; // Andrew's code has a minus sign in front of zEst
-            yEst = zEst*(box.y + box.height - rImgCenter_y)/f2; // Andrew's code has a minus sign in front of zEst
-        // }
-        // convert to m
-        zEst = zEst/1000; 
-        xEst = xEst/1000;
-        yEst = yEst/1000;
+        // // added by Kelvin 
+        // // disparity = (left_box.x - lImgCenter_x)*f2/f1 - (right_box.x - rImgCenter_x);
+        // // float zEst = _baseline*f2/disparity;
+        // float zEst = 4400; // 4400mm
+        // float xEst = 0;
+        // float yEst = 0;
+
+        // // if (is_left == 1) {
+        //     // left image 
+        //     xEst = zEst*(box.x + box.width/2 - lImgCenter_x)/f1; // Andrew's code has a minus sign in front of zEst
+        //     yEst = zEst*(box.y + box.height - lImgCenter_y)/f1; // Andrew's code has a minus sign in front of zEst
+        // // }
+        // // else {
+        //     // right image 
+        //     xEst = zEst*(box.x + box.width/2 - rImgCenter_x)/f2; // Andrew's code has a minus sign in front of zEst
+        //     yEst = zEst*(box.y + box.height - rImgCenter_y)/f2; // Andrew's code has a minus sign in front of zEst
+        // // }
+        // // convert to m
+        // zEst = zEst/1000; 
+        // xEst = xEst/1000;
+        // yEst = yEst/1000;
+
+        float zEst = 0;
+
+        int show_coordinates = 0;
 
         drawPred(classIds[idx], confidences[idx], box.x, box.y,
-                 box.x + box.width, box.y + box.height, frame, zEst, xEst, yEst);
+                 box.x + box.width, box.y + box.height, frame, zEst, show_coordinates); //, xEst, yEst);
     }
 }
 
-//***************************************************************************
-// notes 
-    // fs.open(calibrationFile, cv::FileStorage::READ);
-    // fs["cameraMatrix"]   >> cameraMatrix;
-    // fs["distCoeffs"]     >> distCoeffs;
-    // fs["calibImageSize"] >> calibSize;
-
-    // imgCenter_x = cameraMatrix.at<double>(0, 2);
-    // imgCenter_y = cameraMatrix.at<double>(1, 2);
-
-    // focal_px_x = cameraMatrix.at<double>(0, 0);
-    // focal_px_y = cameraMatrix.at<double>(1, 1);
-
-// the intrinsic parameters of a camera is written as:
-// [focal_px_x 0 img_center_x; 0 focal_px_y img_center_y; 0 0 1]
-//******************************************************************************
-
 // Draw the predicted bounding box
-void drawPred(int classId, float conf, int left, int top, int right, int bottom, Mat& frame, float zEst, float xEst, float yEst)
+void drawPred(int classId, float conf, int left, int top, int right, int bottom, Mat& frame, float zEst, int show_coordinates) // , float xEst, float yEst)
 {
     //Draw a rectangle displaying the bounding box
     rectangle(frame, Point(left, top), Point(right, bottom), Scalar(255, 178, 50), 3);
@@ -723,19 +814,26 @@ void drawPred(int classId, float conf, int left, int top, int right, int bottom,
         label = classes[classId] + ":" + label;
     }
     
-    string conePoseEst = format("(%.2f, %.2f, %.2f)m", xEst, yEst, zEst);
+    // string conePoseEst = format("(%.2f, %.2f, %.2f)m", xEst, yEst, zEst);
+    string conePoseEst = format("(%.2f)m", zEst);
 
     //Display the label at the top of the bounding box
     int baseLine;
     Size labelSize = getTextSize(label, FONT_HERSHEY_SIMPLEX, 0.5, 1, &baseLine);
+    
     Size conePoseEstSize = getTextSize(conePoseEst, FONT_HERSHEY_SIMPLEX, 0.5, 1, &baseLine);
+    
     top = max(top, labelSize.height);
     rectangle(frame, Point(left, top - round(1.5*labelSize.height)), Point(left + round(1.5*labelSize.width), top + baseLine), Scalar(255, 255, 255), FILLED);
     putText(frame, label, Point(left, top), FONT_HERSHEY_SIMPLEX, 0.75, Scalar(0,0,0),1);
 
     // print cone pose estimation 
-    rectangle(frame, Point(left, bottom + round(2*conePoseEstSize.height)), Point(left + round(1.5*conePoseEstSize.width), bottom + baseLine), Scalar(255, 255, 255), FILLED);
-    putText(frame, conePoseEst, Point(left, bottom + round(2*conePoseEstSize.height)), FONT_HERSHEY_SIMPLEX, 0.75, Scalar(0,0,0),1);
+    // rectangle(frame, Point(left, bottom + round(2*conePoseEstSize.height)), Point(left + round(1.5*conePoseEstSize.width), bottom + baseLine), Scalar(255, 255, 255), FILLED);
+    rectangle(frame, Point(left, bottom), Point(left, bottom + baseLine), Scalar(255, 255, 255), FILLED);
+
+    if (show_coordinates == 1) {
+        putText(frame, conePoseEst, Point(left, bottom + round(2*conePoseEstSize.height)), FONT_HERSHEY_SIMPLEX, 0.75, Scalar(0,0,0),1);
+    }
 }
 
 // Get the names of the output layers
@@ -763,192 +861,502 @@ vector<String> getOutputsNames(const Net& net)
     return names;
 }
 
-//*****************************************************************************************************************
-// Andrew's code for cone pose estimation 
 
 
+// Remove the bounding boxes with low confidence using non-maxima suppression
+void postprocess_yolo_right_img(Mat& frame, const vector<Mat>& outs, Mat& frame_right, 
+const vector<Mat>& outs_right, int is_left, Mat cameraMatrix, Mat distCoeffs) {   
 
-// the cones' region of interest (ROI) are passed in as an input. So this method already knows the bounding boxes of the cones. 
-// how does it detect the colour of the cones?
+    // added by Kelvin 
+    double baseline = 550; // 550mm 
+    double f2 = 1499.093; // focal length of right camera = 5mm (in the x axis)
+    double f1 = 2724.847; // focal length of left camera in the x axis
 
-// void estConePos(const cv::Mat& lFrame, const cv::Mat& rFrame, 
-//                 const std::vector<ConeROI>& coneROIs, std::vector<ConeEst>& coneEsts, 
-//                 int lastFrame) {
+    double lImgCenter_x = 548.607;
+    double lImgCenter_y = 845.6168;
 
+    double rImgCenter_x = 921.35846;
+    double rImgCenter_y = 616.6407;
 
-//     // for all the detected cones
-//     for (int i = 0; i < coneROIs.size(); i++) {
-//         const ConeROI& coneROI = coneROIs[i];
-//         cv::Mat tvec;
-//         cv::Mat rvec;
+    // ****************************************** LEFT IMAGE *****************************************************
+    vector<int> classIds;
+    vector<float> confidences;
+    vector<Rect> boxes;
 
-//         double est_depth;
+    vector<int> centerX;
+    vector<int> centerY;
 
-//         // this switch statement shows that the coneROI already detected the colour of the cones 
-//         // Logic for switching pts, currently a STUB
-//         // Kelvin: will need to upgrade this later. Just a temporary solution.
-//         int conePtsID = -1;
-//         switch (coneROI.colorID) {
-//             case ConeColorID::Blue :
-//                 conePtsID = 0;
-//                 break;
-//             case ConeColorID::Yellow :
-//                 conePtsID = 0;
-//                 break;
-//             case ConeColorID::Orange :
-//                 conePtsID = 1;
-//                 break;
-//         };
+    compute_bounding_box(outs, frame, classIds, confidences, boxes, centerX, centerY);
+    print_num_cones(classIds, "Left Image");
 
-//         std::vector<std::vector<cv::Point3f>> conePointsVec; 
-//         auto& conePoints = conePointsVec[conePtsID];
+    // Perform non maximum suppression to eliminate redundant overlapping boxes with lower confidences
+    vector<int> indices;
+    NMSBoxes(boxes, confidences, confThreshold, nmsThreshold, indices);
 
-//         #ifdef CONE4
-//             std::vector<cv::Point3f> conePts (conePoints.begin()+1, conePoints.end()-2);
-//             std::vector<cv::Point2f> keyPts  (coneROI.keypoints.begin()+1, coneROI.keypoints.end()-2);
-//         #else
-//             const std::vector<cv::Point3f> &conePts = conePoints;
-//             const std::vector<cv::Point2f> &keyPts  = coneROI.keypoints;
-//         #endif
+    vector<cv::KeyPoint> final_keypoints;
+    keypoint_detection(indices, boxes, frame, final_keypoints, centerX, centerY);
 
-//         // TODO: Need to process the return
-//         // bool ret = cv::solvePnP(conePts, keyPts, lCamParams.cameraMatrix, lCamParams.distCoeffs, rvec, tvec, false, cv::SolvePnPMethod::SOLVEPNP_IPPE);
-        
-//         if (true) {
-//             est_depth = tvec.at<double>(2, 0);
+    //******************************************* RIGHT IMAGE *****************************************************
+    cv::Mat imgGray_right;
+    cv::Mat roi_right_out;
+    cv::Rect projRect_out;
 
-//             // Using reference shouldnt cause performance degredation?
-//             // const double &f1 = lCamParams.focal_px_x;
-//             // const double &f2 = rCamParams.focal_px_x;
-//             const double &f1 = 5.6;
-//             const double &f2 = 5.6;
+    vector<int> centerX_right;
+    vector<int> centerY_right;
 
-//             // const double &lImgCenter_x = lCamParams.imgCenter_x;
-//             // const double &rImgCenter_x = rCamParams.imgCenter_x;
-//             const double &lImgCenter_x = 960;
-//             const double &rImgCenter_x = 960;
+    vector<int> classIds_right;
+    vector<float> confidences_right;
+    vector<Rect> boxes_right;
 
-//             // const double &rImgCenter_y = rCamParams.imgCenter_y;
-//             const double &rImgCenter_y = 600;
+    compute_bounding_box(outs_right, frame_right, classIds_right, confidences_right, boxes_right, centerX_right, centerY_right);
+    print_num_cones(classIds_right, "Right Image");
 
-//             // TODO? : Enlarge borders around cones?
-//             // float border = 0.0f;
-//             // coneROI.roiRect -= cv::Point2i(border * coneROI.roiRect.width, border * coneROI.roiRect.height);
-//             // coneROI.roiRect += cv::Size2i(2*border * coneROI.roiRect.width, 2*border * coneROI.roiRect.height);
+    // Perform non maximum suppression to eliminate redundant overlapping boxes with lower confidences
+    vector<int> indices_right;
+    NMSBoxes(boxes_right, confidences_right, confThreshold, nmsThreshold, indices_right);
 
-//             cv::Rect projRect(coneROI.roiRect);
+    vector<cv::KeyPoint> final_keypoints_right;
+    keypoint_detection(indices_right, boxes_right, frame_right, final_keypoints_right, centerX_right, centerY_right);
 
-//             int x_p = coneROI.roiRect.x - lImgCenter_x;
-//             int x_pp = (f2/est_depth) * (est_depth/f1 * x_p - _baseline);
+    // cv::KeyPoint final_left_keypoint;
+    // cv::KeyPoint final_right_keypoint;
 
-//             projRect.x = x_pp + rImgCenter_x;
+    // average_keypoint(final_keypoints, )
+    // std::vector<float> disparity;
 
-//             // projRect.x -= coneROI.roiRect.width * border;
-//             // projRect.y -= coneROI.roiRect.height * border;
-//             // projRect.width *= 1.0f + 2*border;
-//             // projRect.height *= 1.0f + 2*border;
+    // float temp;
+    // float temp_min = 1000000;
 
-//             // Bounds checking
-//             // Should we implement reshaping if out of bounds?
-//             if (!(0 <= projRect.x && projRect.x + projRect.width < rFrame.cols)) {
-//                 continue;
-//             }
+    // for (size_t i=0; i < keypoints_left.size(); i++) {
+    //     cv::Point2f keypoint_left = keypoints_left[i];
 
-//             if (!(0 <= projRect.y && projRect.y + projRect.height < rFrame.rows)) {
-//                 continue;
-//             }
+    //     int idx = indices[i];
+    //     Rect box = boxes[idx];
 
-//             cv::Mat unDist1_cropped = lFrame(coneROI.roiRect);
-//             cv::Mat unDist2_cropped = rFrame(projRect);
+    //     for (size_t j=0; j < keypoints_right.size(); j++) {
+    //         cv::Point2f keypoint_right = keypoints_right[j];
 
-//             std::vector<cv::KeyPoint> featureKeypoints1;
-//             std::vector<cv::KeyPoint> featureKeypoints2;
-//             cv::Mat descriptors1;
-//             cv::Mat descriptors2;
+    //         int idx_right = indices_right[j];
+    //         Rect box_right = boxes_right[idx_right];
 
-//             std::vector<cv::DMatch> matches;
-//             std::vector<cv::DMatch> matchesFilt;
+    //         temp = (box.x + keypoint_left.x - lImgCenter_x)*f2/f1 - (box_right.x + keypoint_right.x - rImgCenter_x); 
 
-//             featureDetector->detectAndCompute(unDist1_cropped, cv::noArray(), featureKeypoints1, descriptors1);
-//             featureDetector->detectAndCompute(unDist2_cropped, cv::noArray(), featureKeypoints2, descriptors2);
+    //         if (temp < temp_min) {
+    //             temp_min = temp; 
+    //         }
+    //     }
 
-//             /*
-//             No descriptor in left or right frame, either due to insufficient light.
-//             Or plain ground textures, expecially in synthetic data
-//             */
-//             if (descriptors1.empty() || descriptors2.empty()) {
-//                 continue;
-//             }
+    //     disparity.push_back(temp_min);
+    //     temp_min = 100000000;
+    // }
 
-//             descriptorMatcher->match(descriptors1, descriptors2, matches);
+    // float disparity_avg = (abs(disparity[0]) + abs(disparity[1]))/2;
 
-//             // Filters for horizontal-ish matches only
-//             uint32_t yDelta = projRect.height * 0.1;
-//             for (const cv::DMatch &match : matches) {
-//                 if (abs(featureKeypoints1[match.queryIdx].pt.y - featureKeypoints2[match.trainIdx].pt.y) < yDelta) {
-//                     matchesFilt.push_back(match);
-//                 }
-//             }
+    draw_bounding_boxes(indices, boxes, classIds, confidences, frame);
+    draw_bounding_boxes(indices_right, boxes_right, classIds_right, confidences_right, frame_right);
+  
+}
 
-//             // Check if no valid matches
-//             if (matchesFilt.size() == 0) {
-//                 continue;
-//             }
+void print_num_cones(vector<int> classIds, string image) {
 
-//             std::vector<float> disparity;
-//             // taking the difference in x1 and x2 where disparity = x1 - x2 (when f2 == f1)
-//             for (const cv::DMatch &match : matchesFilt) {
-//                 float x1 = featureKeypoints1[match.queryIdx].pt.x;
-//                 x1 += coneROI.roiRect.x;
-//                 x1 -= lImgCenter_x;
+    cout << image << endl;
 
-//                 float x2 = featureKeypoints2[match.trainIdx].pt.x;
-//                 x2 += projRect.x;
-//                 x2 -= rImgCenter_x;
+    int num_blue = 0;
+    int num_yellow = 0;
 
-//                 disparity.push_back(x1*f2/f1 - x2);
-//             }
+    for (int i = 0; i < classIds.size(); i++) {
 
-//             // Performance loss from not using a sorted heap should be negligable
-//             std::sort(disparity.begin(), disparity.end());
+        // blue cone
+        if (classIds[i] == 0) {
+            num_blue = num_blue + 1;
+        }
+        else if (classIds[i] == 2) {
+            num_yellow = num_yellow + 1;
+        }
+    }
+    
+    cout << "Total Blue Cones: " << num_blue << endl;
+    cout << "Total Yellow Cones: " << num_yellow << endl;
+}
 
-//             // median disparity 
-//             float medDisp = disparity[(int) disparity.size()/2];
-//             float zEst = _baseline*f2/medDisp;
-//             float xEst = -zEst*(coneROI.roiRect.x + coneROI.roiRect.width/2 - rImgCenter_x)/f1;
-//             float yEst = -zEst*(coneROI.roiRect.y + coneROI.roiRect.height - rImgCenter_y)/f1;
+// void average_keypoint(vector<KeyPoint>& input, vector <KeyPoint>& output) {
+    
+//     cv::Point2f avg_keypoint;
+//     cv::KeyPoint avg_keypoint_KeyPoint;
+//     avg_keypoint.x = 0;
+//     avg_keypoint.y = 0;
 
-//             if (abs(est_depth - zEst) > 1500) {
-//                 continue;
-//             }
-
-//             if (zEst < 0) {
-//                 continue;
-//             }
-
-//             ConeEst coneEst;
-//             coneEst.pos.x = xEst;
-//             coneEst.pos.y = yEst;
-//             coneEst.pos.z = zEst;
-//             coneEst.colorID = coneROI.colorID;
-
-//             coneEsts.push_back(coneEst);
-
-//             if (previewArgs.valid) {
-//                 cv::rectangle(*(previewArgs.rFrameBBoxMatPtr), projRect, cv::Scalar(255, 255, 255));
-
-//                 if (i == 0) {
-//                     cv::drawMatches(unDist1_cropped, featureKeypoints1, unDist2_cropped, featureKeypoints2, matchesFilt, *(previewArgs.matchesMatPtr));
-//                 }
-//             }
-
-//             if (lastFrame >= 0) {
-//                 std::cout << "Est Depth: " << est_depth << std::endl;
-//                 std::cout << "Refined Pos (t, x, y, z, colorID): (" << lastFrame << ", " << xEst << ", "
-//                 << yEst << ", " <<  zEst << ", " << static_cast<int>(coneEst.colorID) << ")" << std::endl;
-//             }
-//         }
+//     for (size_t i=0; i < input.size(); i++) {
+//         cv::Point2f keypoint = input[i].pt;
+//         avg_keypoint.x = avg_keypoint.x + keypoint.x; 
+//         avg_keypoint.y = avg_keypoint.y + keypoint.y; 
 //     }
 
-//     // StereoBenchAddTime(SB_TIME_IDX::FRAME_SIFT);
+//     avg_keypoint.x = avg_keypoint.x/input.size();
+//     avg_keypoint.y = avg_keypoint.y/input.size();
+
+//     cv::KeyPoint::convert(avg_keypoint, avg_keypoint_KeyPoint);
+
+//     output.push_back(avg_keypoint_KeyPoint;
+// }
+
+void draw_bounding_boxes(vector<int> indices, vector<Rect> boxes, vector<int> classIds, vector<float> confidences, Mat frame) {
+    for (size_t i = 0; i < indices.size(); ++i) {   
+    // cout << "disparity calculations" << endl;
+
+    int idx = indices[i];
+    Rect box = boxes[idx];
+    
+    // cout << disparity_avg << endl;
+
+    // float zEst = baseline*f2/disparity[idx];
+    // float zEst = baseline*f2/disparity_avg;
+    // float xEst = 0;
+    // float yEst = 0;
+
+    // xEst = zEst*(box.x + box.width/2 - lImgCenter_x)/f1; // Andrew's code has a minus sign in front of zEst
+    // yEst = zEst*(box.y + box.height - lImgCenter_y)/f1; // Andrew's code has a minus sign in front of zEst
+
+    // // convert to m
+    // zEst = zEst/1000; 
+    // xEst = xEst/1000;
+    // yEst = yEst/1000;
+
+    // if (xEst < 0) {
+    //     xEst = abs(xEst);
+    // }
+
+    // if (yEst < 0) {
+    //     yEst = abs(yEst);
+    // }
+
+    // zEst = zEst + 1;
+    int zEst = 0;
+
+    int show_coordinates = 0; 
+
+    // loop again to draw the bounding boxes around the cones 
+    drawPred(classIds[idx], confidences[idx], box.x, box.y,
+                box.x + box.width, box.y + box.height, frame, zEst, show_coordinates); // , xEst, yEst);
+    // cout << "drew pred" << endl;
+    }
+}
+
+void compute_bounding_box(const vector<Mat>& outs, Mat& frame, vector<int>& classIds, vector<float>& confidences, vector<Rect>& boxes, vector<int>& centerX, vector<int>& centerY) {
+
+    int width;
+    int height;
+    int centerY_temp;
+    int centerX_temp;
+
+    for (size_t i = 0; i < outs.size(); ++i) {
+        // Scan through all the bounding boxes output from the network and keep only the
+        // ones with high confidence scores. Assign the box's class label as the class
+        // with the highest score for the box.
+        float* data = (float*)outs[i].data;
+        for (int j = 0; j < outs[i].rows; ++j, data += outs[i].cols) {
+            Mat scores = outs[i].row(j).colRange(5, outs[i].cols);
+            Point classIdPoint;
+            double confidence;
+            // Get the value and location of the maximum score
+            minMaxLoc(scores, 0, &confidence, 0, &classIdPoint);
+            if (confidence > confThreshold)
+            {   
+                // manually resized the bounding box to encapsulate the entire cone
+                // tried training the object detection algorithm but didn't see an improvement in performance. 
+                centerX_temp = (int)(data[0] * frame.cols);
+                centerY_temp = (int)(data[1] * frame.rows);
+
+                width = (int)(data[2] * frame.cols)/2;
+                height = (int)(data[3] * frame.rows) + 95;
+                int left = centerX_temp - width / 2;
+                int top = centerY_temp - height / 2 - 15;
+                
+                classIds.push_back(classIdPoint.x);
+                confidences.push_back((float)confidence);
+                boxes.push_back(Rect(left, top, width, height));
+                centerX.push_back(centerX_temp);
+                centerY.push_back(centerY_temp);
+                
+            }
+        }
+    }
+} 
+
+void keypoint_detection(vector<int>& indices, vector<Rect>& boxes, Mat& frame, vector<cv::KeyPoint>& final_keypoints, vector<int>& centerX, vector<int>& centerY) {
+    
+    // the keypoints for the left and right cone are stacked in one vector... 
+    cv::Mat imgGray;
+    cv::Mat roi_left_out;
+    vector<cv::Point2f> keypoints_Point2f;
+
+    string detectorType = "SIFT";
+    bool visDetector = false; // visualise the results 
+    vector<cv::KeyPoint> keypoints;
+
+    // crop the left frame with the bounding box of a cone from the left frame 
+    for (size_t i = 0; i < indices.size(); ++i) {
+        int idx = indices[i];
+        Rect box = boxes[idx];
+
+        try {
+            cv::Mat roi(frame, box);
+
+            if (roi.empty()) {
+                continue;
+            }
+
+            cv::cvtColor(roi, imgGray, cv::COLOR_BGR2GRAY);
+            roi_left_out = roi; 
+
+        } catch (const std::exception& e) { // reference to the base of a polymorphic object
+            std::cout << "roi not possible" << endl; // information from length_error printed
+            continue;
+        }
+
+        // perform SIFT on it to find the keypoints 
+        DetectorTypeIndex detectorTypeIndex = getDetectorTypeIndex(detectorType);
+        detKeypointsModern(keypoints, imgGray, detectorTypeIndex, visDetector);
+
+        if (keypoints.size() == 0) {
+            continue;
+        }
+
+            // manually moves the keypoints to the cone 
+        for (size_t i=0; i < keypoints.size(); i++) {
+            cv::Point2f single_keypoint = keypoints[i].pt;
+            single_keypoint.x = single_keypoint.x + centerX[idx] - 60;
+            single_keypoint.y = single_keypoint.y + centerY[idx] - 85; 
+            keypoints_Point2f.push_back(single_keypoint);
+        }
+        
+        cv::KeyPoint::convert(keypoints_Point2f, final_keypoints);
+        drawKeypoints(frame, final_keypoints, frame, Scalar(255, 255, 255), DrawMatchesFlags::DRAW_OVER_OUTIMG);
+    }
+
+}    
+
+
+// used to draw epipolar lines but doesn't work 
+// template <typename T1, typename T2>
+// static void drawEpipolarLines(const std::string& title, const cv::Matx<T1,3,3> F,
+//                 const cv::Mat& img1, const cv::Mat& img2,
+//                 const std::vector<cv::Point_<T2>> points1,
+//                 const std::vector<cv::Point_<T2>> points2,
+//                 const float inlierDistance = -1)
+// {
+//   CV_Assert(img1.size() == img2.size() && img1.type() == img2.type());
+//   cv::Mat outImg(img1.rows, img1.cols*2, CV_8UC3);
+//   cv::Rect rect1(0,0, img1.cols, img1.rows);
+//   cv::Rect rect2(img1.cols, 0, img1.cols, img1.rows);
+//   /*
+//    * Allow color drawing
+//    */
+//   if (img1.type() == CV_8U)
+//   {
+//     cv::cvtColor(img1, outImg(rect1), cv::COLOR_GRAY2BGR);
+//     cv::cvtColor(img2, outImg(rect2), cv::COLOR_GRAY2BGR);
+//   }
+//   else
+//   {
+//     img1.copyTo(outImg(rect1));
+//     img2.copyTo(outImg(rect2));
+//   }
+//   std::vector<cv::Vec<T2,3>> epilines1, epilines2;
+//   cv::computeCorrespondEpilines(points1, 1, F, epilines1); //Index starts with 1
+//   cv::computeCorrespondEpilines(points2, 2, F, epilines2);
+ 
+//   CV_Assert(points1.size() == points2.size() &&
+//         points2.size() == epilines1.size() &&
+//         epilines1.size() == epilines2.size());
+ 
+//   cv::RNG rng(0);
+//   for(size_t i=0; i<points1.size(); i++)
+//   {
+//     if(inlierDistance > 0)
+//     {
+//       if(distancePointLine(points1[i], epilines2[i]) > inlierDistance ||
+//         distancePointLine(points2[i], epilines1[i]) > inlierDistance)
+//       {
+//         //The point match is no inlier
+//         continue;
+//       }
+//     }
+//     /*
+//      * Epipolar lines of the 1st point set are drawn in the 2nd image and vice-versa
+//      */
+//     cv::Scalar color(rng(256),rng(256),rng(256));
+ 
+//     cv::line(outImg(rect2),
+//       cv::Point(0,-epilines1[i][2]/epilines1[i][1]),
+//       cv::Point(img1.cols,-(epilines1[i][2]+epilines1[i][0]*img1.cols)/epilines1[i][1]),
+//       color);
+//     cv::circle(outImg(rect1), points1[i], 3, color, -1, LINE_AA);
+ 
+//     cv::line(outImg(rect1),
+//       cv::Point(0,-epilines2[i][2]/epilines2[i][1]),
+//       cv::Point(img2.cols,-(epilines2[i][2]+epilines2[i][0]*img2.cols)/epilines2[i][1]),
+//       color);
+//     cv::circle(outImg(rect2), points2[i], 3, color, -1, LINE_AA);
+//   }
+//   cv::imshow(title, outImg);
+//   cv::waitKey(1);
+// }
+
+// template <typename T>
+// static float distancePointLine(const cv::Point_<T> point, const cv::Vec<T,3>& line)
+// {
+//   //Line is given as a*x + b*y + c = 0
+//   return std::fabs(line(0)*point.x + line(1)*point.y + line(2))
+//       / std::sqrt(line(0)*line(0)+line(1)*line(1));
+// }
+
+
+//    avg_keypoint.x = 0;
+//    avg_keypoint.y = 0;
+
+  // manually moves the keypoints to the cone 
+    // for (size_t i=0; i < keypoints.size(); i++) {
+    //     cv::Point2f keypoint = keypoints[i].pt;
+    //     avg_keypoint.x = avg_keypoint.x + keypoint.x; 
+    //     avg_keypoint.y = avg_keypoint.y + keypoint.y; 
+    // }
+
+    // avg_keypoint.x = avg_keypoint.x/keypoints.size();
+    // avg_keypoint.y = avg_keypoint.y/keypoints.size();
+
+    // keypoints_left.push_back(avg_keypoint);
+
+
+    // // the 0 states to load the images as grayscale 
+    // cv::Mat img1 = cv::imread("1m_CameraLeft0036_L.png", 0);
+    // cv::Mat img2 = cv::imread("1m_CameraRight0036_R.png", 0);
+
+    // //-- Step 1: Detect the keypoints using SURF Detector, compute the descriptors
+    // int minHessian = 400;
+    // Ptr<SURF> detector = SURF::create( minHessian );
+    // std::vector<KeyPoint> keypoints1, keypoints2;
+    // Mat descriptors1, descriptors2;
+    // detector->detectAndCompute( img1, noArray(), keypoints1, descriptors1 );
+    // detector->detectAndCompute( img2, noArray(), keypoints2, descriptors2 );
+    // //-- Step 2: Matching descriptor vectors with a FLANN based matcher
+    // // Since SURF is a floating-point descriptor NORM_L2 is used
+    // Ptr<DescriptorMatcher> matcher = DescriptorMatcher::create(DescriptorMatcher::FLANNBASED);
+    // std::vector< std::vector<DMatch> > knn_matches;
+    // matcher->knnMatch( descriptors1, descriptors2, knn_matches, 2 );
+    // //-- Filter matches using the Lowe's ratio test
+    // const float ratio_thresh = 0.5f;
+    // std::vector<DMatch> good_matches;
+    // for (size_t i = 0; i < knn_matches.size(); i++)
+    // {
+    //     if (knn_matches[i][0].distance < ratio_thresh * knn_matches[i][1].distance)
+    //     {
+    //         good_matches.push_back(knn_matches[i][0]);
+    //     }
+    // }
+    // //-- Draw matches
+    // Mat img_matches;
+    // // drawMatches( img1, keypoints1, img2, keypoints2, good_matches, img_matches, Scalar::all(-1),
+    // //              Scalar::all(-1), std::vector<char>(), DrawMatchesFlags::NOT_DRAW_SINGLE_POINTS );
+    // //-- Show detected matches
+    // // imshow("Good Matches", img_matches );
+    // // waitKey();
+    // // return 0;
+
+    // vector<Point2f> points1; 
+    // KeyPoint::convert(keypoints1, points1);
+
+    // vector<Point2f> points2; 
+    // KeyPoint::convert(keypoints2, points2);
+
+    // long num_matches = good_matches.size();
+    // vector<Point2f> matched_points1;
+    // vector<Point2f> matched_points2;
+
+    // for (int i=0;i<num_matches;i++)
+    // {
+    //     int idx1=good_matches[i].trainIdx; // left image
+    //     int idx2=good_matches[i].queryIdx; // right image 
+    //     matched_points1.push_back(points1[idx1]);
+    //     matched_points2.push_back(points2[idx2]);
+    // }
+
+    // vector<char> inliers(matched_points1.size());
+
+    // // cv::Mat F = findFundamentalMat(matched_points1, matched_points2, cv::FM_RANSAC, 3, 0.99, inliers);
+    // cv::Mat fundamentalMatrix= cv::findFundamentalMat(matched_points1, matched_points2, cv::FM_8POINT);
+
+    // cv::Mat leftLines, rightLines;
+
+    // cv::computeCorrespondEpilines(matched_points1, 1, fundamentalMatrix, leftLines);
+    // cv::computeCorrespondEpilines(matched_points2, 2, fundamentalMatrix, rightLines);
+
+    // cv::Mat left_image11, right_image11, left_image22, right_image22;
+    // // drawlines(img1, img2, leftLines, matched_points1, matched_points2, left_image11, right_image11);
+    // // drawlines(img2, img1, rightLines, matched_points2, matched_points1, left_image22, right_image22);
+    
+    // // result
+    // // imshow("left_image 11", left_image11);
+    // // imshow("right_image 22", right_image22);
+	
+
+    // // drawMatches(img1, matched_points1, img2, matched_points2, good_matches, img_matches, Scalar::all(-1),
+    // //            Scalar::all(-1), std::vector<char>(), DrawMatchesFlags::NOT_DRAW_SINGLE_POINTS );
+    // // imshow("Good Matches", img_matches );
+    // // waitKey();
+    // // return 0;
+
+    // // Mat img_matches;
+    // // drawMatches(img1, keypoints1, img2, keypoints2, good_matches, img_matches, Scalar::all(-1), Scalar::all(-1), inliers, DrawMatchesFlags::NOT_DRAW_SINGLE_POINTS);
+    // // imshow("Matched points", img_matches);
+    // // waitKey();
+    // return 0;
+
+    //************************************************************************************************************
+
+// void featureDetectorExperimentation()
+// {
+//     // source: https://stackoverflow.com/questions/39887357/featuredetectors-not-in-opencv-3-0-0 
+//     cv::Mat image = imread("bird.jpg");
+
+//     std::vector<KeyPoint> keypoints;
+//     cv::Ptr<cv::FastFeatureDetector> fast = cv::FastFeatureDetector::create(40);
+//     // Above line compiler error: "Error    1   error C2259: 'cv::FastFeatureDetector' : cannot instantiate abstract class"
+
+//     fast->detect(image, keypoints);
+
+//     drawKeypoints(image, keypoints, image, Scalar(255, 255, 255), DrawMatchesFlags::DRAW_OVER_OUTIMG);
+
+//     imshow("Image", image);
+//     waitKey(1000);
+// }
+
+// void drawlines(Mat img1, Mat img2, Mat lines, vector<Point2f> pts1, vector<Point2f> pts2, Mat left_image11, Mat right_image11) {
+    
+//     cv::Size s = img1.size();
+//     int rows = s.height;
+//     int cols = s.width;
+
+//     int c = cols;  
+
+//     Mat img1_out, img2_out;
+
+//     cv::cvtColor(img1, img1_out, cv::COLOR_GRAY2RGB);
+//     cv::cvtColor(img2, img2_out, cv::COLOR_GRAY2RGB);
+
+//     for (int i = 0; i < lines.total(); i++) {
+//         std::cout << "hi" << std::endl;
+//     }
+
+
+//     // for i=1:numel(lines)
+//     //     clr = randi([0 255], [1 3], 'uint8');
+//     //     r = lines{i};
+//     //     p1 = uint32([0, -r(3)/r(2)]);
+//     //     p2 = uint32([c, -(r(3)+r(1)*c)/r(2)]);
+//     //     img1 = cv.line(img1, p1, p2, 'Color',clr, 'LineType','AA');
+//     //     img1 = cv.circle(img1, pts1{i}, 5, 'Color',clr, 'Thickness',-1);
+//     //     img2 = cv.circle(img2, pts2{i}, 5, 'Color',clr, 'Thickness',-1);
+//     // end
+//     return;
 // }
