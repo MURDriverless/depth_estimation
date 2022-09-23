@@ -1,0 +1,4076 @@
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=98 keypoints in 5.14137 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 1
+SIFT detection with n=0 keypoints in 3.93388 ms
+SIFT detection with n=6 keypoints in 3.62651 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0218_L.png, Inference Time: 49.3095
+Frame: ../../../../FPS_10_stereo_right/CameraRight0218_R.png, Inference Time: 46.4714
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=98 keypoints in 3.9783 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 1
+SIFT detection with n=0 keypoints in 3.54648 ms
+SIFT detection with n=5 keypoints in 3.42851 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0220_L.png, Inference Time: 49.1304
+Frame: ../../../../FPS_10_stereo_right/CameraRight0220_R.png, Inference Time: 48.9142
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=98 keypoints in 3.36635 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 1
+SIFT detection with n=0 keypoints in 3.03153 ms
+SIFT detection with n=6 keypoints in 3.83681 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0221_L.png, Inference Time: 47.1058
+Frame: ../../../../FPS_10_stereo_right/CameraRight0221_R.png, Inference Time: 43.8544
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=102 keypoints in 3.40072 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 1
+SIFT detection with n=0 keypoints in 3.44898 ms
+SIFT detection with n=5 keypoints in 2.98299 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0223_L.png, Inference Time: 48.6897
+Frame: ../../../../FPS_10_stereo_right/CameraRight0223_R.png, Inference Time: 47.1897
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=99 keypoints in 3.23121 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 1
+SIFT detection with n=0 keypoints in 3.53341 ms
+SIFT detection with n=4 keypoints in 3.06219 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0225_L.png, Inference Time: 48.6644
+Frame: ../../../../FPS_10_stereo_right/CameraRight0225_R.png, Inference Time: 45.6537
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=95 keypoints in 3.16095 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=8 keypoints in 2.98677 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0227_L.png, Inference Time: 53.8197
+Frame: ../../../../FPS_10_stereo_right/CameraRight0227_R.png, Inference Time: 52.2964
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=115 keypoints in 3.92159 ms
+SIFT detection with n=23 keypoints in 3.00604 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 1
+SIFT detection with n=7 keypoints in 2.97643 ms
+SIFT detection with n=6 keypoints in 2.7345 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0229_L.png, Inference Time: 49.6268
+Frame: ../../../../FPS_10_stereo_right/CameraRight0229_R.png, Inference Time: 47.5141
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 1
+SIFT detection with n=9 keypoints in 2.48391 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=5 keypoints in 3.00053 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0231_L.png, Inference Time: 41.2105
+Frame: ../../../../FPS_10_stereo_right/CameraRight0231_R.png, Inference Time: 38.0232
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=126 keypoints in 3.21619 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=2 keypoints in 2.78625 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0233_L.png, Inference Time: 39.0322
+Frame: ../../../../FPS_10_stereo_right/CameraRight0233_R.png, Inference Time: 36.0107
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 1
+SIFT detection with n=6 keypoints in 2.50409 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=5 keypoints in 3.10166 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0234_L.png, Inference Time: 37.8676
+Frame: ../../../../FPS_10_stereo_right/CameraRight0234_R.png, Inference Time: 36.6483
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 1
+SIFT detection with n=9 keypoints in 2.70579 ms
+SIFT detection with n=89 keypoints in 3.04948 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 2
+SIFT detection with n=7 keypoints in 3.30398 ms
+SIFT detection with n=2 keypoints in 3.49354 ms
+SIFT detection with n=8 keypoints in 2.78793 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0236_L.png, Inference Time: 38.1075
+Frame: ../../../../FPS_10_stereo_right/CameraRight0236_R.png, Inference Time: 35.4804
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=14 keypoints in 2.59286 ms
+SIFT detection with n=16 keypoints in 2.7954 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 2
+SIFT detection with n=3 keypoints in 2.61996 ms
+SIFT detection with n=1 keypoints in 2.99235 ms
+SIFT detection with n=10 keypoints in 3.16221 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0238_L.png, Inference Time: 35.8311
+Frame: ../../../../FPS_10_stereo_right/CameraRight0238_R.png, Inference Time: 36.6843
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 1
+SIFT detection with n=14 keypoints in 2.62177 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 1
+SIFT detection with n=3 keypoints in 2.99738 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0240_L.png, Inference Time: 37.457
+Frame: ../../../../FPS_10_stereo_right/CameraRight0240_R.png, Inference Time: 35.3759
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 1
+SIFT detection with n=19 keypoints in 2.83465 ms
+SIFT detection with n=48 keypoints in 2.81782 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 1
+SIFT detection with n=3 keypoints in 2.68344 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0241_L.png, Inference Time: 39.9926
+Frame: ../../../../FPS_10_stereo_right/CameraRight0241_R.png, Inference Time: 37.0705
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=18 keypoints in 2.20259 ms
+SIFT detection with n=17 keypoints in 2.33424 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 0
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0243_L.png, Inference Time: 38.8607
+Frame: ../../../../FPS_10_stereo_right/CameraRight0243_R.png, Inference Time: 36.3444
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=17 keypoints in 2.89018 ms
+SIFT detection with n=21 keypoints in 2.10823 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 1
+SIFT detection with n=4 keypoints in 3.51295 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0245_L.png, Inference Time: 38.6988
+Frame: ../../../../FPS_10_stereo_right/CameraRight0245_R.png, Inference Time: 37.699
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 3
+SIFT detection with n=17 keypoints in 2.28521 ms
+SIFT detection with n=20 keypoints in 2.91134 ms
+SIFT detection with n=1 keypoints in 3.30978 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 1
+SIFT detection with n=1 keypoints in 4.19544 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0246_L.png, Inference Time: 40.48
+Frame: ../../../../FPS_10_stereo_right/CameraRight0246_R.png, Inference Time: 40.1406
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 3
+SIFT detection with n=22 keypoints in 2.37845 ms
+SIFT detection with n=17 keypoints in 2.94647 ms
+SIFT detection with n=14 keypoints in 2.11249 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 1
+SIFT detection with n=2 keypoints in 2.61961 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0248_L.png, Inference Time: 36.9767
+Frame: ../../../../FPS_10_stereo_right/CameraRight0248_R.png, Inference Time: 36.0631
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=20 keypoints in 2.55389 ms
+SIFT detection with n=23 keypoints in 3.94925 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 1
+SIFT detection with n=1 keypoints in 2.61835 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0250_L.png, Inference Time: 37.5142
+Frame: ../../../../FPS_10_stereo_right/CameraRight0250_R.png, Inference Time: 36.5818
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=17 keypoints in 2.39849 ms
+SIFT detection with n=19 keypoints in 2.88319 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 1
+SIFT detection with n=4 keypoints in 2.51387 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0251_L.png, Inference Time: 38.8476
+Frame: ../../../../FPS_10_stereo_right/CameraRight0251_R.png, Inference Time: 36.2912
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 3
+SIFT detection with n=22 keypoints in 2.50346 ms
+SIFT detection with n=13 keypoints in 3.3908 ms
+SIFT detection with n=16 keypoints in 2.05362 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 1
+SIFT detection with n=2 keypoints in 2.55291 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0253_L.png, Inference Time: 38.8502
+Frame: ../../../../FPS_10_stereo_right/CameraRight0253_R.png, Inference Time: 33.5061
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 1
+SIFT detection with n=9 keypoints in 3.6673 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 0
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0255_L.png, Inference Time: 39.1221
+Frame: ../../../../FPS_10_stereo_right/CameraRight0255_R.png, Inference Time: 37.3345
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 3
+SIFT detection with n=27 keypoints in 2.62443 ms
+SIFT detection with n=18 keypoints in 3.63329 ms
+SIFT detection with n=18 keypoints in 2.21502 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=2 keypoints in 2.87174 ms
+SIFT detection with n=5 keypoints in 2.92035 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0257_L.png, Inference Time: 38.4298
+Frame: ../../../../FPS_10_stereo_right/CameraRight0257_R.png, Inference Time: 38.9626
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 3
+SIFT detection with n=22 keypoints in 2.67164 ms
+SIFT detection with n=13 keypoints in 3.64509 ms
+SIFT detection with n=22 keypoints in 2.1889 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=3 keypoints in 3.18567 ms
+SIFT detection with n=4 keypoints in 2.66291 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0258_L.png, Inference Time: 37.5313
+Frame: ../../../../FPS_10_stereo_right/CameraRight0258_R.png, Inference Time: 32.8097
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 4
+SIFT detection with n=15 keypoints in 3.8595 ms
+SIFT detection with n=19 keypoints in 2.4721 ms
+SIFT detection with n=16 keypoints in 2.43991 ms
+SIFT detection with n=25 keypoints in 2.47881 ms
+SIFT detection with n=21 keypoints in 2.64706 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 1
+SIFT detection with n=6 keypoints in 3.18903 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0260_L.png, Inference Time: 40.0735
+Frame: ../../../../FPS_10_stereo_right/CameraRight0260_R.png, Inference Time: 36.0722
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 3
+SIFT detection with n=27 keypoints in 2.90819 ms
+SIFT detection with n=6 keypoints in 3.49891 ms
+SIFT detection with n=16 keypoints in 2.16718 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 3
+SIFT detection with n=3 keypoints in 2.94277 ms
+SIFT detection with n=10 keypoints in 2.52777 ms
+SIFT detection with n=5 keypoints in 2.5849 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0262_L.png, Inference Time: 37.3299
+Frame: ../../../../FPS_10_stereo_right/CameraRight0262_R.png, Inference Time: 36.9374
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=26 keypoints in 2.7308 ms
+SIFT detection with n=15 keypoints in 2.32285 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 3
+SIFT detection with n=9 keypoints in 2.65488 ms
+SIFT detection with n=7 keypoints in 2.58497 ms
+SIFT detection with n=5 keypoints in 3.3975 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0263_L.png, Inference Time: 36.0756
+Frame: ../../../../FPS_10_stereo_right/CameraRight0263_R.png, Inference Time: 36.1697
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=16 keypoints in 3.10466 ms
+SIFT detection with n=19 keypoints in 2.25944 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 4
+SIFT detection with n=6 keypoints in 2.72451 ms
+SIFT detection with n=8 keypoints in 2.60054 ms
+SIFT detection with n=5 keypoints in 3.995 ms
+SIFT detection with n=5 keypoints in 2.86042 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0265_L.png, Inference Time: 37.8122
+Frame: ../../../../FPS_10_stereo_right/CameraRight0265_R.png, Inference Time: 34.6825
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=18 keypoints in 2.95939 ms
+SIFT detection with n=12 keypoints in 2.04957 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=9 keypoints in 2.47909 ms
+SIFT detection with n=8 keypoints in 2.74979 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0267_L.png, Inference Time: 36.6096
+Frame: ../../../../FPS_10_stereo_right/CameraRight0267_R.png, Inference Time: 36.5685
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 2
+SIFT detection with n=14 keypoints in 2.38871 ms
+SIFT detection with n=24 keypoints in 3.56736 ms
+SIFT detection with n=29 keypoints in 2.81286 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 3
+SIFT detection with n=5 keypoints in 2.69637 ms
+SIFT detection with n=7 keypoints in 2.73967 ms
+SIFT detection with n=11 keypoints in 2.39402 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0269_L.png, Inference Time: 39.6344
+Frame: ../../../../FPS_10_stereo_right/CameraRight0269_R.png, Inference Time: 37.3762
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 2
+SIFT detection with n=28 keypoints in 3.38731 ms
+SIFT detection with n=16 keypoints in 2.18652 ms
+SIFT detection with n=22 keypoints in 2.34178 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=5 keypoints in 2.73164 ms
+SIFT detection with n=7 keypoints in 2.70677 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0270_L.png, Inference Time: 37.3347
+Frame: ../../../../FPS_10_stereo_right/CameraRight0270_R.png, Inference Time: 36.7472
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 2
+SIFT detection with n=18 keypoints in 2.25951 ms
+SIFT detection with n=21 keypoints in 3.51512 ms
+SIFT detection with n=23 keypoints in 2.49892 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 3
+SIFT detection with n=4 keypoints in 2.45374 ms
+SIFT detection with n=7 keypoints in 2.54174 ms
+SIFT detection with n=2 keypoints in 2.92964 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0272_L.png, Inference Time: 38.6744
+Frame: ../../../../FPS_10_stereo_right/CameraRight0272_R.png, Inference Time: 35.7315
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=23 keypoints in 2.63665 ms
+SIFT detection with n=23 keypoints in 3.88779 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 3
+SIFT detection with n=3 keypoints in 2.46554 ms
+SIFT detection with n=3 keypoints in 3.07386 ms
+SIFT detection with n=4 keypoints in 2.40729 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0274_L.png, Inference Time: 36.7806
+Frame: ../../../../FPS_10_stereo_right/CameraRight0274_R.png, Inference Time: 35.6072
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 2
+SIFT detection with n=19 keypoints in 2.61563 ms
+SIFT detection with n=25 keypoints in 2.65544 ms
+SIFT detection with n=21 keypoints in 3.61226 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=2 keypoints in 2.32341 ms
+SIFT detection with n=3 keypoints in 3.36049 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0276_L.png, Inference Time: 40.4182
+Frame: ../../../../FPS_10_stereo_right/CameraRight0276_R.png, Inference Time: 37.6722
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 2
+SIFT detection with n=26 keypoints in 2.63944 ms
+SIFT detection with n=24 keypoints in 2.71648 ms
+SIFT detection with n=15 keypoints in 3.96636 ms
+SIFT detection with n=25 keypoints in 3.11793 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 1
+SIFT detection with n=8 keypoints in 2.56332 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0277_L.png, Inference Time: 38.7861
+Frame: ../../../../FPS_10_stereo_right/CameraRight0277_R.png, Inference Time: 36.2218
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 1
+SIFT detection with n=19 keypoints in 2.99152 ms
+SIFT detection with n=19 keypoints in 2.72018 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 2
+SIFT detection with n=6 keypoints in 2.97496 ms
+SIFT detection with n=6 keypoints in 2.57009 ms
+SIFT detection with n=2 keypoints in 3.67226 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0279_L.png, Inference Time: 38.0999
+Frame: ../../../../FPS_10_stereo_right/CameraRight0279_R.png, Inference Time: 37.5392
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 1
+SIFT detection with n=28 keypoints in 3.29519 ms
+SIFT detection with n=23 keypoints in 2.66487 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 1
+SIFT detection with n=6 keypoints in 2.91979 ms
+SIFT detection with n=7 keypoints in 2.97496 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0281_L.png, Inference Time: 38.4428
+Frame: ../../../../FPS_10_stereo_right/CameraRight0281_R.png, Inference Time: 38.6675
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 2
+SIFT detection with n=21 keypoints in 2.36015 ms
+SIFT detection with n=19 keypoints in 3.33409 ms
+SIFT detection with n=26 keypoints in 2.7815 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 0
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0283_L.png, Inference Time: 40.6509
+Frame: ../../../../FPS_10_stereo_right/CameraRight0283_R.png, Inference Time: 40.5357
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=29 keypoints in 3.17513 ms
+SIFT detection with n=17 keypoints in 2.27948 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 0
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0285_L.png, Inference Time: 40.3992
+Frame: ../../../../FPS_10_stereo_right/CameraRight0285_R.png, Inference Time: 42.8126
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 1
+SIFT detection with n=31 keypoints in 3.42376 ms
+SIFT detection with n=21 keypoints in 2.8621 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 1
+SIFT detection with n=8 keypoints in 2.464 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0286_L.png, Inference Time: 38.3194
+Frame: ../../../../FPS_10_stereo_right/CameraRight0286_R.png, Inference Time: 38.8099
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 1
+SIFT detection with n=31 keypoints in 2.86999 ms
+SIFT detection with n=16 keypoints in 3.50925 ms
+SIFT detection with n=9 keypoints in 2.30721 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 2
+SIFT detection with n=6 keypoints in 2.86545 ms
+SIFT detection with n=8 keypoints in 3.76431 ms
+SIFT detection with n=2 keypoints in 2.54656 ms
+SIFT detection with n=6 keypoints in 2.87663 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0288_L.png, Inference Time: 40.0464
+Frame: ../../../../FPS_10_stereo_right/CameraRight0288_R.png, Inference Time: 39.7949
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 2
+SIFT detection with n=35 keypoints in 3.70564 ms
+SIFT detection with n=11 keypoints in 2.24784 ms
+SIFT detection with n=21 keypoints in 4.03362 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 1
+SIFT detection with n=7 keypoints in 3.5214 ms
+SIFT detection with n=3 keypoints in 2.58203 ms
+SIFT detection with n=6 keypoints in 3.64586 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0290_L.png, Inference Time: 40.2096
+Frame: ../../../../FPS_10_stereo_right/CameraRight0290_R.png, Inference Time: 44.0749
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 2
+SIFT detection with n=29 keypoints in 3.67875 ms
+SIFT detection with n=18 keypoints in 2.10006 ms
+SIFT detection with n=8 keypoints in 2.52211 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=4 keypoints in 3.03433 ms
+SIFT detection with n=6 keypoints in 3.4223 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0292_L.png, Inference Time: 43.0779
+Frame: ../../../../FPS_10_stereo_right/CameraRight0292_R.png, Inference Time: 39.1267
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 3
+SIFT detection with n=8 keypoints in 2.20838 ms
+SIFT detection with n=17 keypoints in 2.39989 ms
+SIFT detection with n=22 keypoints in 3.63601 ms
+SIFT detection with n=3 keypoints in 2.41525 ms
+SIFT detection with n=9 keypoints in 2.17444 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=5 keypoints in 2.39256 ms
+SIFT detection with n=3 keypoints in 2.91371 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0294_L.png, Inference Time: 39.6786
+Frame: ../../../../FPS_10_stereo_right/CameraRight0294_R.png, Inference Time: 34.9418
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 1
+SIFT detection with n=8 keypoints in 2.01939 ms
+SIFT detection with n=27 keypoints in 3.70893 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=3 keypoints in 2.46582 ms
+SIFT detection with n=3 keypoints in 2.95855 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0295_L.png, Inference Time: 39.3617
+Frame: ../../../../FPS_10_stereo_right/CameraRight0295_R.png, Inference Time: 36.3306
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 3
+SIFT detection with n=6 keypoints in 3.09104 ms
+SIFT detection with n=20 keypoints in 3.97181 ms
+SIFT detection with n=10 keypoints in 2.67723 ms
+SIFT detection with n=5 keypoints in 2.14909 ms
+SIFT detection with n=8 keypoints in 2.02568 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 1
+SIFT detection with n=3 keypoints in 2.02233 ms
+SIFT detection with n=4 keypoints in 3.46804 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0297_L.png, Inference Time: 37.0656
+Frame: ../../../../FPS_10_stereo_right/CameraRight0297_R.png, Inference Time: 38.3355
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 3
+SIFT detection with n=17 keypoints in 1.9601 ms
+SIFT detection with n=6 keypoints in 1.86099 ms
+SIFT detection with n=10 keypoints in 1.47086 ms
+SIFT detection with n=6 keypoints in 1.65615 ms
+SIFT detection with n=19 keypoints in 3.36272 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=3 keypoints in 2.1377 ms
+SIFT detection with n=2 keypoints in 2.56953 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0299_L.png, Inference Time: 40.1635
+Frame: ../../../../FPS_10_stereo_right/CameraRight0299_R.png, Inference Time: 37.5156
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 3
+SIFT detection with n=5 keypoints in 2.22599 ms
+SIFT detection with n=13 keypoints in 1.9485 ms
+SIFT detection with n=9 keypoints in 1.56179 ms
+SIFT detection with n=7 keypoints in 1.67033 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=5 keypoints in 1.71426 ms
+SIFT detection with n=3 keypoints in 2.10299 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0301_L.png, Inference Time: 43.7603
+Frame: ../../../../FPS_10_stereo_right/CameraRight0301_R.png, Inference Time: 31.4388
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 3
+SIFT detection with n=13 keypoints in 1.38167 ms
+SIFT detection with n=13 keypoints in 2.13121 ms
+SIFT detection with n=6 keypoints in 1.98936 ms
+SIFT detection with n=13 keypoints in 1.73709 ms
+SIFT detection with n=8 keypoints in 1.65852 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 3
+SIFT detection with n=5 keypoints in 1.57618 ms
+SIFT detection with n=4 keypoints in 2.09133 ms
+SIFT detection with n=4 keypoints in 2.11291 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0303_L.png, Inference Time: 30.2122
+Frame: ../../../../FPS_10_stereo_right/CameraRight0303_R.png, Inference Time: 35.5435
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 3
+SIFT detection with n=17 keypoints in 2.30141 ms
+SIFT detection with n=11 keypoints in 1.65203 ms
+SIFT detection with n=10 keypoints in 1.7109 ms
+SIFT detection with n=2 keypoints in 1.43384 ms
+SIFT detection with n=6 keypoints in 1.76936 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 3
+SIFT detection with n=5 keypoints in 1.67647 ms
+SIFT detection with n=3 keypoints in 2.21299 ms
+SIFT detection with n=2 keypoints in 1.66404 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0305_L.png, Inference Time: 36.0342
+Frame: ../../../../FPS_10_stereo_right/CameraRight0305_R.png, Inference Time: 39.4778
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 4
+SIFT detection with n=6 keypoints in 1.74282 ms
+SIFT detection with n=4 keypoints in 2.09629 ms
+SIFT detection with n=11 keypoints in 2.46219 ms
+SIFT detection with n=8 keypoints in 1.81448 ms
+SIFT detection with n=12 keypoints in 4.59759 ms
+SIFT detection with n=13 keypoints in 1.64721 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 2
+SIFT detection with n=2 keypoints in 1.71356 ms
+SIFT detection with n=2 keypoints in 1.95283 ms
+SIFT detection with n=3 keypoints in 1.48273 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0307_L.png, Inference Time: 28.4353
+Frame: ../../../../FPS_10_stereo_right/CameraRight0307_R.png, Inference Time: 37.6629
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 2
+SIFT detection with n=4 keypoints in 1.88683 ms
+SIFT detection with n=9 keypoints in 1.67319 ms
+SIFT detection with n=20 keypoints in 1.81308 ms
+SIFT detection with n=0 keypoints in 1.57835 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 2
+SIFT detection with n=5 keypoints in 1.70427 ms
+SIFT detection with n=3 keypoints in 1.83236 ms
+SIFT detection with n=3 keypoints in 2.06025 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0309_L.png, Inference Time: 39.0891
+Frame: ../../../../FPS_10_stereo_right/CameraRight0309_R.png, Inference Time: 27.8008
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 3
+SIFT detection with n=7 keypoints in 1.60279 ms
+SIFT detection with n=13 keypoints in 2.65565 ms
+SIFT detection with n=6 keypoints in 2.40632 ms
+SIFT detection with n=7 keypoints in 1.71901 ms
+SIFT detection with n=17 keypoints in 1.68213 ms
+SIFT detection with n=14 keypoints in 1.56319 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 3
+SIFT detection with n=3 keypoints in 2.60292 ms
+SIFT detection with n=4 keypoints in 1.78787 ms
+SIFT detection with n=2 keypoints in 1.99879 ms
+SIFT detection with n=3 keypoints in 1.84318 ms
+roi not possible
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0311_L.png, Inference Time: 26.7585
+Frame: ../../../../FPS_10_stereo_right/CameraRight0311_R.png, Inference Time: 29.0728
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 4
+SIFT detection with n=19 keypoints in 1.97176 ms
+SIFT detection with n=5 keypoints in 1.38677 ms
+SIFT detection with n=10 keypoints in 2.21348 ms
+SIFT detection with n=12 keypoints in 1.79695 ms
+SIFT detection with n=12 keypoints in 4.82052 ms
+SIFT detection with n=11 keypoints in 1.8582 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 3
+SIFT detection with n=5 keypoints in 2.00137 ms
+SIFT detection with n=3 keypoints in 2.10921 ms
+SIFT detection with n=1 keypoints in 1.69316 ms
+SIFT detection with n=1 keypoints in 1.86421 ms
+SIFT detection with n=2 keypoints in 2.88892 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0313_L.png, Inference Time: 29.7828
+Frame: ../../../../FPS_10_stereo_right/CameraRight0313_R.png, Inference Time: 39.2149
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 2
+SIFT detection with n=8 keypoints in 2.76062 ms
+SIFT detection with n=15 keypoints in 1.4314 ms
+SIFT detection with n=13 keypoints in 1.76384 ms
+SIFT detection with n=15 keypoints in 1.7313 ms
+SIFT detection with n=10 keypoints in 1.73423 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 2
+SIFT detection with n=2 keypoints in 1.76091 ms
+SIFT detection with n=2 keypoints in 2.06402 ms
+SIFT detection with n=1 keypoints in 2.07911 ms
+SIFT detection with n=4 keypoints in 1.7241 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0315_L.png, Inference Time: 27.8501
+Frame: ../../../../FPS_10_stereo_right/CameraRight0315_R.png, Inference Time: 23.3038
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 3
+SIFT detection with n=15 keypoints in 2.01444 ms
+SIFT detection with n=9 keypoints in 1.8904 ms
+SIFT detection with n=11 keypoints in 1.65077 ms
+SIFT detection with n=5 keypoints in 1.61368 ms
+SIFT detection with n=12 keypoints in 1.52883 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 2
+SIFT detection with n=3 keypoints in 2.12597 ms
+SIFT detection with n=2 keypoints in 1.6822 ms
+SIFT detection with n=4 keypoints in 1.70979 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0317_L.png, Inference Time: 27.0436
+Frame: ../../../../FPS_10_stereo_right/CameraRight0317_R.png, Inference Time: 23.5716
+Left Image
+Total Blue Cones: 4
+Total Yellow Cones: 2
+SIFT detection with n=11 keypoints in 1.83068 ms
+SIFT detection with n=15 keypoints in 1.99872 ms
+SIFT detection with n=12 keypoints in 2.46701 ms
+SIFT detection with n=13 keypoints in 1.5817 ms
+SIFT detection with n=11 keypoints in 1.81783 ms
+SIFT detection with n=4 keypoints in 2.88452 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 3
+SIFT detection with n=2 keypoints in 2.23883 ms
+SIFT detection with n=2 keypoints in 1.64763 ms
+SIFT detection with n=5 keypoints in 1.68974 ms
+SIFT detection with n=3 keypoints in 1.5458 ms
+SIFT detection with n=2 keypoints in 1.628 ms
+SIFT detection with n=0 keypoints in 1.92692 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0319_L.png, Inference Time: 29.2716
+Frame: ../../../../FPS_10_stereo_right/CameraRight0319_R.png, Inference Time: 26.4339
+Left Image
+Total Blue Cones: 4
+Total Yellow Cones: 2
+SIFT detection with n=10 keypoints in 2.0562 ms
+SIFT detection with n=16 keypoints in 1.85136 ms
+SIFT detection with n=11 keypoints in 1.83794 ms
+SIFT detection with n=12 keypoints in 2.06458 ms
+SIFT detection with n=10 keypoints in 1.62996 ms
+SIFT detection with n=7 keypoints in 1.61026 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 4
+SIFT detection with n=3 keypoints in 1.65426 ms
+SIFT detection with n=2 keypoints in 2.2035 ms
+SIFT detection with n=4 keypoints in 1.60754 ms
+SIFT detection with n=2 keypoints in 1.49481 ms
+SIFT detection with n=0 keypoints in 4.04025 ms
+SIFT detection with n=2 keypoints in 1.71922 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0321_L.png, Inference Time: 30.0628
+Frame: ../../../../FPS_10_stereo_right/CameraRight0321_R.png, Inference Time: 35.6646
+Left Image
+Total Blue Cones: 4
+Total Yellow Cones: 2
+SIFT detection with n=25 keypoints in 1.76419 ms
+SIFT detection with n=9 keypoints in 2.54202 ms
+SIFT detection with n=14 keypoints in 1.89815 ms
+SIFT detection with n=12 keypoints in 1.54398 ms
+SIFT detection with n=11 keypoints in 1.68646 ms
+SIFT detection with n=12 keypoints in 1.97176 ms
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 3
+SIFT detection with n=5 keypoints in 1.90807 ms
+SIFT detection with n=4 keypoints in 1.72075 ms
+SIFT detection with n=2 keypoints in 1.56452 ms
+SIFT detection with n=2 keypoints in 2.45416 ms
+SIFT detection with n=2 keypoints in 1.91449 ms
+SIFT detection with n=3 keypoints in 1.60935 ms
+SIFT detection with n=1 keypoints in 1.3566 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0323_L.png, Inference Time: 38.5985
+Frame: ../../../../FPS_10_stereo_right/CameraRight0323_R.png, Inference Time: 29.3835
+Left Image
+Total Blue Cones: 5
+Total Yellow Cones: 2
+SIFT detection with n=22 keypoints in 1.92588 ms
+SIFT detection with n=14 keypoints in 1.99935 ms
+SIFT detection with n=12 keypoints in 1.63736 ms
+SIFT detection with n=7 keypoints in 1.70727 ms
+SIFT detection with n=11 keypoints in 1.61522 ms
+SIFT detection with n=8 keypoints in 2.6224 ms
+SIFT detection with n=9 keypoints in 1.52652 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 3
+SIFT detection with n=2 keypoints in 2.12122 ms
+SIFT detection with n=4 keypoints in 2.08861 ms
+SIFT detection with n=2 keypoints in 1.56068 ms
+SIFT detection with n=2 keypoints in 2.64503 ms
+SIFT detection with n=2 keypoints in 1.78954 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0325_L.png, Inference Time: 40.7804
+Frame: ../../../../FPS_10_stereo_right/CameraRight0325_R.png, Inference Time: 40.3314
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 3
+SIFT detection with n=11 keypoints in 1.98622 ms
+SIFT detection with n=15 keypoints in 1.48525 ms
+SIFT detection with n=12 keypoints in 1.49642 ms
+SIFT detection with n=17 keypoints in 1.56403 ms
+SIFT detection with n=8 keypoints in 2.70831 ms
+SIFT detection with n=10 keypoints in 1.73325 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 3
+SIFT detection with n=3 keypoints in 1.74254 ms
+SIFT detection with n=2 keypoints in 3.17883 ms
+SIFT detection with n=2 keypoints in 2.35638 ms
+SIFT detection with n=3 keypoints in 1.99809 ms
+SIFT detection with n=5 keypoints in 1.76349 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0327_L.png, Inference Time: 33.5443
+Frame: ../../../../FPS_10_stereo_right/CameraRight0327_R.png, Inference Time: 32.3359
+Left Image
+Total Blue Cones: 6
+Total Yellow Cones: 2
+SIFT detection with n=10 keypoints in 2.23737 ms
+SIFT detection with n=8 keypoints in 2.40785 ms
+SIFT detection with n=28 keypoints in 1.98985 ms
+SIFT detection with n=11 keypoints in 1.62968 ms
+SIFT detection with n=7 keypoints in 1.47659 ms
+SIFT detection with n=12 keypoints in 1.82579 ms
+SIFT detection with n=13 keypoints in 1.62046 ms
+SIFT detection with n=7 keypoints in 1.98796 ms
+Right Image
+Total Blue Cones: 5
+Total Yellow Cones: 2
+SIFT detection with n=1 keypoints in 2.38257 ms
+SIFT detection with n=1 keypoints in 1.90646 ms
+SIFT detection with n=4 keypoints in 1.92895 ms
+SIFT detection with n=2 keypoints in 1.48769 ms
+SIFT detection with n=9 keypoints in 1.72459 ms
+SIFT detection with n=2 keypoints in 1.70811 ms
+SIFT detection with n=3 keypoints in 1.72871 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0330_L.png, Inference Time: 40.2458
+Frame: ../../../../FPS_10_stereo_right/CameraRight0330_R.png, Inference Time: 40.1159
+Left Image
+Total Blue Cones: 6
+Total Yellow Cones: 1
+SIFT detection with n=12 keypoints in 1.77153 ms
+SIFT detection with n=16 keypoints in 2.16012 ms
+SIFT detection with n=7 keypoints in 1.93866 ms
+SIFT detection with n=7 keypoints in 1.43336 ms
+SIFT detection with n=7 keypoints in 2.29394 ms
+SIFT detection with n=16 keypoints in 1.87224 ms
+SIFT detection with n=10 keypoints in 1.8589 ms
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 2
+SIFT detection with n=5 keypoints in 1.97742 ms
+SIFT detection with n=3 keypoints in 1.78221 ms
+SIFT detection with n=1 keypoints in 1.51751 ms
+SIFT detection with n=2 keypoints in 2.05669 ms
+SIFT detection with n=0 keypoints in 2.83877 ms
+SIFT detection with n=3 keypoints in 2.69071 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0332_L.png, Inference Time: 33.8885
+Frame: ../../../../FPS_10_stereo_right/CameraRight0332_R.png, Inference Time: 37.3746
+Left Image
+Total Blue Cones: 7
+Total Yellow Cones: 1
+SIFT detection with n=7 keypoints in 1.6257 ms
+SIFT detection with n=16 keypoints in 2.05613 ms
+SIFT detection with n=15 keypoints in 2.58986 ms
+SIFT detection with n=10 keypoints in 1.80093 ms
+SIFT detection with n=10 keypoints in 1.8112 ms
+SIFT detection with n=6 keypoints in 2.57079 ms
+SIFT detection with n=9 keypoints in 1.54706 ms
+SIFT detection with n=40 keypoints in 1.64274 ms
+Right Image
+Total Blue Cones: 6
+Total Yellow Cones: 3
+SIFT detection with n=2 keypoints in 1.56626 ms
+SIFT detection with n=3 keypoints in 1.94732 ms
+SIFT detection with n=3 keypoints in 1.87796 ms
+SIFT detection with n=4 keypoints in 2.26433 ms
+SIFT detection with n=3 keypoints in 2.13023 ms
+SIFT detection with n=3 keypoints in 1.69358 ms
+SIFT detection with n=3 keypoints in 2.06346 ms
+SIFT detection with n=1 keypoints in 3.43955 ms
+SIFT detection with n=1 keypoints in 1.72285 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0334_L.png, Inference Time: 31.2371
+Frame: ../../../../FPS_10_stereo_right/CameraRight0334_R.png, Inference Time: 29.7349
+Left Image
+Total Blue Cones: 6
+Total Yellow Cones: 1
+SIFT detection with n=12 keypoints in 1.88683 ms
+SIFT detection with n=12 keypoints in 1.80722 ms
+SIFT detection with n=7 keypoints in 1.82572 ms
+SIFT detection with n=17 keypoints in 2.06416 ms
+SIFT detection with n=9 keypoints in 1.57597 ms
+SIFT detection with n=10 keypoints in 1.8508 ms
+SIFT detection with n=30 keypoints in 1.87629 ms
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 3
+SIFT detection with n=1 keypoints in 2.08972 ms
+SIFT detection with n=2 keypoints in 2.94996 ms
+SIFT detection with n=3 keypoints in 2.09161 ms
+SIFT detection with n=1 keypoints in 1.71977 ms
+SIFT detection with n=1 keypoints in 4.78015 ms
+SIFT detection with n=3 keypoints in 1.7614 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0336_L.png, Inference Time: 31.8055
+Frame: ../../../../FPS_10_stereo_right/CameraRight0336_R.png, Inference Time: 29.7065
+Left Image
+Total Blue Cones: 7
+Total Yellow Cones: 1
+SIFT detection with n=11 keypoints in 1.81944 ms
+SIFT detection with n=12 keypoints in 1.70231 ms
+SIFT detection with n=7 keypoints in 1.73158 ms
+SIFT detection with n=10 keypoints in 1.55551 ms
+SIFT detection with n=11 keypoints in 2.42021 ms
+SIFT detection with n=12 keypoints in 1.73067 ms
+SIFT detection with n=10 keypoints in 1.71712 ms
+roi not possible
+Right Image
+Total Blue Cones: 5
+Total Yellow Cones: 2
+SIFT detection with n=1 keypoints in 1.75728 ms
+SIFT detection with n=3 keypoints in 2.16774 ms
+SIFT detection with n=2 keypoints in 1.87685 ms
+SIFT detection with n=3 keypoints in 1.56319 ms
+SIFT detection with n=2 keypoints in 2.1134 ms
+SIFT detection with n=3 keypoints in 1.78473 ms
+roi not possible
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0338_L.png, Inference Time: 42.673
+Frame: ../../../../FPS_10_stereo_right/CameraRight0338_R.png, Inference Time: 36.4671
+Left Image
+Total Blue Cones: 6
+Total Yellow Cones: 1
+SIFT detection with n=10 keypoints in 1.90073 ms
+SIFT detection with n=14 keypoints in 2.09021 ms
+SIFT detection with n=10 keypoints in 1.79192 ms
+SIFT detection with n=14 keypoints in 1.88153 ms
+SIFT detection with n=12 keypoints in 1.70699 ms
+SIFT detection with n=14 keypoints in 2.43258 ms
+SIFT detection with n=7 keypoints in 1.91994 ms
+Right Image
+Total Blue Cones: 6
+Total Yellow Cones: 2
+SIFT detection with n=3 keypoints in 1.77153 ms
+SIFT detection with n=3 keypoints in 1.64868 ms
+SIFT detection with n=2 keypoints in 1.6896 ms
+SIFT detection with n=2 keypoints in 1.93726 ms
+SIFT detection with n=3 keypoints in 2.31936 ms
+SIFT detection with n=4 keypoints in 1.67787 ms
+roi not possible
+SIFT detection with n=2 keypoints in 4.24349 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0340_L.png, Inference Time: 39.7723
+Frame: ../../../../FPS_10_stereo_right/CameraRight0340_R.png, Inference Time: 26.1535
+Left Image
+Total Blue Cones: 7
+Total Yellow Cones: 1
+SIFT detection with n=9 keypoints in 1.5648 ms
+SIFT detection with n=5 keypoints in 1.81378 ms
+SIFT detection with n=8 keypoints in 1.55655 ms
+SIFT detection with n=13 keypoints in 2.3019 ms
+SIFT detection with n=10 keypoints in 1.78696 ms
+SIFT detection with n=10 keypoints in 1.58309 ms
+SIFT detection with n=11 keypoints in 2.18645 ms
+roi not possible
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 1
+SIFT detection with n=4 keypoints in 1.78801 ms
+SIFT detection with n=1 keypoints in 1.72403 ms
+SIFT detection with n=2 keypoints in 2.45492 ms
+roi not possible
+SIFT detection with n=2 keypoints in 2.17395 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0342_L.png, Inference Time: 31.8393
+Frame: ../../../../FPS_10_stereo_right/CameraRight0342_R.png, Inference Time: 32.9977
+Left Image
+Total Blue Cones: 7
+Total Yellow Cones: 1
+SIFT detection with n=9 keypoints in 2.21705 ms
+SIFT detection with n=10 keypoints in 2.02659 ms
+SIFT detection with n=15 keypoints in 2.45786 ms
+SIFT detection with n=8 keypoints in 1.9601 ms
+SIFT detection with n=10 keypoints in 1.73011 ms
+SIFT detection with n=8 keypoints in 1.99264 ms
+SIFT detection with n=10 keypoints in 2.45108 ms
+roi not possible
+Right Image
+Total Blue Cones: 6
+Total Yellow Cones: 1
+SIFT detection with n=5 keypoints in 2.1787 ms
+SIFT detection with n=3 keypoints in 1.98755 ms
+SIFT detection with n=2 keypoints in 2.27948 ms
+SIFT detection with n=2 keypoints in 1.78948 ms
+SIFT detection with n=3 keypoints in 3.01736 ms
+SIFT detection with n=3 keypoints in 2.13736 ms
+roi not possible
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0344_L.png, Inference Time: 31.7447
+Frame: ../../../../FPS_10_stereo_right/CameraRight0344_R.png, Inference Time: 37.0234
+Left Image
+Total Blue Cones: 7
+Total Yellow Cones: 0
+SIFT detection with n=10 keypoints in 1.8971 ms
+SIFT detection with n=10 keypoints in 2.03504 ms
+SIFT detection with n=10 keypoints in 1.78961 ms
+SIFT detection with n=8 keypoints in 1.60964 ms
+SIFT detection with n=9 keypoints in 1.8406 ms
+SIFT detection with n=11 keypoints in 2.74623 ms
+roi not possible
+Right Image
+Total Blue Cones: 7
+Total Yellow Cones: 1
+SIFT detection with n=3 keypoints in 2.08777 ms
+SIFT detection with n=3 keypoints in 1.92769 ms
+SIFT detection with n=2 keypoints in 2.00522 ms
+SIFT detection with n=3 keypoints in 2.46575 ms
+SIFT detection with n=2 keypoints in 1.73842 ms
+SIFT detection with n=3 keypoints in 1.87936 ms
+roi not possible
+SIFT detection with n=4 keypoints in 1.78836 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0347_L.png, Inference Time: 36.3769
+Frame: ../../../../FPS_10_stereo_right/CameraRight0347_R.png, Inference Time: 40.1181
+Left Image
+Total Blue Cones: 6
+Total Yellow Cones: 0
+SIFT detection with n=11 keypoints in 1.8473 ms
+SIFT detection with n=8 keypoints in 1.82104 ms
+SIFT detection with n=11 keypoints in 2.16452 ms
+SIFT detection with n=10 keypoints in 1.94005 ms
+SIFT detection with n=12 keypoints in 2.27404 ms
+SIFT detection with n=12 keypoints in 2.29708 ms
+Right Image
+Total Blue Cones: 7
+Total Yellow Cones: 1
+SIFT detection with n=3 keypoints in 1.8823 ms
+SIFT detection with n=5 keypoints in 2.53615 ms
+SIFT detection with n=3 keypoints in 1.89885 ms
+SIFT detection with n=3 keypoints in 1.6514 ms
+SIFT detection with n=3 keypoints in 2.31664 ms
+SIFT detection with n=3 keypoints in 1.73689 ms
+roi not possible
+SIFT detection with n=2 keypoints in 3.16319 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0349_L.png, Inference Time: 36.5159
+Frame: ../../../../FPS_10_stereo_right/CameraRight0349_R.png, Inference Time: 38.4848
+Left Image
+Total Blue Cones: 5
+Total Yellow Cones: 0
+SIFT detection with n=14 keypoints in 1.75169 ms
+SIFT detection with n=11 keypoints in 2.10677 ms
+SIFT detection with n=13 keypoints in 2.8943 ms
+SIFT detection with n=12 keypoints in 2.03413 ms
+SIFT detection with n=10 keypoints in 2.00836 ms
+Right Image
+Total Blue Cones: 6
+Total Yellow Cones: 0
+SIFT detection with n=2 keypoints in 1.8707 ms
+SIFT detection with n=3 keypoints in 2.1787 ms
+SIFT detection with n=2 keypoints in 2.06179 ms
+SIFT detection with n=2 keypoints in 1.98552 ms
+SIFT detection with n=2 keypoints in 1.88376 ms
+SIFT detection with n=3 keypoints in 2.1736 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0351_L.png, Inference Time: 39.2047
+Frame: ../../../../FPS_10_stereo_right/CameraRight0351_R.png, Inference Time: 41.993
+Left Image
+Total Blue Cones: 5
+Total Yellow Cones: 0
+SIFT detection with n=13 keypoints in 1.88516 ms
+SIFT detection with n=10 keypoints in 2.06276 ms
+SIFT detection with n=11 keypoints in 1.80274 ms
+SIFT detection with n=12 keypoints in 3.20467 ms
+SIFT detection with n=8 keypoints in 2.05774 ms
+Right Image
+Total Blue Cones: 6
+Total Yellow Cones: 2
+SIFT detection with n=1 keypoints in 1.6669 ms
+SIFT detection with n=3 keypoints in 1.82998 ms
+SIFT detection with n=3 keypoints in 1.80449 ms
+SIFT detection with n=2 keypoints in 2.04419 ms
+SIFT detection with n=3 keypoints in 2.7551 ms
+SIFT detection with n=2 keypoints in 2.12192 ms
+SIFT detection with n=1 keypoints in 4.76737 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0353_L.png, Inference Time: 40.6365
+Frame: ../../../../FPS_10_stereo_right/CameraRight0353_R.png, Inference Time: 31.4136
+Left Image
+Total Blue Cones: 5
+Total Yellow Cones: 0
+SIFT detection with n=12 keypoints in 1.88949 ms
+SIFT detection with n=11 keypoints in 2.50374 ms
+SIFT detection with n=10 keypoints in 1.87182 ms
+SIFT detection with n=14 keypoints in 2.41812 ms
+SIFT detection with n=8 keypoints in 2.47273 ms
+Right Image
+Total Blue Cones: 6
+Total Yellow Cones: 2
+SIFT detection with n=3 keypoints in 1.9967 ms
+SIFT detection with n=3 keypoints in 1.85764 ms
+SIFT detection with n=2 keypoints in 2.81936 ms
+SIFT detection with n=3 keypoints in 2.04014 ms
+SIFT detection with n=3 keypoints in 2.06514 ms
+SIFT detection with n=0 keypoints in 6.48791 ms
+SIFT detection with n=0 keypoints in 1.66551 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0355_L.png, Inference Time: 32.7026
+Frame: ../../../../FPS_10_stereo_right/CameraRight0355_R.png, Inference Time: 30.0136
+Left Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=12 keypoints in 2.21579 ms
+SIFT detection with n=13 keypoints in 2.31329 ms
+SIFT detection with n=12 keypoints in 2.42636 ms
+SIFT detection with n=13 keypoints in 2.57575 ms
+Right Image
+Total Blue Cones: 5
+Total Yellow Cones: 1
+SIFT detection with n=2 keypoints in 2.00906 ms
+SIFT detection with n=2 keypoints in 2.3239 ms
+SIFT detection with n=2 keypoints in 2.16697 ms
+SIFT detection with n=1 keypoints in 1.73207 ms
+SIFT detection with n=4 keypoints in 2.21125 ms
+SIFT detection with n=2 keypoints in 4.77924 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0357_L.png, Inference Time: 38.1649
+Frame: ../../../../FPS_10_stereo_right/CameraRight0357_R.png, Inference Time: 31.457
+Left Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=5 keypoints in 2.44864 ms
+SIFT detection with n=12 keypoints in 2.36008 ms
+SIFT detection with n=11 keypoints in 2.20461 ms
+SIFT detection with n=13 keypoints in 2.11347 ms
+Right Image
+Total Blue Cones: 5
+Total Yellow Cones: 1
+SIFT detection with n=3 keypoints in 2.38906 ms
+SIFT detection with n=4 keypoints in 2.835 ms
+SIFT detection with n=3 keypoints in 1.80749 ms
+SIFT detection with n=2 keypoints in 1.95898 ms
+SIFT detection with n=4 keypoints in 4.54423 ms
+SIFT detection with n=0 keypoints in 1.58107 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0359_L.png, Inference Time: 32.8893
+Frame: ../../../../FPS_10_stereo_right/CameraRight0359_R.png, Inference Time: 30.3059
+Left Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=5 keypoints in 3.02232 ms
+SIFT detection with n=12 keypoints in 3.00381 ms
+SIFT detection with n=9 keypoints in 3.36342 ms
+SIFT detection with n=12 keypoints in 3.09928 ms
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=2 keypoints in 1.82174 ms
+SIFT detection with n=4 keypoints in 2.69937 ms
+SIFT detection with n=3 keypoints in 1.98971 ms
+SIFT detection with n=2 keypoints in 2.76006 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0361_L.png, Inference Time: 40.9199
+Frame: ../../../../FPS_10_stereo_right/CameraRight0361_R.png, Inference Time: 42.5136
+Left Image
+Total Blue Cones: 5
+Total Yellow Cones: 0
+SIFT detection with n=9 keypoints in 1.93475 ms
+SIFT detection with n=6 keypoints in 2.15237 ms
+SIFT detection with n=12 keypoints in 2.21027 ms
+SIFT detection with n=12 keypoints in 2.80462 ms
+SIFT detection with n=9 keypoints in 4.21304 ms
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=4 keypoints in 2.52679 ms
+SIFT detection with n=3 keypoints in 2.34576 ms
+SIFT detection with n=2 keypoints in 2.11766 ms
+SIFT detection with n=2 keypoints in 1.98803 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0364_L.png, Inference Time: 37.1787
+Frame: ../../../../FPS_10_stereo_right/CameraRight0364_R.png, Inference Time: 32.0487
+Left Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=10 keypoints in 2.40296 ms
+SIFT detection with n=9 keypoints in 2.75503 ms
+SIFT detection with n=9 keypoints in 2.68212 ms
+SIFT detection with n=1 keypoints in 1.64407 ms
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=3 keypoints in 2.17451 ms
+SIFT detection with n=3 keypoints in 2.09475 ms
+SIFT detection with n=2 keypoints in 2.20405 ms
+SIFT detection with n=4 keypoints in 2.48761 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0366_L.png, Inference Time: 34.0946
+Frame: ../../../../FPS_10_stereo_right/CameraRight0366_R.png, Inference Time: 33.2407
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=6 keypoints in 2.35547 ms
+SIFT detection with n=13 keypoints in 2.42147 ms
+SIFT detection with n=7 keypoints in 2.57966 ms
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=4 keypoints in 2.16969 ms
+SIFT detection with n=2 keypoints in 2.42049 ms
+SIFT detection with n=3 keypoints in 2.45276 ms
+SIFT detection with n=2 keypoints in 3.45198 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0368_L.png, Inference Time: 37.3717
+Frame: ../../../../FPS_10_stereo_right/CameraRight0368_R.png, Inference Time: 39.2047
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=10 keypoints in 2.58057 ms
+SIFT detection with n=14 keypoints in 2.28025 ms
+SIFT detection with n=10 keypoints in 2.89667 ms
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=3 keypoints in 2.2454 ms
+SIFT detection with n=3 keypoints in 2.58762 ms
+SIFT detection with n=1 keypoints in 2.89367 ms
+SIFT detection with n=2 keypoints in 2.62003 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0370_L.png, Inference Time: 37.0259
+Frame: ../../../../FPS_10_stereo_right/CameraRight0370_R.png, Inference Time: 39.6163
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=16 keypoints in 2.39961 ms
+SIFT detection with n=10 keypoints in 2.91874 ms
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=4 keypoints in 2.36588 ms
+SIFT detection with n=5 keypoints in 2.19644 ms
+SIFT detection with n=4 keypoints in 2.50786 ms
+SIFT detection with n=4 keypoints in 2.90331 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0372_L.png, Inference Time: 38.0189
+Frame: ../../../../FPS_10_stereo_right/CameraRight0372_R.png, Inference Time: 32.6331
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=10 keypoints in 2.67332 ms
+SIFT detection with n=10 keypoints in 2.84834 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=4 keypoints in 2.85246 ms
+SIFT detection with n=2 keypoints in 2.3568 ms
+SIFT detection with n=0 keypoints in 1.84654 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0374_L.png, Inference Time: 42.8245
+Frame: ../../../../FPS_10_stereo_right/CameraRight0374_R.png, Inference Time: 38.2221
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=10 keypoints in 3.14384 ms
+SIFT detection with n=12 keypoints in 3.1599 ms
+SIFT detection with n=9 keypoints in 3.47733 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=3 keypoints in 2.79428 ms
+SIFT detection with n=2 keypoints in 3.0138 ms
+SIFT detection with n=0 keypoints in 1.77376 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0376_L.png, Inference Time: 37.0947
+Frame: ../../../../FPS_10_stereo_right/CameraRight0376_R.png, Inference Time: 41.8833
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=11 keypoints in 2.82557 ms
+SIFT detection with n=12 keypoints in 3.24567 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=3 keypoints in 2.832 ms
+SIFT detection with n=2 keypoints in 3.83366 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0378_L.png, Inference Time: 41.345
+Frame: ../../../../FPS_10_stereo_right/CameraRight0378_R.png, Inference Time: 33.7848
+Left Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=13 keypoints in 4.17407 ms
+SIFT detection with n=12 keypoints in 4.26507 ms
+SIFT detection with n=6 keypoints in 2.73583 ms
+SIFT detection with n=29 keypoints in 3.56233 ms
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=5 keypoints in 3.50632 ms
+SIFT detection with n=1 keypoints in 2.72304 ms
+SIFT detection with n=3 keypoints in 4.09054 ms
+SIFT detection with n=4 keypoints in 2.5643 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0381_L.png, Inference Time: 32.3657
+Frame: ../../../../FPS_10_stereo_right/CameraRight0381_R.png, Inference Time: 37.1891
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=15 keypoints in 2.99117 ms
+SIFT detection with n=34 keypoints in 1.78347 ms
+SIFT detection with n=4 keypoints in 2.36797 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=0 keypoints in 2.11913 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0383_L.png, Inference Time: 36.5319
+Frame: ../../../../FPS_10_stereo_right/CameraRight0383_R.png, Inference Time: 30.2158
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=4 keypoints in 2.08553 ms
+SIFT detection with n=12 keypoints in 2.92174 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=3 keypoints in 2.15978 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0385_L.png, Inference Time: 32.6741
+Frame: ../../../../FPS_10_stereo_right/CameraRight0385_R.png, Inference Time: 38.7507
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=1 keypoints in 1.5905 ms
+SIFT detection with n=14 keypoints in 3.15047 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=3 keypoints in 3.71186 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0387_L.png, Inference Time: 31.3159
+Frame: ../../../../FPS_10_stereo_right/CameraRight0387_R.png, Inference Time: 35.71
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=9 keypoints in 1.63492 ms
+SIFT detection with n=14 keypoints in 3.05591 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=3 keypoints in 3.62945 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0389_L.png, Inference Time: 41.8774
+Frame: ../../../../FPS_10_stereo_right/CameraRight0389_R.png, Inference Time: 34.2731
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 0
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=1 keypoints in 3.95784 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0391_L.png, Inference Time: 33.7415
+Frame: ../../../../FPS_10_stereo_right/CameraRight0391_R.png, Inference Time: 31.763
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=19 keypoints in 3.53418 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=2 keypoints in 4.94253 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0393_L.png, Inference Time: 30.02
+Frame: ../../../../FPS_10_stereo_right/CameraRight0393_R.png, Inference Time: 29.6857
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=5 keypoints in 1.76594 ms
+SIFT detection with n=10 keypoints in 2.87418 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 0
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0395_L.png, Inference Time: 33.5519
+Frame: ../../../../FPS_10_stereo_right/CameraRight0395_R.png, Inference Time: 37.4827
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=6 keypoints in 1.80589 ms
+SIFT detection with n=5 keypoints in 2.79407 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=1 keypoints in 1.78668 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0398_L.png, Inference Time: 38.011
+Frame: ../../../../FPS_10_stereo_right/CameraRight0398_R.png, Inference Time: 27.323
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 0
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 0
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0400_L.png, Inference Time: 30.0004
+Frame: ../../../../FPS_10_stereo_right/CameraRight0400_R.png, Inference Time: 25.3571
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 0
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=2 keypoints in 3.68337 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0402_L.png, Inference Time: 30.2594
+Frame: ../../../../FPS_10_stereo_right/CameraRight0402_R.png, Inference Time: 29.7457
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=6 keypoints in 2.42552 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 0
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0404_L.png, Inference Time: 29.428
+Frame: ../../../../FPS_10_stereo_right/CameraRight0404_R.png, Inference Time: 24.9346
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 0
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=2 keypoints in 2.40066 ms
+SIFT detection with n=2 keypoints in 3.21892 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0406_L.png, Inference Time: 39.2987
+Frame: ../../../../FPS_10_stereo_right/CameraRight0406_R.png, Inference Time: 24.6986
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=11 keypoints in 2.47001 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=1 keypoints in 2.07569 ms
+SIFT detection with n=3 keypoints in 3.05682 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0408_L.png, Inference Time: 30.3943
+Frame: ../../../../FPS_10_stereo_right/CameraRight0408_R.png, Inference Time: 29.3473
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=12 keypoints in 1.82489 ms
+SIFT detection with n=9 keypoints in 2.27571 ms
+SIFT detection with n=2 keypoints in 2.23032 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=1 keypoints in 2.21258 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0410_L.png, Inference Time: 32.1856
+Frame: ../../../../FPS_10_stereo_right/CameraRight0410_R.png, Inference Time: 40.8035
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=18 keypoints in 2.36197 ms
+SIFT detection with n=10 keypoints in 2.58748 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=4 keypoints in 1.9015 ms
+SIFT detection with n=2 keypoints in 2.35323 ms
+SIFT detection with n=3 keypoints in 2.9911 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0412_L.png, Inference Time: 31.0018
+Frame: ../../../../FPS_10_stereo_right/CameraRight0412_R.png, Inference Time: 26.1173
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=17 keypoints in 2.33766 ms
+SIFT detection with n=16 keypoints in 1.66076 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=3 keypoints in 1.69463 ms
+SIFT detection with n=2 keypoints in 1.84968 ms
+SIFT detection with n=2 keypoints in 2.23499 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0414_L.png, Inference Time: 36.634
+Frame: ../../../../FPS_10_stereo_right/CameraRight0414_R.png, Inference Time: 40.18
+Left Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=12 keypoints in 1.78906 ms
+SIFT detection with n=14 keypoints in 2.20552 ms
+SIFT detection with n=6 keypoints in 2.3774 ms
+SIFT detection with n=13 keypoints in 3.12198 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=3 keypoints in 1.85045 ms
+SIFT detection with n=2 keypoints in 2.35715 ms
+SIFT detection with n=3 keypoints in 1.87049 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0417_L.png, Inference Time: 36.4958
+Frame: ../../../../FPS_10_stereo_right/CameraRight0417_R.png, Inference Time: 28.5479
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=14 keypoints in 1.94054 ms
+SIFT detection with n=15 keypoints in 2.12346 ms
+roi not possible
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=3 keypoints in 1.85869 ms
+SIFT detection with n=4 keypoints in 2.03218 ms
+SIFT detection with n=2 keypoints in 2.17982 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0419_L.png, Inference Time: 37.1639
+Frame: ../../../../FPS_10_stereo_right/CameraRight0419_R.png, Inference Time: 25.1222
+Left Image
+Total Blue Cones: 5
+Total Yellow Cones: 0
+SIFT detection with n=18 keypoints in 1.7848 ms
+SIFT detection with n=8 keypoints in 1.59748 ms
+SIFT detection with n=17 keypoints in 4.38297 ms
+SIFT detection with n=16 keypoints in 2.11347 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=4 keypoints in 2.26475 ms
+SIFT detection with n=3 keypoints in 1.99509 ms
+SIFT detection with n=2 keypoints in 2.02044 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0421_L.png, Inference Time: 39.1392
+Frame: ../../../../FPS_10_stereo_right/CameraRight0421_R.png, Inference Time: 38.5755
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=15 keypoints in 2.2109 ms
+SIFT detection with n=5 keypoints in 1.57932 ms
+SIFT detection with n=15 keypoints in 2.53042 ms
+Right Image
+Total Blue Cones: 5
+Total Yellow Cones: 0
+SIFT detection with n=3 keypoints in 2.14734 ms
+SIFT detection with n=3 keypoints in 1.60244 ms
+SIFT detection with n=2 keypoints in 5.09255 ms
+SIFT detection with n=4 keypoints in 4.30872 ms
+SIFT detection with n=1 keypoints in 2.64664 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0423_L.png, Inference Time: 30.6341
+Frame: ../../../../FPS_10_stereo_right/CameraRight0423_R.png, Inference Time: 26.4115
+Left Image
+Total Blue Cones: 5
+Total Yellow Cones: 0
+SIFT detection with n=13 keypoints in 1.85101 ms
+SIFT detection with n=3 keypoints in 1.60293 ms
+SIFT detection with n=17 keypoints in 2.36867 ms
+SIFT detection with n=11 keypoints in 1.65817 ms
+SIFT detection with n=3 keypoints in 2.36392 ms
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=3 keypoints in 1.89193 ms
+SIFT detection with n=3 keypoints in 1.84772 ms
+SIFT detection with n=3 keypoints in 1.59134 ms
+SIFT detection with n=2 keypoints in 2.49131 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0425_L.png, Inference Time: 29.3432
+Frame: ../../../../FPS_10_stereo_right/CameraRight0425_R.png, Inference Time: 28.3659
+Left Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=13 keypoints in 2.18932 ms
+SIFT detection with n=4 keypoints in 1.60398 ms
+SIFT detection with n=12 keypoints in 1.58526 ms
+SIFT detection with n=4 keypoints in 2.68477 ms
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=3 keypoints in 1.84123 ms
+SIFT detection with n=3 keypoints in 1.76496 ms
+SIFT detection with n=3 keypoints in 1.89256 ms
+SIFT detection with n=3 keypoints in 1.69449 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0427_L.png, Inference Time: 31.7862
+Frame: ../../../../FPS_10_stereo_right/CameraRight0427_R.png, Inference Time: 39.7777
+Left Image
+Total Blue Cones: 5
+Total Yellow Cones: 0
+SIFT detection with n=14 keypoints in 1.82167 ms
+SIFT detection with n=4 keypoints in 1.45829 ms
+SIFT detection with n=3 keypoints in 1.67312 ms
+SIFT detection with n=16 keypoints in 1.85317 ms
+roi not possible
+Right Image
+Total Blue Cones: 5
+Total Yellow Cones: 0
+SIFT detection with n=2 keypoints in 2.35331 ms
+SIFT detection with n=3 keypoints in 2.05711 ms
+SIFT detection with n=2 keypoints in 1.93195 ms
+SIFT detection with n=2 keypoints in 1.81183 ms
+SIFT detection with n=5 keypoints in 1.99991 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0429_L.png, Inference Time: 35.9124
+Frame: ../../../../FPS_10_stereo_right/CameraRight0429_R.png, Inference Time: 28.5217
+Left Image
+Total Blue Cones: 6
+Total Yellow Cones: 0
+SIFT detection with n=11 keypoints in 1.69247 ms
+SIFT detection with n=17 keypoints in 1.92329 ms
+SIFT detection with n=6 keypoints in 1.47219 ms
+SIFT detection with n=14 keypoints in 1.93726 ms
+SIFT detection with n=6 keypoints in 1.91638 ms
+SIFT detection with n=18 keypoints in 3.44004 ms
+Right Image
+Total Blue Cones: 5
+Total Yellow Cones: 0
+SIFT detection with n=3 keypoints in 1.70176 ms
+SIFT detection with n=1 keypoints in 2.26349 ms
+SIFT detection with n=5 keypoints in 1.59099 ms
+SIFT detection with n=4 keypoints in 2.23423 ms
+SIFT detection with n=2 keypoints in 3.17694 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0431_L.png, Inference Time: 31.6342
+Frame: ../../../../FPS_10_stereo_right/CameraRight0431_R.png, Inference Time: 37.5385
+Left Image
+Total Blue Cones: 7
+Total Yellow Cones: 0
+SIFT detection with n=15 keypoints in 2.32488 ms
+SIFT detection with n=4 keypoints in 1.53365 ms
+SIFT detection with n=9 keypoints in 1.79932 ms
+SIFT detection with n=10 keypoints in 1.58882 ms
+SIFT detection with n=7 keypoints in 1.51102 ms
+SIFT detection with n=16 keypoints in 3.77514 ms
+SIFT detection with n=36 keypoints in 3.32585 ms
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=3 keypoints in 2.35023 ms
+SIFT detection with n=2 keypoints in 1.61229 ms
+SIFT detection with n=3 keypoints in 2.05871 ms
+SIFT detection with n=3 keypoints in 3.50611 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0433_L.png, Inference Time: 36.3543
+Frame: ../../../../FPS_10_stereo_right/CameraRight0433_R.png, Inference Time: 31.757
+Left Image
+Total Blue Cones: 5
+Total Yellow Cones: 0
+SIFT detection with n=6 keypoints in 1.52003 ms
+SIFT detection with n=9 keypoints in 2.29136 ms
+SIFT detection with n=15 keypoints in 2.48125 ms
+SIFT detection with n=13 keypoints in 5.01021 ms
+SIFT detection with n=8 keypoints in 1.53693 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=2 keypoints in 1.95549 ms
+SIFT detection with n=2 keypoints in 2.06374 ms
+SIFT detection with n=2 keypoints in 2.39772 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0436_L.png, Inference Time: 32.5733
+Frame: ../../../../FPS_10_stereo_right/CameraRight0436_R.png, Inference Time: 32.5785
+Left Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=10 keypoints in 1.88258 ms
+SIFT detection with n=7 keypoints in 1.57443 ms
+SIFT detection with n=10 keypoints in 2.44417 ms
+SIFT detection with n=5 keypoints in 1.52247 ms
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=2 keypoints in 2.18995 ms
+SIFT detection with n=2 keypoints in 2.74435 ms
+SIFT detection with n=3 keypoints in 1.76657 ms
+SIFT detection with n=3 keypoints in 1.7167 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0438_L.png, Inference Time: 32.4452
+Frame: ../../../../FPS_10_stereo_right/CameraRight0438_R.png, Inference Time: 29.584
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=6 keypoints in 2.52197 ms
+SIFT detection with n=6 keypoints in 2.42929 ms
+SIFT detection with n=5 keypoints in 1.61781 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=2 keypoints in 2.54649 ms
+SIFT detection with n=2 keypoints in 1.89955 ms
+SIFT detection with n=3 keypoints in 1.81483 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0440_L.png, Inference Time: 37.984
+Frame: ../../../../FPS_10_stereo_right/CameraRight0440_R.png, Inference Time: 30.8389
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=8 keypoints in 1.74624 ms
+SIFT detection with n=5 keypoints in 1.55683 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=3 keypoints in 2.02708 ms
+SIFT detection with n=3 keypoints in 1.82572 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0442_L.png, Inference Time: 40.2101
+Frame: ../../../../FPS_10_stereo_right/CameraRight0442_R.png, Inference Time: 39.3398
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 1
+SIFT detection with n=6 keypoints in 2.1053 ms
+SIFT detection with n=8 keypoints in 1.41282 ms
+SIFT detection with n=5 keypoints in 1.61229 ms
+SIFT detection with n=32 keypoints in 1.59092 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 2
+SIFT detection with n=3 keypoints in 2.27187 ms
+SIFT detection with n=3 keypoints in 1.54915 ms
+SIFT detection with n=4 keypoints in 2.17661 ms
+SIFT detection with n=3 keypoints in 4.11247 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0444_L.png, Inference Time: 31.1298
+Frame: ../../../../FPS_10_stereo_right/CameraRight0444_R.png, Inference Time: 25.1767
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 1
+SIFT detection with n=6 keypoints in 1.908 ms
+SIFT detection with n=8 keypoints in 1.55544 ms
+SIFT detection with n=7 keypoints in 1.59287 ms
+SIFT detection with n=45 keypoints in 1.90115 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 3
+SIFT detection with n=3 keypoints in 1.76384 ms
+SIFT detection with n=1 keypoints in 2.28326 ms
+SIFT detection with n=5 keypoints in 2.23346 ms
+SIFT detection with n=3 keypoints in 4.66855 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0446_L.png, Inference Time: 32.2762
+Frame: ../../../../FPS_10_stereo_right/CameraRight0446_R.png, Inference Time: 26.8485
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 1
+SIFT detection with n=4 keypoints in 1.59252 ms
+SIFT detection with n=6 keypoints in 1.92322 ms
+SIFT detection with n=36 keypoints in 2.05418 ms
+SIFT detection with n=17 keypoints in 1.6771 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 1
+SIFT detection with n=3 keypoints in 1.9404 ms
+SIFT detection with n=6 keypoints in 1.83948 ms
+SIFT detection with n=3 keypoints in 2.39584 ms
+SIFT detection with n=5 keypoints in 1.66041 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0448_L.png, Inference Time: 30.8982
+Frame: ../../../../FPS_10_stereo_right/CameraRight0448_R.png, Inference Time: 25.1115
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 1
+SIFT detection with n=9 keypoints in 1.44467 ms
+SIFT detection with n=6 keypoints in 1.63806 ms
+SIFT detection with n=6 keypoints in 1.9219 ms
+SIFT detection with n=37 keypoints in 1.89228 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=3 keypoints in 1.64484 ms
+SIFT detection with n=2 keypoints in 2.74065 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0450_L.png, Inference Time: 35.0071
+Frame: ../../../../FPS_10_stereo_right/CameraRight0450_R.png, Inference Time: 27.3307
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 1
+SIFT detection with n=5 keypoints in 1.76804 ms
+SIFT detection with n=5 keypoints in 2.22557 ms
+SIFT detection with n=9 keypoints in 1.88544 ms
+SIFT detection with n=41 keypoints in 2.00773 ms
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 1
+SIFT detection with n=3 keypoints in 1.83089 ms
+SIFT detection with n=4 keypoints in 2.08155 ms
+SIFT detection with n=1 keypoints in 3.09118 ms
+SIFT detection with n=4 keypoints in 1.87112 ms
+SIFT detection with n=3 keypoints in 1.79695 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0452_L.png, Inference Time: 33.9242
+Frame: ../../../../FPS_10_stereo_right/CameraRight0452_R.png, Inference Time: 37.9754
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=9 keypoints in 1.99188 ms
+SIFT detection with n=8 keypoints in 1.54028 ms
+SIFT detection with n=5 keypoints in 2.27299 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 1
+SIFT detection with n=1 keypoints in 2.09859 ms
+SIFT detection with n=2 keypoints in 1.80393 ms
+SIFT detection with n=1 keypoints in 1.95989 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0455_L.png, Inference Time: 32.2616
+Frame: ../../../../FPS_10_stereo_right/CameraRight0455_R.png, Inference Time: 33.285
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 1
+SIFT detection with n=6 keypoints in 2.2549 ms
+SIFT detection with n=8 keypoints in 2.16348 ms
+SIFT detection with n=35 keypoints in 2.21062 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 2
+SIFT detection with n=4 keypoints in 1.87349 ms
+SIFT detection with n=8 keypoints in 2.0356 ms
+SIFT detection with n=3 keypoints in 2.40743 ms
+SIFT detection with n=1 keypoints in 2.20859 ms
+SIFT detection with n=3 keypoints in 2.36064 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0457_L.png, Inference Time: 32.7806
+Frame: ../../../../FPS_10_stereo_right/CameraRight0457_R.png, Inference Time: 28.218
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=14 keypoints in 1.58624 ms
+SIFT detection with n=7 keypoints in 1.82188 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 1
+SIFT detection with n=4 keypoints in 2.13149 ms
+SIFT detection with n=3 keypoints in 1.79548 ms
+SIFT detection with n=7 keypoints in 3.50276 ms
+SIFT detection with n=4 keypoints in 3.08259 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0459_L.png, Inference Time: 33.4958
+Frame: ../../../../FPS_10_stereo_right/CameraRight0459_R.png, Inference Time: 32.9496
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 1
+SIFT detection with n=7 keypoints in 2.11997 ms
+SIFT detection with n=10 keypoints in 1.60244 ms
+SIFT detection with n=12 keypoints in 1.92043 ms
+SIFT detection with n=36 keypoints in 1.89333 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=4 keypoints in 1.83201 ms
+SIFT detection with n=1 keypoints in 1.99104 ms
+SIFT detection with n=3 keypoints in 1.7452 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0461_L.png, Inference Time: 41.4266
+Frame: ../../../../FPS_10_stereo_right/CameraRight0461_R.png, Inference Time: 32.0074
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=8 keypoints in 2.3063 ms
+SIFT detection with n=13 keypoints in 1.69652 ms
+SIFT detection with n=14 keypoints in 1.96408 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 1
+SIFT detection with n=1 keypoints in 2.24114 ms
+SIFT detection with n=3 keypoints in 1.47589 ms
+SIFT detection with n=12 keypoints in 2.33235 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0463_L.png, Inference Time: 36.319
+Frame: ../../../../FPS_10_stereo_right/CameraRight0463_R.png, Inference Time: 37.4286
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=11 keypoints in 1.71642 ms
+SIFT detection with n=8 keypoints in 2.02519 ms
+SIFT detection with n=14 keypoints in 1.97749 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 1
+SIFT detection with n=4 keypoints in 1.77411 ms
+SIFT detection with n=11 keypoints in 2.19875 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0465_L.png, Inference Time: 38.0902
+Frame: ../../../../FPS_10_stereo_right/CameraRight0465_R.png, Inference Time: 38.1233
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=11 keypoints in 2.1567 ms
+SIFT detection with n=10 keypoints in 1.91722 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 2
+SIFT detection with n=3 keypoints in 1.79646 ms
+SIFT detection with n=7 keypoints in 1.67033 ms
+SIFT detection with n=3 keypoints in 2.0937 ms
+SIFT detection with n=3 keypoints in 1.95751 ms
+SIFT detection with n=6 keypoints in 2.31964 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0468_L.png, Inference Time: 35.4029
+Frame: ../../../../FPS_10_stereo_right/CameraRight0468_R.png, Inference Time: 28.3908
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=7 keypoints in 1.99222 ms
+SIFT detection with n=12 keypoints in 2.10963 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 1
+SIFT detection with n=3 keypoints in 2.41246 ms
+SIFT detection with n=3 keypoints in 1.61334 ms
+SIFT detection with n=4 keypoints in 1.64763 ms
+SIFT detection with n=3 keypoints in 2.15377 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0470_L.png, Inference Time: 31.6883
+Frame: ../../../../FPS_10_stereo_right/CameraRight0470_R.png, Inference Time: 26.7955
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=12 keypoints in 2.09433 ms
+SIFT detection with n=6 keypoints in 2.98327 ms
+SIFT detection with n=12 keypoints in 1.72711 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=3 keypoints in 1.60712 ms
+SIFT detection with n=2 keypoints in 1.58903 ms
+SIFT detection with n=3 keypoints in 2.6722 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0472_L.png, Inference Time: 37.3489
+Frame: ../../../../FPS_10_stereo_right/CameraRight0472_R.png, Inference Time: 38.5202
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=13 keypoints in 1.92679 ms
+SIFT detection with n=9 keypoints in 3.12526 ms
+SIFT detection with n=14 keypoints in 1.8003 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=4 keypoints in 1.68562 ms
+SIFT detection with n=2 keypoints in 1.94634 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0474_L.png, Inference Time: 32.3828
+Frame: ../../../../FPS_10_stereo_right/CameraRight0474_R.png, Inference Time: 30.9385
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=14 keypoints in 1.93202 ms
+SIFT detection with n=15 keypoints in 1.71097 ms
+SIFT detection with n=11 keypoints in 3.02986 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=2 keypoints in 1.76384 ms
+SIFT detection with n=4 keypoints in 1.91065 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0476_L.png, Inference Time: 35.5952
+Frame: ../../../../FPS_10_stereo_right/CameraRight0476_R.png, Inference Time: 32.0668
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=11 keypoints in 1.92532 ms
+SIFT detection with n=14 keypoints in 1.71139 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 1
+SIFT detection with n=4 keypoints in 2.12255 ms
+SIFT detection with n=4 keypoints in 1.74771 ms
+SIFT detection with n=7 keypoints in 2.09308 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0478_L.png, Inference Time: 29.8654
+Frame: ../../../../FPS_10_stereo_right/CameraRight0478_R.png, Inference Time: 36.1408
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 1
+SIFT detection with n=15 keypoints in 2.15174 ms
+SIFT detection with n=8 keypoints in 2.27222 ms
+SIFT detection with n=16 keypoints in 1.60628 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 1
+SIFT detection with n=2 keypoints in 1.78312 ms
+SIFT detection with n=9 keypoints in 1.95521 ms
+SIFT detection with n=5 keypoints in 1.72767 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0480_L.png, Inference Time: 38.863
+Frame: ../../../../FPS_10_stereo_right/CameraRight0480_R.png, Inference Time: 40.9727
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 1
+SIFT detection with n=15 keypoints in 1.97574 ms
+SIFT detection with n=11 keypoints in 2.09259 ms
+SIFT detection with n=19 keypoints in 1.49083 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 1
+SIFT detection with n=3 keypoints in 2.41274 ms
+SIFT detection with n=4 keypoints in 2.30805 ms
+SIFT detection with n=3 keypoints in 4.0443 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0482_L.png, Inference Time: 32.6741
+Frame: ../../../../FPS_10_stereo_right/CameraRight0482_R.png, Inference Time: 33.6562
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 2
+SIFT detection with n=15 keypoints in 1.90094 ms
+SIFT detection with n=11 keypoints in 2.4675 ms
+SIFT detection with n=20 keypoints in 1.44649 ms
+SIFT detection with n=10 keypoints in 1.40437 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=2 keypoints in 2.25399 ms
+SIFT detection with n=6 keypoints in 1.80561 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0485_L.png, Inference Time: 32.1242
+Frame: ../../../../FPS_10_stereo_right/CameraRight0485_R.png, Inference Time: 35.2064
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 1
+SIFT detection with n=17 keypoints in 1.62165 ms
+SIFT detection with n=14 keypoints in 1.25994 ms
+SIFT detection with n=10 keypoints in 2.44591 ms
+SIFT detection with n=56 keypoints in 1.66523 ms
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 1
+SIFT detection with n=4 keypoints in 1.92657 ms
+SIFT detection with n=6 keypoints in 1.96268 ms
+SIFT detection with n=6 keypoints in 2.48621 ms
+SIFT detection with n=1 keypoints in 1.66648 ms
+SIFT detection with n=2 keypoints in 1.9865 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0487_L.png, Inference Time: 33.3566
+Frame: ../../../../FPS_10_stereo_right/CameraRight0487_R.png, Inference Time: 31.9237
+Left Image
+Total Blue Cones: 4
+Total Yellow Cones: 1
+SIFT detection with n=9 keypoints in 1.79583 ms
+SIFT detection with n=11 keypoints in 1.73612 ms
+SIFT detection with n=0 keypoints in 1.58372 ms
+SIFT detection with n=34 keypoints in 1.76852 ms
+SIFT detection with n=11 keypoints in 2.87167 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 2
+SIFT detection with n=5 keypoints in 1.86861 ms
+SIFT detection with n=5 keypoints in 1.67389 ms
+SIFT detection with n=4 keypoints in 1.8515 ms
+SIFT detection with n=4 keypoints in 2.54041 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0489_L.png, Inference Time: 33.6464
+Frame: ../../../../FPS_10_stereo_right/CameraRight0489_R.png, Inference Time: 27.3947
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 1
+SIFT detection with n=6 keypoints in 2.7271 ms
+SIFT detection with n=5 keypoints in 1.53476 ms
+SIFT detection with n=17 keypoints in 1.40982 ms
+SIFT detection with n=6 keypoints in 1.87056 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 1
+SIFT detection with n=8 keypoints in 1.88069 ms
+SIFT detection with n=3 keypoints in 1.97037 ms
+SIFT detection with n=6 keypoints in 1.69868 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0491_L.png, Inference Time: 35.3385
+Frame: ../../../../FPS_10_stereo_right/CameraRight0491_R.png, Inference Time: 35.3545
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 1
+SIFT detection with n=13 keypoints in 1.79646 ms
+SIFT detection with n=4 keypoints in 2.12765 ms
+SIFT detection with n=20 keypoints in 1.57171 ms
+SIFT detection with n=4 keypoints in 1.40542 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 1
+SIFT detection with n=6 keypoints in 1.96597 ms
+SIFT detection with n=1 keypoints in 2.59845 ms
+SIFT detection with n=6 keypoints in 1.66257 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0493_L.png, Inference Time: 30.596
+Frame: ../../../../FPS_10_stereo_right/CameraRight0493_R.png, Inference Time: 30.8037
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 1
+SIFT detection with n=20 keypoints in 1.30471 ms
+SIFT detection with n=7 keypoints in 1.65531 ms
+SIFT detection with n=5 keypoints in 2.09908 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 1
+SIFT detection with n=3 keypoints in 1.41855 ms
+SIFT detection with n=1 keypoints in 2.09447 ms
+SIFT detection with n=8 keypoints in 1.76084 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0495_L.png, Inference Time: 30.2526
+Frame: ../../../../FPS_10_stereo_right/CameraRight0495_R.png, Inference Time: 25.2782
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 1
+SIFT detection with n=18 keypoints in 1.4203 ms
+SIFT detection with n=5 keypoints in 1.75155 ms
+SIFT detection with n=2 keypoints in 1.81937 ms
+SIFT detection with n=5 keypoints in 1.23123 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=6 keypoints in 1.92965 ms
+SIFT detection with n=4 keypoints in 2.36183 ms
+SIFT detection with n=3 keypoints in 1.87838 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0497_L.png, Inference Time: 34.0915
+Frame: ../../../../FPS_10_stereo_right/CameraRight0497_R.png, Inference Time: 30.2769
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 1
+SIFT detection with n=8 keypoints in 1.75847 ms
+SIFT detection with n=20 keypoints in 1.37916 ms
+SIFT detection with n=5 keypoints in 1.94117 ms
+SIFT detection with n=3 keypoints in 1.36442 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=3 keypoints in 1.49474 ms
+SIFT detection with n=5 keypoints in 1.98461 ms
+SIFT detection with n=4 keypoints in 2.22137 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0499_L.png, Inference Time: 29.3896
+Frame: ../../../../FPS_10_stereo_right/CameraRight0499_R.png, Inference Time: 31.3154
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 1
+SIFT detection with n=10 keypoints in 1.71579 ms
+SIFT detection with n=24 keypoints in 1.556 ms
+SIFT detection with n=3 keypoints in 2.25245 ms
+SIFT detection with n=4 keypoints in 1.41645 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 1
+SIFT detection with n=3 keypoints in 2.06018 ms
+SIFT detection with n=2 keypoints in 1.43706 ms
+SIFT detection with n=4 keypoints in 1.73332 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0501_L.png, Inference Time: 31.5826
+Frame: ../../../../FPS_10_stereo_right/CameraRight0501_R.png, Inference Time: 38.5464
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 1
+SIFT detection with n=6 keypoints in 1.68395 ms
+SIFT detection with n=4 keypoints in 1.60419 ms
+SIFT detection with n=20 keypoints in 1.58065 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 1
+SIFT detection with n=3 keypoints in 1.46436 ms
+SIFT detection with n=4 keypoints in 1.83166 ms
+SIFT detection with n=10 keypoints in 1.93139 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0504_L.png, Inference Time: 31.6827
+Frame: ../../../../FPS_10_stereo_right/CameraRight0504_R.png, Inference Time: 30.7608
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 1
+SIFT detection with n=6 keypoints in 1.58575 ms
+SIFT detection with n=9 keypoints in 1.97113 ms
+SIFT detection with n=24 keypoints in 1.77425 ms
+SIFT detection with n=2 keypoints in 2.85267 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 2
+SIFT detection with n=3 keypoints in 1.66879 ms
+SIFT detection with n=6 keypoints in 3.16801 ms
+SIFT detection with n=9 keypoints in 2.06703 ms
+SIFT detection with n=5 keypoints in 1.66355 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0506_L.png, Inference Time: 38.8212
+Frame: ../../../../FPS_10_stereo_right/CameraRight0506_R.png, Inference Time: 26.8612
+Left Image
+Total Blue Cones: 4
+Total Yellow Cones: 2
+SIFT detection with n=3 keypoints in 1.56193 ms
+SIFT detection with n=4 keypoints in 1.81434 ms
+SIFT detection with n=23 keypoints in 2.16145 ms
+SIFT detection with n=17 keypoints in 4.00917 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 1
+SIFT detection with n=3 keypoints in 2.06046 ms
+SIFT detection with n=6 keypoints in 1.76636 ms
+SIFT detection with n=5 keypoints in 2.46938 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0508_L.png, Inference Time: 33.457
+Frame: ../../../../FPS_10_stereo_right/CameraRight0508_R.png, Inference Time: 33.6276
+Left Image
+Total Blue Cones: 4
+Total Yellow Cones: 1
+SIFT detection with n=5 keypoints in 1.47107 ms
+SIFT detection with n=6 keypoints in 1.60356 ms
+SIFT detection with n=30 keypoints in 1.57262 ms
+SIFT detection with n=7 keypoints in 2.2871 ms
+SIFT detection with n=28 keypoints in 2.00249 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 2
+SIFT detection with n=3 keypoints in 2.03762 ms
+SIFT detection with n=3 keypoints in 1.73612 ms
+SIFT detection with n=7 keypoints in 2.18862 ms
+SIFT detection with n=8 keypoints in 1.94683 ms
+SIFT detection with n=8 keypoints in 2.10725 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0510_L.png, Inference Time: 38.5212
+Frame: ../../../../FPS_10_stereo_right/CameraRight0510_R.png, Inference Time: 29.6431
+Left Image
+Total Blue Cones: 4
+Total Yellow Cones: 1
+SIFT detection with n=5 keypoints in 1.53023 ms
+SIFT detection with n=7 keypoints in 1.60055 ms
+SIFT detection with n=5 keypoints in 1.72899 ms
+SIFT detection with n=31 keypoints in 1.56934 ms
+SIFT detection with n=15 keypoints in 2.37873 ms
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 1
+SIFT detection with n=3 keypoints in 2.13966 ms
+SIFT detection with n=1 keypoints in 1.85652 ms
+SIFT detection with n=3 keypoints in 1.49614 ms
+SIFT detection with n=8 keypoints in 1.95207 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0512_L.png, Inference Time: 32.9686
+Frame: ../../../../FPS_10_stereo_right/CameraRight0512_R.png, Inference Time: 30.8058
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 2
+SIFT detection with n=8 keypoints in 2.03238 ms
+SIFT detection with n=9 keypoints in 1.68821 ms
+SIFT detection with n=19 keypoints in 1.69219 ms
+SIFT detection with n=56 keypoints in 1.40367 ms
+SIFT detection with n=4 keypoints in 2.48056 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 1
+SIFT detection with n=3 keypoints in 1.958 ms
+SIFT detection with n=9 keypoints in 1.8568 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0514_L.png, Inference Time: 37.8133
+Frame: ../../../../FPS_10_stereo_right/CameraRight0514_R.png, Inference Time: 30.2919
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 2
+SIFT detection with n=6 keypoints in 1.83822 ms
+SIFT detection with n=6 keypoints in 1.94899 ms
+SIFT detection with n=40 keypoints in 1.90688 ms
+SIFT detection with n=67 keypoints in 1.54657 ms
+SIFT detection with n=8 keypoints in 1.58861 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 2
+SIFT detection with n=2 keypoints in 2.42119 ms
+SIFT detection with n=8 keypoints in 1.85052 ms
+SIFT detection with n=3 keypoints in 1.75707 ms
+SIFT detection with n=3 keypoints in 1.40207 ms
+SIFT detection with n=8 keypoints in 2.31985 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0516_L.png, Inference Time: 40.0948
+Frame: ../../../../FPS_10_stereo_right/CameraRight0516_R.png, Inference Time: 33.5272
+Left Image
+Total Blue Cones: 4
+Total Yellow Cones: 2
+SIFT detection with n=6 keypoints in 1.70469 ms
+SIFT detection with n=10 keypoints in 1.66956 ms
+SIFT detection with n=26 keypoints in 1.69219 ms
+SIFT detection with n=58 keypoints in 2.01667 ms
+SIFT detection with n=5 keypoints in 1.72955 ms
+SIFT detection with n=5 keypoints in 1.40186 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 1
+SIFT detection with n=2 keypoints in 2.04859 ms
+SIFT detection with n=3 keypoints in 1.64504 ms
+SIFT detection with n=7 keypoints in 1.99865 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0518_L.png, Inference Time: 33.5473
+Frame: ../../../../FPS_10_stereo_right/CameraRight0518_R.png, Inference Time: 34.9639
+Left Image
+Total Blue Cones: 5
+Total Yellow Cones: 2
+SIFT detection with n=7 keypoints in 2.15077 ms
+SIFT detection with n=6 keypoints in 1.67843 ms
+SIFT detection with n=45 keypoints in 2.1199 ms
+SIFT detection with n=6 keypoints in 1.49412 ms
+SIFT detection with n=8 keypoints in 1.84905 ms
+SIFT detection with n=0 keypoints in 1.50473 ms
+SIFT detection with n=102 keypoints in 1.71838 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 1
+SIFT detection with n=3 keypoints in 1.87042 ms
+SIFT detection with n=3 keypoints in 1.87622 ms
+SIFT detection with n=4 keypoints in 2.89416 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0520_L.png, Inference Time: 30.3226
+Frame: ../../../../FPS_10_stereo_right/CameraRight0520_R.png, Inference Time: 27.4625
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 3
+SIFT detection with n=6 keypoints in 2.3012 ms
+SIFT detection with n=5 keypoints in 1.5384 ms
+SIFT detection with n=30 keypoints in 2.41791 ms
+SIFT detection with n=10 keypoints in 1.48455 ms
+SIFT detection with n=76 keypoints in 2.41847 ms
+SIFT detection with n=47 keypoints in 1.47205 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 1
+SIFT detection with n=3 keypoints in 1.33187 ms
+SIFT detection with n=2 keypoints in 1.77711 ms
+SIFT detection with n=6 keypoints in 2.10579 ms
+SIFT detection with n=1 keypoints in 1.67047 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0522_L.png, Inference Time: 29.2955
+Frame: ../../../../FPS_10_stereo_right/CameraRight0522_R.png, Inference Time: 41.6295
+Left Image
+Total Blue Cones: 4
+Total Yellow Cones: 3
+SIFT detection with n=3 keypoints in 2.02477 ms
+SIFT detection with n=6 keypoints in 2.2556 ms
+SIFT detection with n=6 keypoints in 1.93314 ms
+SIFT detection with n=38 keypoints in 2.79359 ms
+SIFT detection with n=50 keypoints in 2.45052 ms
+SIFT detection with n=20 keypoints in 1.7313 ms
+SIFT detection with n=9 keypoints in 1.7813 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 1
+SIFT detection with n=4 keypoints in 1.85457 ms
+SIFT detection with n=3 keypoints in 1.6609 ms
+SIFT detection with n=6 keypoints in 2.93082 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0524_L.png, Inference Time: 37.5662
+Frame: ../../../../FPS_10_stereo_right/CameraRight0524_R.png, Inference Time: 32.278
+Left Image
+Total Blue Cones: 4
+Total Yellow Cones: 2
+SIFT detection with n=6 keypoints in 1.54929 ms
+SIFT detection with n=36 keypoints in 2.09356 ms
+SIFT detection with n=4 keypoints in 1.32685 ms
+SIFT detection with n=5 keypoints in 2.05906 ms
+SIFT detection with n=31 keypoints in 2.35596 ms
+SIFT detection with n=8 keypoints in 1.51297 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 1
+SIFT detection with n=4 keypoints in 1.91792 ms
+SIFT detection with n=1 keypoints in 1.68248 ms
+SIFT detection with n=5 keypoints in 2.36769 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0527_L.png, Inference Time: 35.0728
+Frame: ../../../../FPS_10_stereo_right/CameraRight0527_R.png, Inference Time: 31.5428
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 1
+SIFT detection with n=8 keypoints in 1.6866 ms
+SIFT detection with n=6 keypoints in 1.58023 ms
+SIFT detection with n=7 keypoints in 2.55654 ms
+SIFT detection with n=44 keypoints in 2.19497 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 1
+SIFT detection with n=4 keypoints in 1.81804 ms
+SIFT detection with n=3 keypoints in 2.4559 ms
+SIFT detection with n=2 keypoints in 1.48106 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0529_L.png, Inference Time: 35.4806
+Frame: ../../../../FPS_10_stereo_right/CameraRight0529_R.png, Inference Time: 39.6816
+Left Image
+Total Blue Cones: 4
+Total Yellow Cones: 3
+SIFT detection with n=7 keypoints in 1.96897 ms
+SIFT detection with n=5 keypoints in 1.57436 ms
+SIFT detection with n=7 keypoints in 2.18603 ms
+SIFT detection with n=39 keypoints in 2.25231 ms
+SIFT detection with n=8 keypoints in 1.79786 ms
+SIFT detection with n=83 keypoints in 1.94634 ms
+SIFT detection with n=34 keypoints in 2.95317 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 2
+SIFT detection with n=4 keypoints in 1.9476 ms
+SIFT detection with n=3 keypoints in 1.56843 ms
+SIFT detection with n=8 keypoints in 2.10481 ms
+SIFT detection with n=4 keypoints in 3.47175 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0531_L.png, Inference Time: 38.8122
+Frame: ../../../../FPS_10_stereo_right/CameraRight0531_R.png, Inference Time: 34.8732
+Left Image
+Total Blue Cones: 4
+Total Yellow Cones: 1
+SIFT detection with n=5 keypoints in 1.56151 ms
+SIFT detection with n=8 keypoints in 1.80163 ms
+SIFT detection with n=8 keypoints in 2.60585 ms
+SIFT detection with n=9 keypoints in 2.0988 ms
+SIFT detection with n=37 keypoints in 2.18345 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 1
+SIFT detection with n=4 keypoints in 1.80296 ms
+SIFT detection with n=3 keypoints in 1.79297 ms
+SIFT detection with n=5 keypoints in 1.56745 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0533_L.png, Inference Time: 33.9925
+Frame: ../../../../FPS_10_stereo_right/CameraRight0533_R.png, Inference Time: 31.8073
+Left Image
+Total Blue Cones: 5
+Total Yellow Cones: 1
+SIFT detection with n=4 keypoints in 1.68422 ms
+SIFT detection with n=7 keypoints in 1.43887 ms
+SIFT detection with n=6 keypoints in 1.45361 ms
+SIFT detection with n=4 keypoints in 1.85073 ms
+SIFT detection with n=50 keypoints in 2.35771 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 1
+SIFT detection with n=3 keypoints in 1.64148 ms
+SIFT detection with n=3 keypoints in 1.83851 ms
+SIFT detection with n=8 keypoints in 2.86713 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0535_L.png, Inference Time: 29.4394
+Frame: ../../../../FPS_10_stereo_right/CameraRight0535_R.png, Inference Time: 24.8729
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 2
+SIFT detection with n=7 keypoints in 2.13547 ms
+SIFT detection with n=7 keypoints in 1.40598 ms
+SIFT detection with n=38 keypoints in 2.50353 ms
+SIFT detection with n=2 keypoints in 1.71887 ms
+SIFT detection with n=21 keypoints in 1.60321 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 2
+SIFT detection with n=3 keypoints in 2.14057 ms
+SIFT detection with n=4 keypoints in 1.72711 ms
+SIFT detection with n=0 keypoints in 1.46024 ms
+SIFT detection with n=6 keypoints in 2.61619 ms
+SIFT detection with n=6 keypoints in 1.68143 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0537_L.png, Inference Time: 31.9576
+Frame: ../../../../FPS_10_stereo_right/CameraRight0537_R.png, Inference Time: 27.2565
+Left Image
+Total Blue Cones: 5
+Total Yellow Cones: 5
+SIFT detection with n=5 keypoints in 2.53566 ms
+SIFT detection with n=9 keypoints in 1.3756 ms
+SIFT detection with n=16 keypoints in 1.48106 ms
+SIFT detection with n=5 keypoints in 1.46101 ms
+SIFT detection with n=3 keypoints in 1.90087 ms
+SIFT detection with n=34 keypoints in 5.24565 ms
+SIFT detection with n=43 keypoints in 2.94514 ms
+SIFT detection with n=51 keypoints in 1.59441 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 2
+SIFT detection with n=4 keypoints in 1.93901 ms
+SIFT detection with n=2 keypoints in 1.65845 ms
+SIFT detection with n=3 keypoints in 1.55083 ms
+SIFT detection with n=7 keypoints in 4.58956 ms
+SIFT detection with n=10 keypoints in 2.58064 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0539_L.png, Inference Time: 31.3992
+Frame: ../../../../FPS_10_stereo_right/CameraRight0539_R.png, Inference Time: 31.3406
+Left Image
+Total Blue Cones: 5
+Total Yellow Cones: 3
+SIFT detection with n=8 keypoints in 1.51186 ms
+SIFT detection with n=8 keypoints in 1.7922 ms
+SIFT detection with n=34 keypoints in 2.85896 ms
+SIFT detection with n=4 keypoints in 2.17835 ms
+SIFT detection with n=34 keypoints in 4.98681 ms
+SIFT detection with n=8 keypoints in 1.66816 ms
+SIFT detection with n=11 keypoints in 1.52694 ms
+SIFT detection with n=40 keypoints in 1.75903 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 1
+SIFT detection with n=3 keypoints in 1.67885 ms
+SIFT detection with n=3 keypoints in 1.91994 ms
+SIFT detection with n=0 keypoints in 1.63995 ms
+SIFT detection with n=4 keypoints in 2.23828 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0541_L.png, Inference Time: 42.6968
+Frame: ../../../../FPS_10_stereo_right/CameraRight0541_R.png, Inference Time: 30.0578
+Left Image
+Total Blue Cones: 5
+Total Yellow Cones: 1
+SIFT detection with n=10 keypoints in 1.64679 ms
+SIFT detection with n=8 keypoints in 1.50096 ms
+SIFT detection with n=6 keypoints in 2.21174 ms
+SIFT detection with n=53 keypoints in 1.7482 ms
+SIFT detection with n=27 keypoints in 3.28443 ms
+SIFT detection with n=8 keypoints in 3.83136 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 1
+SIFT detection with n=3 keypoints in 2.02037 ms
+SIFT detection with n=4 keypoints in 2.20741 ms
+SIFT detection with n=3 keypoints in 2.00794 ms
+SIFT detection with n=2 keypoints in 2.19742 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0543_L.png, Inference Time: 30.4272
+Frame: ../../../../FPS_10_stereo_right/CameraRight0543_R.png, Inference Time: 27.273
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 2
+SIFT detection with n=9 keypoints in 2.19218 ms
+SIFT detection with n=9 keypoints in 2.77871 ms
+SIFT detection with n=9 keypoints in 1.62444 ms
+SIFT detection with n=22 keypoints in 2.49606 ms
+SIFT detection with n=84 keypoints in 4.35468 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 3
+SIFT detection with n=1 keypoints in 2.00536 ms
+SIFT detection with n=4 keypoints in 3.09593 ms
+SIFT detection with n=4 keypoints in 2.13107 ms
+SIFT detection with n=5 keypoints in 1.6623 ms
+SIFT detection with n=6 keypoints in 2.59922 ms
+SIFT detection with n=2 keypoints in 1.88767 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0545_L.png, Inference Time: 38.1715
+Frame: ../../../../FPS_10_stereo_right/CameraRight0545_R.png, Inference Time: 35.4689
+Left Image
+Total Blue Cones: 4
+Total Yellow Cones: 1
+SIFT detection with n=10 keypoints in 2.15964 ms
+SIFT detection with n=7 keypoints in 2.34402 ms
+SIFT detection with n=8 keypoints in 1.7063 ms
+SIFT detection with n=21 keypoints in 2.64999 ms
+SIFT detection with n=4 keypoints in 3.12708 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 3
+SIFT detection with n=3 keypoints in 1.74184 ms
+SIFT detection with n=3 keypoints in 2.09838 ms
+SIFT detection with n=1 keypoints in 1.45955 ms
+SIFT detection with n=6 keypoints in 1.77593 ms
+SIFT detection with n=6 keypoints in 1.59106 ms
+SIFT detection with n=7 keypoints in 3.42188 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0547_L.png, Inference Time: 30.7373
+Frame: ../../../../FPS_10_stereo_right/CameraRight0547_R.png, Inference Time: 30.7248
+Left Image
+Total Blue Cones: 5
+Total Yellow Cones: 0
+SIFT detection with n=10 keypoints in 1.79451 ms
+SIFT detection with n=10 keypoints in 1.51919 ms
+SIFT detection with n=6 keypoints in 2.45541 ms
+SIFT detection with n=9 keypoints in 3.14223 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 1
+SIFT detection with n=2 keypoints in 1.89102 ms
+SIFT detection with n=4 keypoints in 2.68833 ms
+SIFT detection with n=3 keypoints in 2.09615 ms
+SIFT detection with n=6 keypoints in 2.24498 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0549_L.png, Inference Time: 34.7856
+Frame: ../../../../FPS_10_stereo_right/CameraRight0549_R.png, Inference Time: 34.844
+Left Image
+Total Blue Cones: 5
+Total Yellow Cones: 0
+SIFT detection with n=10 keypoints in 2.45884 ms
+SIFT detection with n=9 keypoints in 2.11389 ms
+SIFT detection with n=13 keypoints in 1.71998 ms
+SIFT detection with n=13 keypoints in 1.69722 ms
+SIFT detection with n=11 keypoints in 2.79722 ms
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=3 keypoints in 2.03965 ms
+SIFT detection with n=2 keypoints in 1.62465 ms
+SIFT detection with n=4 keypoints in 2.50891 ms
+SIFT detection with n=4 keypoints in 1.55914 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0552_L.png, Inference Time: 32.649
+Frame: ../../../../FPS_10_stereo_right/CameraRight0552_R.png, Inference Time: 29.7559
+Left Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=12 keypoints in 2.25553 ms
+SIFT detection with n=13 keypoints in 2.3049 ms
+SIFT detection with n=8 keypoints in 1.47372 ms
+SIFT detection with n=9 keypoints in 1.4872 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=3 keypoints in 1.71139 ms
+SIFT detection with n=2 keypoints in 2.23046 ms
+SIFT detection with n=2 keypoints in 2.45611 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0554_L.png, Inference Time: 31.1226
+Frame: ../../../../FPS_10_stereo_right/CameraRight0554_R.png, Inference Time: 24.3213
+Left Image
+Total Blue Cones: 5
+Total Yellow Cones: 0
+SIFT detection with n=12 keypoints in 1.99537 ms
+SIFT detection with n=8 keypoints in 1.49908 ms
+SIFT detection with n=11 keypoints in 2.46212 ms
+SIFT detection with n=10 keypoints in 1.50417 ms
+SIFT detection with n=9 keypoints in 2.44822 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 1
+SIFT detection with n=3 keypoints in 2.39898 ms
+SIFT detection with n=3 keypoints in 1.73046 ms
+SIFT detection with n=2 keypoints in 1.93845 ms
+SIFT detection with n=3 keypoints in 2.91232 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0556_L.png, Inference Time: 30.9554
+Frame: ../../../../FPS_10_stereo_right/CameraRight0556_R.png, Inference Time: 37.2825
+Left Image
+Total Blue Cones: 5
+Total Yellow Cones: 0
+SIFT detection with n=11 keypoints in 2.09294 ms
+SIFT detection with n=14 keypoints in 2.34765 ms
+SIFT detection with n=9 keypoints in 1.60076 ms
+SIFT detection with n=12 keypoints in 2.26181 ms
+SIFT detection with n=7 keypoints in 1.75826 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=3 keypoints in 2.26433 ms
+SIFT detection with n=2 keypoints in 1.70797 ms
+SIFT detection with n=3 keypoints in 3.03873 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0558_L.png, Inference Time: 35.4886
+Frame: ../../../../FPS_10_stereo_right/CameraRight0558_R.png, Inference Time: 34.4954
+Left Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=8 keypoints in 2.36231 ms
+SIFT detection with n=19 keypoints in 1.84605 ms
+SIFT detection with n=8 keypoints in 1.73961 ms
+SIFT detection with n=10 keypoints in 1.44683 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=2 keypoints in 2.61752 ms
+SIFT detection with n=1 keypoints in 1.95744 ms
+SIFT detection with n=4 keypoints in 1.55062 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0560_L.png, Inference Time: 34.9591
+Frame: ../../../../FPS_10_stereo_right/CameraRight0560_R.png, Inference Time: 31.3759
+Left Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=10 keypoints in 1.65873 ms
+SIFT detection with n=9 keypoints in 2.5152 ms
+SIFT detection with n=14 keypoints in 1.86833 ms
+SIFT detection with n=9 keypoints in 4.75983 ms
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=3 keypoints in 2.54816 ms
+SIFT detection with n=3 keypoints in 1.8897 ms
+SIFT detection with n=2 keypoints in 1.49698 ms
+SIFT detection with n=2 keypoints in 4.63782 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0562_L.png, Inference Time: 39.5102
+Frame: ../../../../FPS_10_stereo_right/CameraRight0562_R.png, Inference Time: 38.9504
+Left Image
+Total Blue Cones: 5
+Total Yellow Cones: 0
+SIFT detection with n=8 keypoints in 1.55488 ms
+SIFT detection with n=22 keypoints in 1.94005 ms
+SIFT detection with n=14 keypoints in 3.24944 ms
+SIFT detection with n=11 keypoints in 1.75714 ms
+SIFT detection with n=14 keypoints in 5.10492 ms
+Right Image
+Total Blue Cones: 6
+Total Yellow Cones: 0
+SIFT detection with n=2 keypoints in 2.44675 ms
+SIFT detection with n=2 keypoints in 1.82258 ms
+SIFT detection with n=3 keypoints in 2.41623 ms
+SIFT detection with n=2 keypoints in 1.73277 ms
+SIFT detection with n=2 keypoints in 4.78728 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0564_L.png, Inference Time: 36.9048
+Frame: ../../../../FPS_10_stereo_right/CameraRight0564_R.png, Inference Time: 35.6654
+Left Image
+Total Blue Cones: 5
+Total Yellow Cones: 0
+SIFT detection with n=20 keypoints in 2.35826 ms
+SIFT detection with n=15 keypoints in 2.76153 ms
+SIFT detection with n=32 keypoints in 2.05473 ms
+SIFT detection with n=11 keypoints in 1.87622 ms
+SIFT detection with n=12 keypoints in 4.60876 ms
+Right Image
+Total Blue Cones: 5
+Total Yellow Cones: 0
+SIFT detection with n=3 keypoints in 2.35142 ms
+SIFT detection with n=2 keypoints in 1.72746 ms
+SIFT detection with n=3 keypoints in 3.10529 ms
+SIFT detection with n=4 keypoints in 1.80526 ms
+SIFT detection with n=2 keypoints in 1.81043 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0566_L.png, Inference Time: 36.9191
+Frame: ../../../../FPS_10_stereo_right/CameraRight0566_R.png, Inference Time: 36.2396
+Left Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=9 keypoints in 1.60461 ms
+SIFT detection with n=18 keypoints in 1.73898 ms
+SIFT detection with n=18 keypoints in 3.24944 ms
+SIFT detection with n=11 keypoints in 3.17576 ms
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=2 keypoints in 2.48168 ms
+SIFT detection with n=3 keypoints in 2.60564 ms
+SIFT detection with n=3 keypoints in 2.44759 ms
+SIFT detection with n=4 keypoints in 1.99097 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0569_L.png, Inference Time: 35.2198
+Frame: ../../../../FPS_10_stereo_right/CameraRight0569_R.png, Inference Time: 36.4719
+Left Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=14 keypoints in 2.05187 ms
+SIFT detection with n=17 keypoints in 2.14734 ms
+SIFT detection with n=15 keypoints in 2.98265 ms
+Right Image
+Total Blue Cones: 5
+Total Yellow Cones: 0
+SIFT detection with n=3 keypoints in 2.58986 ms
+SIFT detection with n=3 keypoints in 3.03398 ms
+SIFT detection with n=2 keypoints in 2.2762 ms
+SIFT detection with n=3 keypoints in 2.30092 ms
+SIFT detection with n=1 keypoints in 3.81921 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0571_L.png, Inference Time: 36.3702
+Frame: ../../../../FPS_10_stereo_right/CameraRight0571_R.png, Inference Time: 35.3018
+Left Image
+Total Blue Cones: 5
+Total Yellow Cones: 0
+SIFT detection with n=13 keypoints in 1.7672 ms
+SIFT detection with n=19 keypoints in 1.6537 ms
+SIFT detection with n=15 keypoints in 2.56402 ms
+SIFT detection with n=22 keypoints in 1.66816 ms
+Right Image
+Total Blue Cones: 5
+Total Yellow Cones: 0
+SIFT detection with n=2 keypoints in 3.17464 ms
+SIFT detection with n=3 keypoints in 2.01374 ms
+SIFT detection with n=4 keypoints in 1.70581 ms
+SIFT detection with n=3 keypoints in 4.0661 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0573_L.png, Inference Time: 37.446
+Frame: ../../../../FPS_10_stereo_right/CameraRight0573_R.png, Inference Time: 34.2132
+Left Image
+Total Blue Cones: 6
+Total Yellow Cones: 0
+SIFT detection with n=18 keypoints in 2.62799 ms
+SIFT detection with n=12 keypoints in 2.15531 ms
+SIFT detection with n=16 keypoints in 3.55472 ms
+SIFT detection with n=19 keypoints in 2.63155 ms
+SIFT detection with n=14 keypoints in 8.41372 ms
+SIFT detection with n=25 keypoints in 2.81007 ms
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 1
+SIFT detection with n=11 keypoints in 2.04726 ms
+SIFT detection with n=0 keypoints in 1.72725 ms
+SIFT detection with n=0 keypoints in 1.48888 ms
+SIFT detection with n=4 keypoints in 2.57959 ms
+SIFT detection with n=2 keypoints in 2.57442 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0575_L.png, Inference Time: 32.9787
+Frame: ../../../../FPS_10_stereo_right/CameraRight0575_R.png, Inference Time: 38.134
+Left Image
+Total Blue Cones: 7
+Total Yellow Cones: 1
+SIFT detection with n=15 keypoints in 1.54824 ms
+SIFT detection with n=57 keypoints in 1.61082 ms
+SIFT detection with n=19 keypoints in 1.64386 ms
+SIFT detection with n=5 keypoints in 1.71859 ms
+SIFT detection with n=21 keypoints in 2.47602 ms
+SIFT detection with n=7 keypoints in 2.2704 ms
+SIFT detection with n=12 keypoints in 4.53487 ms
+Right Image
+Total Blue Cones: 5
+Total Yellow Cones: 0
+SIFT detection with n=2 keypoints in 1.71656 ms
+SIFT detection with n=4 keypoints in 1.70706 ms
+SIFT detection with n=2 keypoints in 1.6301 ms
+SIFT detection with n=5 keypoints in 2.33235 ms
+SIFT detection with n=15 keypoints in 1.62214 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0577_L.png, Inference Time: 32.7396
+Frame: ../../../../FPS_10_stereo_right/CameraRight0577_R.png, Inference Time: 30.133
+Left Image
+Total Blue Cones: 6
+Total Yellow Cones: 1
+SIFT detection with n=19 keypoints in 1.97972 ms
+SIFT detection with n=19 keypoints in 1.72466 ms
+SIFT detection with n=59 keypoints in 2.03832 ms
+SIFT detection with n=7 keypoints in 1.74799 ms
+SIFT detection with n=19 keypoints in 2.84261 ms
+SIFT detection with n=10 keypoints in 2.69581 ms
+SIFT detection with n=3 keypoints in 2.16439 ms
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 1
+SIFT detection with n=3 keypoints in 1.87335 ms
+SIFT detection with n=5 keypoints in 2.03958 ms
+SIFT detection with n=14 keypoints in 1.53169 ms
+SIFT detection with n=3 keypoints in 1.57946 ms
+SIFT detection with n=1 keypoints in 2.52358 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0579_L.png, Inference Time: 35.8365
+Frame: ../../../../FPS_10_stereo_right/CameraRight0579_R.png, Inference Time: 33.8241
+Left Image
+Total Blue Cones: 5
+Total Yellow Cones: 1
+SIFT detection with n=16 keypoints in 2.05047 ms
+SIFT detection with n=75 keypoints in 1.95626 ms
+SIFT detection with n=19 keypoints in 1.7408 ms
+SIFT detection with n=16 keypoints in 3.14845 ms
+SIFT detection with n=8 keypoints in 2.35519 ms
+SIFT detection with n=36 keypoints in 1.45906 ms
+Right Image
+Total Blue Cones: 5
+Total Yellow Cones: 1
+SIFT detection with n=4 keypoints in 2.0643 ms
+SIFT detection with n=3 keypoints in 2.0759 ms
+SIFT detection with n=12 keypoints in 1.56515 ms
+SIFT detection with n=2 keypoints in 1.76203 ms
+SIFT detection with n=2 keypoints in 3.04935 ms
+SIFT detection with n=5 keypoints in 2.74498 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0581_L.png, Inference Time: 36.7151
+Frame: ../../../../FPS_10_stereo_right/CameraRight0581_R.png, Inference Time: 37.0729
+Left Image
+Total Blue Cones: 6
+Total Yellow Cones: 0
+SIFT detection with n=6 keypoints in 2.42678 ms
+SIFT detection with n=26 keypoints in 1.80051 ms
+SIFT detection with n=76 keypoints in 2.21174 ms
+SIFT detection with n=18 keypoints in 2.08204 ms
+SIFT detection with n=41 keypoints in 1.68967 ms
+SIFT detection with n=9 keypoints in 2.5629 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 3
+SIFT detection with n=8 keypoints in 1.75742 ms
+SIFT detection with n=1 keypoints in 1.74024 ms
+SIFT detection with n=3 keypoints in 2.25218 ms
+SIFT detection with n=5 keypoints in 2.17521 ms
+SIFT detection with n=8 keypoints in 4.23029 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0583_L.png, Inference Time: 36.4359
+Frame: ../../../../FPS_10_stereo_right/CameraRight0583_R.png, Inference Time: 31.3548
+Left Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=12 keypoints in 2.36232 ms
+SIFT detection with n=22 keypoints in 1.87699 ms
+SIFT detection with n=11 keypoints in 2.32712 ms
+SIFT detection with n=90 keypoints in 2.10718 ms
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=1 keypoints in 2.34758 ms
+SIFT detection with n=9 keypoints in 1.72334 ms
+SIFT detection with n=4 keypoints in 2.0629 ms
+SIFT detection with n=1 keypoints in 1.78689 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0585_L.png, Inference Time: 34.5065
+Frame: ../../../../FPS_10_stereo_right/CameraRight0585_R.png, Inference Time: 33.2632
+Left Image
+Total Blue Cones: 6
+Total Yellow Cones: 0
+SIFT detection with n=16 keypoints in 1.96373 ms
+SIFT detection with n=19 keypoints in 1.92266 ms
+SIFT detection with n=78 keypoints in 1.79311 ms
+SIFT detection with n=8 keypoints in 2.21481 ms
+SIFT detection with n=31 keypoints in 1.76315 ms
+SIFT detection with n=14 keypoints in 4.08872 ms
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 2
+SIFT detection with n=2 keypoints in 1.98839 ms
+SIFT detection with n=3 keypoints in 2.07219 ms
+SIFT detection with n=7 keypoints in 1.81637 ms
+SIFT detection with n=3 keypoints in 2.47825 ms
+SIFT detection with n=0 keypoints in 2.50975 ms
+SIFT detection with n=1 keypoints in 4.33526 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0587_L.png, Inference Time: 29.5898
+Frame: ../../../../FPS_10_stereo_right/CameraRight0587_R.png, Inference Time: 36.3277
+Left Image
+Total Blue Cones: 5
+Total Yellow Cones: 0
+SIFT detection with n=22 keypoints in 2.18653 ms
+SIFT detection with n=90 keypoints in 1.85764 ms
+SIFT detection with n=26 keypoints in 1.9705 ms
+SIFT detection with n=34 keypoints in 1.83257 ms
+SIFT detection with n=10 keypoints in 2.47099 ms
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=2 keypoints in 2.39053 ms
+SIFT detection with n=2 keypoints in 2.09929 ms
+SIFT detection with n=14 keypoints in 1.99146 ms
+SIFT detection with n=6 keypoints in 3.00744 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0589_L.png, Inference Time: 36.1028
+Frame: ../../../../FPS_10_stereo_right/CameraRight0589_R.png, Inference Time: 32.3608
+Left Image
+Total Blue Cones: 6
+Total Yellow Cones: 0
+SIFT detection with n=20 keypoints in 1.85981 ms
+SIFT detection with n=88 keypoints in 1.95996 ms
+SIFT detection with n=28 keypoints in 1.75386 ms
+SIFT detection with n=9 keypoints in 2.47322 ms
+SIFT detection with n=15 keypoints in 2.25797 ms
+SIFT detection with n=8 keypoints in 3.22507 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=2 keypoints in 2.12877 ms
+SIFT detection with n=3 keypoints in 2.16054 ms
+SIFT detection with n=11 keypoints in 1.99062 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0591_L.png, Inference Time: 34.2034
+Frame: ../../../../FPS_10_stereo_right/CameraRight0591_R.png, Inference Time: 33.7672
+Left Image
+Total Blue Cones: 5
+Total Yellow Cones: 0
+SIFT detection with n=34 keypoints in 1.92266 ms
+SIFT detection with n=18 keypoints in 2.44864 ms
+SIFT detection with n=22 keypoints in 1.89857 ms
+SIFT detection with n=81 keypoints in 2.1229 ms
+SIFT detection with n=4 keypoints in 2.23311 ms
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=3 keypoints in 1.98922 ms
+SIFT detection with n=11 keypoints in 1.91784 ms
+SIFT detection with n=1 keypoints in 2.58616 ms
+SIFT detection with n=2 keypoints in 1.91163 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0593_L.png, Inference Time: 37.0575
+Frame: ../../../../FPS_10_stereo_right/CameraRight0593_R.png, Inference Time: 34.2117
+Left Image
+Total Blue Cones: 5
+Total Yellow Cones: 0
+SIFT detection with n=22 keypoints in 2.60879 ms
+SIFT detection with n=110 keypoints in 3.17694 ms
+SIFT detection with n=20 keypoints in 2.45472 ms
+SIFT detection with n=10 keypoints in 3.10738 ms
+SIFT detection with n=7 keypoints in 3.72639 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=1 keypoints in 2.58651 ms
+SIFT detection with n=3 keypoints in 3.06792 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0596_L.png, Inference Time: 36.566
+Frame: ../../../../FPS_10_stereo_right/CameraRight0596_R.png, Inference Time: 35.5095
+Left Image
+Total Blue Cones: 5
+Total Yellow Cones: 0
+SIFT detection with n=27 keypoints in 1.84325 ms
+SIFT detection with n=110 keypoints in 2.07101 ms
+SIFT detection with n=15 keypoints in 2.91134 ms
+SIFT detection with n=3 keypoints in 2.41868 ms
+SIFT detection with n=25 keypoints in 4.09808 ms
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=18 keypoints in 2.14448 ms
+SIFT detection with n=3 keypoints in 1.78047 ms
+SIFT detection with n=4 keypoints in 2.42007 ms
+SIFT detection with n=3 keypoints in 1.82719 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0598_L.png, Inference Time: 32.9271
+Frame: ../../../../FPS_10_stereo_right/CameraRight0598_R.png, Inference Time: 30.8242
+Left Image
+Total Blue Cones: 5
+Total Yellow Cones: 0
+SIFT detection with n=113 keypoints in 2.27313 ms
+SIFT detection with n=26 keypoints in 1.88537 ms
+SIFT detection with n=9 keypoints in 2.57582 ms
+SIFT detection with n=12 keypoints in 1.68506 ms
+SIFT detection with n=6 keypoints in 2.63721 ms
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=20 keypoints in 2.14685 ms
+SIFT detection with n=5 keypoints in 2.34423 ms
+SIFT detection with n=6 keypoints in 1.73528 ms
+SIFT detection with n=4 keypoints in 2.42727 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0600_L.png, Inference Time: 31.7142
+Frame: ../../../../FPS_10_stereo_right/CameraRight0600_R.png, Inference Time: 30.3695
+Left Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=109 keypoints in 2.36099 ms
+SIFT detection with n=24 keypoints in 1.79101 ms
+SIFT detection with n=16 keypoints in 1.86232 ms
+SIFT detection with n=12 keypoints in 3.22954 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=16 keypoints in 2.22599 ms
+SIFT detection with n=1 keypoints in 1.89906 ms
+SIFT detection with n=2 keypoints in 1.60468 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0602_L.png, Inference Time: 32.4765
+Frame: ../../../../FPS_10_stereo_right/CameraRight0602_R.png, Inference Time: 37.3564
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=115 keypoints in 2.28731 ms
+SIFT detection with n=32 keypoints in 2.99948 ms
+SIFT detection with n=14 keypoints in 2.06179 ms
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=13 keypoints in 2.66682 ms
+SIFT detection with n=3 keypoints in 2.22452 ms
+SIFT detection with n=6 keypoints in 2.1178 ms
+SIFT detection with n=4 keypoints in 3.54159 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0604_L.png, Inference Time: 37.1819
+Frame: ../../../../FPS_10_stereo_right/CameraRight0604_R.png, Inference Time: 35.3948
+Left Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=30 keypoints in 2.3568 ms
+SIFT detection with n=91 keypoints in 2.16501 ms
+SIFT detection with n=12 keypoints in 2.48999 ms
+SIFT detection with n=4 keypoints in 3.00611 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=3 keypoints in 2.65132 ms
+SIFT detection with n=26 keypoints in 2.50954 ms
+SIFT detection with n=5 keypoints in 1.76782 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0606_L.png, Inference Time: 39.5962
+Frame: ../../../../FPS_10_stereo_right/CameraRight0606_R.png, Inference Time: 31.2506
+Left Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=12 keypoints in 3.38577 ms
+SIFT detection with n=45 keypoints in 3.90623 ms
+SIFT detection with n=63 keypoints in 2.4654 ms
+SIFT detection with n=4 keypoints in 3.43669 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=17 keypoints in 2.42196 ms
+SIFT detection with n=5 keypoints in 2.22885 ms
+SIFT detection with n=5 keypoints in 2.06905 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0608_L.png, Inference Time: 33.4798
+Frame: ../../../../FPS_10_stereo_right/CameraRight0608_R.png, Inference Time: 35.0549
+Left Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=13 keypoints in 2.39263 ms
+SIFT detection with n=40 keypoints in 3.07211 ms
+SIFT detection with n=67 keypoints in 1.72515 ms
+SIFT detection with n=8 keypoints in 2.43837 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=20 keypoints in 2.66634 ms
+SIFT detection with n=2 keypoints in 2.16578 ms
+SIFT detection with n=5 keypoints in 2.17661 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0610_L.png, Inference Time: 41.4742
+Frame: ../../../../FPS_10_stereo_right/CameraRight0610_R.png, Inference Time: 41.9073
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=56 keypoints in 2.58734 ms
+SIFT detection with n=9 keypoints in 2.40324 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=6 keypoints in 2.19344 ms
+SIFT detection with n=23 keypoints in 2.36727 ms
+SIFT detection with n=2 keypoints in 2.34388 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0612_L.png, Inference Time: 33.777
+Frame: ../../../../FPS_10_stereo_right/CameraRight0612_R.png, Inference Time: 31.2782
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=17 keypoints in 2.04565 ms
+SIFT detection with n=53 keypoints in 2.93047 ms
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=28 keypoints in 2.76565 ms
+SIFT detection with n=9 keypoints in 2.14294 ms
+SIFT detection with n=3 keypoints in 2.54251 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0614_L.png, Inference Time: 32.627
+Frame: ../../../../FPS_10_stereo_right/CameraRight0614_R.png, Inference Time: 37.5189
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=17 keypoints in 2.08966 ms
+SIFT detection with n=59 keypoints in 3.033 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=5 keypoints in 2.41141 ms
+SIFT detection with n=3 keypoints in 3.6467 ms
+SIFT detection with n=27 keypoints in 2.36958 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0616_L.png, Inference Time: 33.4597
+Frame: ../../../../FPS_10_stereo_right/CameraRight0616_R.png, Inference Time: 31.3924
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=17 keypoints in 2.2762 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=5 keypoints in 2.28381 ms
+SIFT detection with n=1 keypoints in 2.2674 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0618_L.png, Inference Time: 34.2665
+Frame: ../../../../FPS_10_stereo_right/CameraRight0618_R.png, Inference Time: 30.0035
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=11 keypoints in 2.99019 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=2 keypoints in 2.03197 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0621_L.png, Inference Time: 35.9502
+Frame: ../../../../FPS_10_stereo_right/CameraRight0621_R.png, Inference Time: 33.2143
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=15 keypoints in 2.46582 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=4 keypoints in 2.65851 ms
+SIFT detection with n=18 keypoints in 2.65251 ms
+SIFT detection with n=2 keypoints in 4.07902 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0623_L.png, Inference Time: 38.8779
+Frame: ../../../../FPS_10_stereo_right/CameraRight0623_R.png, Inference Time: 33.6897
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=22 keypoints in 2.42343 ms
+SIFT detection with n=135 keypoints in 2.74302 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=5 keypoints in 2.48042 ms
+SIFT detection with n=15 keypoints in 3.53754 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0625_L.png, Inference Time: 34.001
+Frame: ../../../../FPS_10_stereo_right/CameraRight0625_R.png, Inference Time: 32.4306
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=185 keypoints in 2.72388 ms
+SIFT detection with n=24 keypoints in 2.81244 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=5 keypoints in 2.03811 ms
+SIFT detection with n=20 keypoints in 2.58197 ms
+SIFT detection with n=16 keypoints in 2.51241 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0627_L.png, Inference Time: 35.4469
+Frame: ../../../../FPS_10_stereo_right/CameraRight0627_R.png, Inference Time: 39.6822
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=155 keypoints in 2.30477 ms
+SIFT detection with n=26 keypoints in 2.33885 ms
+SIFT detection with n=213 keypoints in 2.65774 ms
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=17 keypoints in 2.43914 ms
+SIFT detection with n=12 keypoints in 2.38166 ms
+SIFT detection with n=5 keypoints in 2.8012 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0629_L.png, Inference Time: 31.2198
+Frame: ../../../../FPS_10_stereo_right/CameraRight0629_R.png, Inference Time: 32.4993
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=200 keypoints in 2.28975 ms
+SIFT detection with n=62 keypoints in 1.54747 ms
+SIFT detection with n=23 keypoints in 3.16801 ms
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=16 keypoints in 1.92022 ms
+SIFT detection with n=13 keypoints in 2.1009 ms
+SIFT detection with n=3 keypoints in 2.76774 ms
+SIFT detection with n=8 keypoints in 2.98083 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0631_L.png, Inference Time: 35.1262
+Frame: ../../../../FPS_10_stereo_right/CameraRight0631_R.png, Inference Time: 30.9525
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=87 keypoints in 2.73143 ms
+SIFT detection with n=182 keypoints in 3.52385 ms
+SIFT detection with n=237 keypoints in 3.25761 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=16 keypoints in 3.04648 ms
+SIFT detection with n=19 keypoints in 3.1231 ms
+SIFT detection with n=14 keypoints in 3.40044 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0633_L.png, Inference Time: 31.8467
+Frame: ../../../../FPS_10_stereo_right/CameraRight0633_R.png, Inference Time: 45.2105
+Left Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=111 keypoints in 2.33864 ms
+SIFT detection with n=263 keypoints in 2.48642 ms
+SIFT detection with n=250 keypoints in 3.69999 ms
+SIFT detection with n=10 keypoints in 2.51373 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=19 keypoints in 2.26531 ms
+SIFT detection with n=20 keypoints in 2.48195 ms
+SIFT detection with n=19 keypoints in 2.68205 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0635_L.png, Inference Time: 36.6843
+Frame: ../../../../FPS_10_stereo_right/CameraRight0635_R.png, Inference Time: 33.8202
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=117 keypoints in 2.39249 ms
+SIFT detection with n=250 keypoints in 2.50982 ms
+SIFT detection with n=123 keypoints in 2.16788 ms
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=15 keypoints in 2.37984 ms
+SIFT detection with n=13 keypoints in 2.41002 ms
+SIFT detection with n=18 keypoints in 2.66361 ms
+SIFT detection with n=8 keypoints in 1.90919 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0637_L.png, Inference Time: 33.9203
+Frame: ../../../../FPS_10_stereo_right/CameraRight0637_R.png, Inference Time: 37.1058
+Left Image
+Total Blue Cones: 5
+Total Yellow Cones: 0
+SIFT detection with n=151 keypoints in 2.04056 ms
+SIFT detection with n=59 keypoints in 2.12597 ms
+SIFT detection with n=44 keypoints in 2.73003 ms
+SIFT detection with n=288 keypoints in 3.85629 ms
+SIFT detection with n=135 keypoints in 3.00479 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=22 keypoints in 1.95793 ms
+SIFT detection with n=16 keypoints in 2.38858 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0640_L.png, Inference Time: 36.8089
+Frame: ../../../../FPS_10_stereo_right/CameraRight0640_R.png, Inference Time: 32.8672
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=150 keypoints in 2.8598 ms
+SIFT detection with n=63 keypoints in 1.79814 ms
+SIFT detection with n=243 keypoints in 2.87726 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=24 keypoints in 2.01541 ms
+SIFT detection with n=20 keypoints in 2.69015 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0642_L.png, Inference Time: 33.073
+Frame: ../../../../FPS_10_stereo_right/CameraRight0642_R.png, Inference Time: 36.5985
+Left Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=138 keypoints in 1.93733 ms
+SIFT detection with n=64 keypoints in 1.55467 ms
+SIFT detection with n=42 keypoints in 1.8142 ms
+SIFT detection with n=66 keypoints in 1.86204 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=9 keypoints in 2.07541 ms
+SIFT detection with n=13 keypoints in 2.37153 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0644_L.png, Inference Time: 31.9444
+Frame: ../../../../FPS_10_stereo_right/CameraRight0644_R.png, Inference Time: 29.7114
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=156 keypoints in 2.54314 ms
+SIFT detection with n=359 keypoints in 3.67366 ms
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=12 keypoints in 2.56115 ms
+SIFT detection with n=11 keypoints in 4.22547 ms
+SIFT detection with n=10 keypoints in 3.5029 ms
+SIFT detection with n=9 keypoints in 3.05668 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0646_L.png, Inference Time: 37.2009
+Frame: ../../../../FPS_10_stereo_right/CameraRight0646_R.png, Inference Time: 35.8219
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=165 keypoints in 2.00752 ms
+SIFT detection with n=75 keypoints in 1.63066 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=6 keypoints in 1.86721 ms
+SIFT detection with n=5 keypoints in 2.44221 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0648_L.png, Inference Time: 42.0741
+Frame: ../../../../FPS_10_stereo_right/CameraRight0648_R.png, Inference Time: 39.174
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=155 keypoints in 2.01625 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 1
+SIFT detection with n=19 keypoints in 2.16725 ms
+SIFT detection with n=5 keypoints in 1.42665 ms
+SIFT detection with n=10 keypoints in 1.5935 ms
+SIFT detection with n=3 keypoints in 1.86595 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0650_L.png, Inference Time: 36.5992
+Frame: ../../../../FPS_10_stereo_right/CameraRight0650_R.png, Inference Time: 33.9772
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=158 keypoints in 3.14943 ms
+SIFT detection with n=66 keypoints in 1.84752 ms
+SIFT detection with n=80 keypoints in 1.55278 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 1
+SIFT detection with n=16 keypoints in 2.23353 ms
+SIFT detection with n=4 keypoints in 1.77481 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0653_L.png, Inference Time: 32.0026
+Frame: ../../../../FPS_10_stereo_right/CameraRight0653_R.png, Inference Time: 38.2818
+Left Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=106 keypoints in 2.59216 ms
+SIFT detection with n=34 keypoints in 1.44055 ms
+SIFT detection with n=61 keypoints in 1.71391 ms
+SIFT detection with n=49 keypoints in 2.00179 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 1
+SIFT detection with n=7 keypoints in 1.5912 ms
+SIFT detection with n=15 keypoints in 2.2623 ms
+SIFT detection with n=6 keypoints in 1.73081 ms
+SIFT detection with n=8 keypoints in 1.5847 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0655_L.png, Inference Time: 41.4079
+Frame: ../../../../FPS_10_stereo_right/CameraRight0655_R.png, Inference Time: 28.4911
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=165 keypoints in 2.42266 ms
+SIFT detection with n=60 keypoints in 1.57443 ms
+SIFT detection with n=74 keypoints in 3.05926 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 1
+SIFT detection with n=8 keypoints in 1.93943 ms
+SIFT detection with n=5 keypoints in 1.38977 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0657_L.png, Inference Time: 40.5508
+Frame: ../../../../FPS_10_stereo_right/CameraRight0657_R.png, Inference Time: 40.4513
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=181 keypoints in 3.37215 ms
+SIFT detection with n=62 keypoints in 1.8054 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 1
+SIFT detection with n=11 keypoints in 1.77167 ms
+SIFT detection with n=19 keypoints in 2.77864 ms
+SIFT detection with n=5 keypoints in 2.31706 ms
+SIFT detection with n=8 keypoints in 1.61522 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0659_L.png, Inference Time: 40.4431
+Frame: ../../../../FPS_10_stereo_right/CameraRight0659_R.png, Inference Time: 41.7355
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=49 keypoints in 2.08051 ms
+SIFT detection with n=61 keypoints in 1.50976 ms
+SIFT detection with n=176 keypoints in 2.83396 ms
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 1
+SIFT detection with n=17 keypoints in 2.92384 ms
+SIFT detection with n=13 keypoints in 1.65664 ms
+SIFT detection with n=3 keypoints in 1.82649 ms
+SIFT detection with n=11 keypoints in 1.89752 ms
+SIFT detection with n=10 keypoints in 2.36099 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0661_L.png, Inference Time: 36.4237
+Frame: ../../../../FPS_10_stereo_right/CameraRight0661_R.png, Inference Time: 33.812
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 1
+SIFT detection with n=71 keypoints in 2.00522 ms
+SIFT detection with n=135 keypoints in 2.45618 ms
+SIFT detection with n=17 keypoints in 2.11633 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 1
+SIFT detection with n=7 keypoints in 2.79037 ms
+SIFT detection with n=12 keypoints in 2.95255 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0663_L.png, Inference Time: 33.0226
+Frame: ../../../../FPS_10_stereo_right/CameraRight0663_R.png, Inference Time: 25.0583
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=46 keypoints in 1.67424 ms
+SIFT detection with n=51 keypoints in 1.80309 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 2
+SIFT detection with n=3 keypoints in 1.86742 ms
+SIFT detection with n=4 keypoints in 1.53365 ms
+SIFT detection with n=4 keypoints in 2.27641 ms
+SIFT detection with n=5 keypoints in 1.8399 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0666_L.png, Inference Time: 43.2163
+Frame: ../../../../FPS_10_stereo_right/CameraRight0666_R.png, Inference Time: 38.0866
+Left Image
+Total Blue Cones: 4
+Total Yellow Cones: 1
+SIFT detection with n=32 keypoints in 1.61613 ms
+SIFT detection with n=51 keypoints in 1.94187 ms
+SIFT detection with n=66 keypoints in 1.69875 ms
+SIFT detection with n=30 keypoints in 2.85281 ms
+SIFT detection with n=38 keypoints in 1.92839 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 1
+SIFT detection with n=9 keypoints in 2.62932 ms
+SIFT detection with n=7 keypoints in 1.77837 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0668_L.png, Inference Time: 31.0361
+Frame: ../../../../FPS_10_stereo_right/CameraRight0668_R.png, Inference Time: 34.5237
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 2
+SIFT detection with n=57 keypoints in 2.32013 ms
+SIFT detection with n=29 keypoints in 2.35023 ms
+SIFT detection with n=62 keypoints in 1.58072 ms
+SIFT detection with n=24 keypoints in 1.64323 ms
+SIFT detection with n=40 keypoints in 2.9559 ms
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=14 keypoints in 1.82964 ms
+SIFT detection with n=17 keypoints in 1.79597 ms
+SIFT detection with n=17 keypoints in 1.68562 ms
+SIFT detection with n=11 keypoints in 1.51311 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0670_L.png, Inference Time: 39.9097
+Frame: ../../../../FPS_10_stereo_right/CameraRight0670_R.png, Inference Time: 39.3334
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 1
+SIFT detection with n=59 keypoints in 1.78312 ms
+SIFT detection with n=26 keypoints in 2.57023 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 2
+SIFT detection with n=5 keypoints in 2.14881 ms
+SIFT detection with n=10 keypoints in 1.62849 ms
+SIFT detection with n=10 keypoints in 2.31084 ms
+SIFT detection with n=7 keypoints in 2.22145 ms
+SIFT detection with n=11 keypoints in 1.79178 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0672_L.png, Inference Time: 38.8809
+Frame: ../../../../FPS_10_stereo_right/CameraRight0672_R.png, Inference Time: 30.9995
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 1
+SIFT detection with n=48 keypoints in 2.18066 ms
+SIFT detection with n=54 keypoints in 1.53274 ms
+SIFT detection with n=28 keypoints in 2.92629 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 1
+SIFT detection with n=16 keypoints in 2.74861 ms
+SIFT detection with n=8 keypoints in 2.56115 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0674_L.png, Inference Time: 34.9822
+Frame: ../../../../FPS_10_stereo_right/CameraRight0674_R.png, Inference Time: 24.156
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=71 keypoints in 1.64253 ms
+SIFT detection with n=58 keypoints in 3.70753 ms
+SIFT detection with n=35 keypoints in 1.59336 ms
+Right Image
+Total Blue Cones: 5
+Total Yellow Cones: 1
+SIFT detection with n=6 keypoints in 1.96757 ms
+SIFT detection with n=11 keypoints in 2.58923 ms
+SIFT detection with n=14 keypoints in 1.82139 ms
+SIFT detection with n=13 keypoints in 1.65531 ms
+SIFT detection with n=8 keypoints in 1.58191 ms
+SIFT detection with n=5 keypoints in 1.58421 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0676_L.png, Inference Time: 29.5602
+Frame: ../../../../FPS_10_stereo_right/CameraRight0676_R.png, Inference Time: 23.4477
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=52 keypoints in 1.37623 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 1
+SIFT detection with n=12 keypoints in 1.76524 ms
+SIFT detection with n=10 keypoints in 1.58952 ms
+SIFT detection with n=12 keypoints in 2.19442 ms
+SIFT detection with n=3 keypoints in 1.53903 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0678_L.png, Inference Time: 28.9509
+Frame: ../../../../FPS_10_stereo_right/CameraRight0678_R.png, Inference Time: 24.385
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=58 keypoints in 2.16341 ms
+SIFT detection with n=31 keypoints in 1.93335 ms
+SIFT detection with n=40 keypoints in 1.86016 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 1
+SIFT detection with n=16 keypoints in 1.43999 ms
+SIFT detection with n=11 keypoints in 2.7984 ms
+SIFT detection with n=10 keypoints in 1.59671 ms
+SIFT detection with n=5 keypoints in 1.5708 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0681_L.png, Inference Time: 31.8109
+Frame: ../../../../FPS_10_stereo_right/CameraRight0681_R.png, Inference Time: 39.1969
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=62 keypoints in 1.97281 ms
+SIFT detection with n=32 keypoints in 1.62633 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 1
+SIFT detection with n=8 keypoints in 2.14874 ms
+SIFT detection with n=14 keypoints in 1.93698 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0683_L.png, Inference Time: 39.2885
+Frame: ../../../../FPS_10_stereo_right/CameraRight0683_R.png, Inference Time: 39.1587
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=36 keypoints in 2.00172 ms
+SIFT detection with n=34 keypoints in 1.46262 ms
+SIFT detection with n=43 keypoints in 1.6836 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=16 keypoints in 1.90073 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0685_L.png, Inference Time: 27.8227
+Frame: ../../../../FPS_10_stereo_right/CameraRight0685_R.png, Inference Time: 24.9419
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=63 keypoints in 1.69875 ms
+SIFT detection with n=93 keypoints in 1.9828 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=19 keypoints in 2.44403 ms
+SIFT detection with n=8 keypoints in 1.71426 ms
+SIFT detection with n=5 keypoints in 1.62626 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0687_L.png, Inference Time: 29.6699
+Frame: ../../../../FPS_10_stereo_right/CameraRight0687_R.png, Inference Time: 34.3528
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=59 keypoints in 1.61075 ms
+SIFT detection with n=80 keypoints in 1.86777 ms
+Right Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=21 keypoints in 2.51694 ms
+SIFT detection with n=13 keypoints in 1.6176 ms
+SIFT detection with n=12 keypoints in 1.55921 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0689_L.png, Inference Time: 27.3058
+Frame: ../../../../FPS_10_stereo_right/CameraRight0689_R.png, Inference Time: 23.1727
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=82 keypoints in 1.66809 ms
+SIFT detection with n=33 keypoints in 1.77858 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 1
+SIFT detection with n=19 keypoints in 2.14113 ms
+SIFT detection with n=3 keypoints in 1.68199 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0691_L.png, Inference Time: 37.4534
+Frame: ../../../../FPS_10_stereo_right/CameraRight0691_R.png, Inference Time: 31.9066
+Left Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=97 keypoints in 2.2975 ms
+SIFT detection with n=79 keypoints in 2.03441 ms
+SIFT detection with n=32 keypoints in 1.68758 ms
+SIFT detection with n=38 keypoints in 1.71538 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=18 keypoints in 2.55145 ms
+SIFT detection with n=7 keypoints in 1.94362 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0693_L.png, Inference Time: 42.5728
+Frame: ../../../../FPS_10_stereo_right/CameraRight0693_R.png, Inference Time: 36.9268
+Left Image
+Total Blue Cones: 3
+Total Yellow Cones: 0
+SIFT detection with n=72 keypoints in 1.71111 ms
+SIFT detection with n=29 keypoints in 1.63087 ms
+SIFT detection with n=37 keypoints in 1.77055 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 1
+SIFT detection with n=11 keypoints in 2.02114 ms
+SIFT detection with n=2 keypoints in 1.94355 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0695_L.png, Inference Time: 29.3484
+Frame: ../../../../FPS_10_stereo_right/CameraRight0695_R.png, Inference Time: 21.9645
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=34 keypoints in 1.87943 ms
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=13 keypoints in 1.90597 ms
+SIFT detection with n=13 keypoints in 1.69261 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0698_L.png, Inference Time: 28.8872
+Frame: ../../../../FPS_10_stereo_right/CameraRight0698_R.png, Inference Time: 37.0204
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=43 keypoints in 1.59162 ms
+Right Image
+Total Blue Cones: 4
+Total Yellow Cones: 0
+SIFT detection with n=16 keypoints in 1.69142 ms
+SIFT detection with n=6 keypoints in 1.82503 ms
+SIFT detection with n=12 keypoints in 2.5189 ms
+SIFT detection with n=8 keypoints in 1.92699 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0700_L.png, Inference Time: 43.2999
+Frame: ../../../../FPS_10_stereo_right/CameraRight0700_R.png, Inference Time: 31.7113
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=43 keypoints in 1.93139 ms
+SIFT detection with n=29 keypoints in 1.71035 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 0
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0702_L.png, Inference Time: 42.0681
+Frame: ../../../../FPS_10_stereo_right/CameraRight0702_R.png, Inference Time: 37.4835
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 0
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 0
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0704_L.png, Inference Time: 36.638
+Frame: ../../../../FPS_10_stereo_right/CameraRight0704_R.png, Inference Time: 42.9969
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=44 keypoints in 1.93545 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=17 keypoints in 2.06256 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0706_L.png, Inference Time: 41.7594
+Frame: ../../../../FPS_10_stereo_right/CameraRight0706_R.png, Inference Time: 41.7404
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 0
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 0
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0708_L.png, Inference Time: 32.1747
+Frame: ../../../../FPS_10_stereo_right/CameraRight0708_R.png, Inference Time: 27.608
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 0
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=5 keypoints in 1.97986 ms
+SIFT detection with n=10 keypoints in 2.25602 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0710_L.png, Inference Time: 38.6229
+Frame: ../../../../FPS_10_stereo_right/CameraRight0710_R.png, Inference Time: 35.615
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 0
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=7 keypoints in 1.86993 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0712_L.png, Inference Time: 43.8946
+Frame: ../../../../FPS_10_stereo_right/CameraRight0712_R.png, Inference Time: 31.072
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 0
+Right Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=13 keypoints in 2.49753 ms
+SIFT detection with n=7 keypoints in 2.25022 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0715_L.png, Inference Time: 30.787
+Frame: ../../../../FPS_10_stereo_right/CameraRight0715_R.png, Inference Time: 26.6423
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=98 keypoints in 2.41686 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 1
+SIFT detection with n=9 keypoints in 1.66257 ms
+SIFT detection with n=9 keypoints in 2.35289 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0717_L.png, Inference Time: 37.5189
+Frame: ../../../../FPS_10_stereo_right/CameraRight0717_R.png, Inference Time: 27.9208
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=128 keypoints in 2.77683 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=9 keypoints in 1.79374 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0719_L.png, Inference Time: 32.1212
+Frame: ../../../../FPS_10_stereo_right/CameraRight0719_R.png, Inference Time: 40.7144
+Left Image
+Total Blue Cones: 2
+Total Yellow Cones: 0
+SIFT detection with n=108 keypoints in 1.86435 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=6 keypoints in 1.81539 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0721_L.png, Inference Time: 29.1667
+Frame: ../../../../FPS_10_stereo_right/CameraRight0721_R.png, Inference Time: 30.1407
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 1
+SIFT detection with n=119 keypoints in 2.72179 ms
+SIFT detection with n=11 keypoints in 1.83403 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=5 keypoints in 1.83264 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0723_L.png, Inference Time: 32.97
+Frame: ../../../../FPS_10_stereo_right/CameraRight0723_R.png, Inference Time: 30.7071
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=152 keypoints in 2.02142 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=2 keypoints in 1.60719 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0725_L.png, Inference Time: 33.4979
+Frame: ../../../../FPS_10_stereo_right/CameraRight0725_R.png, Inference Time: 29.9632
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=134 keypoints in 2.77208 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=3 keypoints in 2.45199 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0727_L.png, Inference Time: 30.6672
+Frame: ../../../../FPS_10_stereo_right/CameraRight0727_R.png, Inference Time: 34.3762
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 0
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=2 keypoints in 1.9675 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0729_L.png, Inference Time: 41.3923
+Frame: ../../../../FPS_10_stereo_right/CameraRight0729_R.png, Inference Time: 32.2977
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=124 keypoints in 1.83718 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=5 keypoints in 1.58756 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0731_L.png, Inference Time: 39.8695
+Frame: ../../../../FPS_10_stereo_right/CameraRight0731_R.png, Inference Time: 22.8921
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 0
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 1
+SIFT detection with n=5 keypoints in 2.56122 ms
+SIFT detection with n=5 keypoints in 2.0152 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0733_L.png, Inference Time: 35.0672
+Frame: ../../../../FPS_10_stereo_right/CameraRight0733_R.png, Inference Time: 22.8346
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 1
+SIFT detection with n=10 keypoints in 2.12011 ms
+SIFT detection with n=144 keypoints in 2.41058 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=1 keypoints in 1.64407 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0735_L.png, Inference Time: 41.1408
+Frame: ../../../../FPS_10_stereo_right/CameraRight0735_R.png, Inference Time: 41.3555
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 0
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 0
+SIFT detection with n=7 keypoints in 2.83165 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0737_L.png, Inference Time: 41.0909
+Frame: ../../../../FPS_10_stereo_right/CameraRight0737_R.png, Inference Time: 35.2589
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 0
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 0
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0738_L.png, Inference Time: 35.2407
+Frame: ../../../../FPS_10_stereo_right/CameraRight0738_R.png, Inference Time: 37.9396
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 0
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 0
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0740_L.png, Inference Time: 30.2753
+Frame: ../../../../FPS_10_stereo_right/CameraRight0740_R.png, Inference Time: 40.2901
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 0
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=2 keypoints in 1.70741 ms
+SIFT detection with n=10 keypoints in 1.81266 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0742_L.png, Inference Time: 39.479
+Frame: ../../../../FPS_10_stereo_right/CameraRight0742_R.png, Inference Time: 38.543
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 1
+SIFT detection with n=12 keypoints in 2.01548 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 0
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0744_L.png, Inference Time: 38.445
+Frame: ../../../../FPS_10_stereo_right/CameraRight0744_R.png, Inference Time: 32.289
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 1
+SIFT detection with n=13 keypoints in 1.68101 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 1
+SIFT detection with n=2 keypoints in 1.62269 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0745_L.png, Inference Time: 40.7356
+Frame: ../../../../FPS_10_stereo_right/CameraRight0745_R.png, Inference Time: 32.9315
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=18 keypoints in 1.63981 ms
+SIFT detection with n=18 keypoints in 1.73779 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 0
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0747_L.png, Inference Time: 38.5483
+Frame: ../../../../FPS_10_stereo_right/CameraRight0747_R.png, Inference Time: 30.2082
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=17 keypoints in 1.57988 ms
+SIFT detection with n=15 keypoints in 2.02764 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 1
+SIFT detection with n=3 keypoints in 1.75428 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0749_L.png, Inference Time: 41.5903
+Frame: ../../../../FPS_10_stereo_right/CameraRight0749_R.png, Inference Time: 41.8534
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=22 keypoints in 1.54957 ms
+SIFT detection with n=11 keypoints in 2.21111 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 1
+SIFT detection with n=2 keypoints in 1.76929 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0751_L.png, Inference Time: 40.4019
+Frame: ../../../../FPS_10_stereo_right/CameraRight0751_R.png, Inference Time: 40.5968
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 3
+SIFT detection with n=21 keypoints in 1.52527 ms
+SIFT detection with n=12 keypoints in 2.18646 ms
+SIFT detection with n=14 keypoints in 1.38419 ms
+SIFT detection with n=18 keypoints in 1.85701 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 1
+SIFT detection with n=5 keypoints in 2.16522 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0752_L.png, Inference Time: 41.5149
+Frame: ../../../../FPS_10_stereo_right/CameraRight0752_R.png, Inference Time: 40.7576
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=23 keypoints in 1.84004 ms
+SIFT detection with n=8 keypoints in 2.10767 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 0
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0754_L.png, Inference Time: 42.1756
+Frame: ../../../../FPS_10_stereo_right/CameraRight0754_R.png, Inference Time: 38.282
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=18 keypoints in 1.62828 ms
+SIFT detection with n=5 keypoints in 1.89452 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=3 keypoints in 2.17242 ms
+SIFT detection with n=5 keypoints in 1.75924 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0756_L.png, Inference Time: 42.1303
+Frame: ../../../../FPS_10_stereo_right/CameraRight0756_R.png, Inference Time: 39.323
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 1
+SIFT detection with n=23 keypoints in 1.55341 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=7 keypoints in 1.8031 ms
+SIFT detection with n=7 keypoints in 1.82908 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0757_L.png, Inference Time: 27.3736
+Frame: ../../../../FPS_10_stereo_right/CameraRight0757_R.png, Inference Time: 22.7323
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 1
+SIFT detection with n=23 keypoints in 1.76161 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=8 keypoints in 1.81259 ms
+SIFT detection with n=4 keypoints in 2.15775 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0759_L.png, Inference Time: 41.1185
+Frame: ../../../../FPS_10_stereo_right/CameraRight0759_R.png, Inference Time: 39.9121
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=11 keypoints in 1.32482 ms
+SIFT detection with n=22 keypoints in 2.01946 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 3
+SIFT detection with n=6 keypoints in 1.56431 ms
+SIFT detection with n=6 keypoints in 1.71768 ms
+SIFT detection with n=5 keypoints in 2.27613 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0761_L.png, Inference Time: 41.2833
+Frame: ../../../../FPS_10_stereo_right/CameraRight0761_R.png, Inference Time: 37.7363
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=25 keypoints in 1.7834 ms
+SIFT detection with n=9 keypoints in 1.41457 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 3
+SIFT detection with n=5 keypoints in 2.09636 ms
+SIFT detection with n=5 keypoints in 1.65112 ms
+SIFT detection with n=11 keypoints in 1.62702 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0762_L.png, Inference Time: 33.2144
+Frame: ../../../../FPS_10_stereo_right/CameraRight0762_R.png, Inference Time: 27.741
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=24 keypoints in 1.93656 ms
+SIFT detection with n=17 keypoints in 1.3434 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=11 keypoints in 1.48225 ms
+SIFT detection with n=7 keypoints in 2.30002 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0764_L.png, Inference Time: 32.2468
+Frame: ../../../../FPS_10_stereo_right/CameraRight0764_R.png, Inference Time: 34.7075
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 1
+SIFT detection with n=24 keypoints in 2.33277 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=7 keypoints in 1.66872 ms
+SIFT detection with n=13 keypoints in 1.54077 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0766_L.png, Inference Time: 39.8992
+Frame: ../../../../FPS_10_stereo_right/CameraRight0766_R.png, Inference Time: 40.5646
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=21 keypoints in 2.15866 ms
+SIFT detection with n=19 keypoints in 1.36316 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 2
+SIFT detection with n=8 keypoints in 2.21684 ms
+SIFT detection with n=10 keypoints in 1.66851 ms
+SIFT detection with n=9 keypoints in 1.82747 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0768_L.png, Inference Time: 29.4111
+Frame: ../../../../FPS_10_stereo_right/CameraRight0768_R.png, Inference Time: 28.0088
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=19 keypoints in 1.46339 ms
+SIFT detection with n=19 keypoints in 2.46778 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 1
+SIFT detection with n=6 keypoints in 1.66118 ms
+SIFT detection with n=7 keypoints in 1.86309 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0769_L.png, Inference Time: 32.5036
+Frame: ../../../../FPS_10_stereo_right/CameraRight0769_R.png, Inference Time: 26.2386
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=23 keypoints in 1.91785 ms
+SIFT detection with n=23 keypoints in 2.49124 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=4 keypoints in 2.03169 ms
+SIFT detection with n=9 keypoints in 1.62486 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0771_L.png, Inference Time: 32.498
+Frame: ../../../../FPS_10_stereo_right/CameraRight0771_R.png, Inference Time: 42.7677
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 1
+SIFT detection with n=23 keypoints in 1.55865 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 1
+SIFT detection with n=7 keypoints in 1.68786 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0773_L.png, Inference Time: 30.9874
+Frame: ../../../../FPS_10_stereo_right/CameraRight0773_R.png, Inference Time: 38.4199
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 2
+SIFT detection with n=24 keypoints in 1.48211 ms
+SIFT detection with n=40 keypoints in 1.99306 ms
+SIFT detection with n=7 keypoints in 2.27187 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 2
+SIFT detection with n=6 keypoints in 2.18869 ms
+SIFT detection with n=7 keypoints in 1.60998 ms
+SIFT detection with n=4 keypoints in 1.58491 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0775_L.png, Inference Time: 32.7298
+Frame: ../../../../FPS_10_stereo_right/CameraRight0775_R.png, Inference Time: 27.6003
+Left Image
+Total Blue Cones: 0
+Total Yellow Cones: 1
+SIFT detection with n=20 keypoints in 1.58435 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=7 keypoints in 2.21537 ms
+SIFT detection with n=7 keypoints in 1.57604 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0776_L.png, Inference Time: 31.1766
+Frame: ../../../../FPS_10_stereo_right/CameraRight0776_R.png, Inference Time: 21.8074
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 1
+SIFT detection with n=24 keypoints in 1.8274 ms
+SIFT detection with n=35 keypoints in 1.92511 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=6 keypoints in 1.72634 ms
+SIFT detection with n=3 keypoints in 1.55656 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0778_L.png, Inference Time: 34.9315
+Frame: ../../../../FPS_10_stereo_right/CameraRight0778_R.png, Inference Time: 36.456
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 1
+SIFT detection with n=29 keypoints in 2.23206 ms
+SIFT detection with n=41 keypoints in 1.83103 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 1
+SIFT detection with n=4 keypoints in 1.71517 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0780_L.png, Inference Time: 31.8926
+Frame: ../../../../FPS_10_stereo_right/CameraRight0780_R.png, Inference Time: 32.3246
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 1
+SIFT detection with n=34 keypoints in 1.67843 ms
+SIFT detection with n=25 keypoints in 2.08721 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=7 keypoints in 1.51109 ms
+SIFT detection with n=3 keypoints in 2.88431 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0782_L.png, Inference Time: 28.7613
+Frame: ../../../../FPS_10_stereo_right/CameraRight0782_R.png, Inference Time: 27.1468
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 1
+SIFT detection with n=23 keypoints in 2.08148 ms
+SIFT detection with n=32 keypoints in 1.79094 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=6 keypoints in 1.98357 ms
+SIFT detection with n=4 keypoints in 1.56885 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0784_L.png, Inference Time: 31.5014
+Frame: ../../../../FPS_10_stereo_right/CameraRight0784_R.png, Inference Time: 23.6945
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 1
+SIFT detection with n=26 keypoints in 2.67339 ms
+SIFT detection with n=30 keypoints in 2.04971 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 1
+SIFT detection with n=7 keypoints in 1.94522 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0785_L.png, Inference Time: 29.2307
+Frame: ../../../../FPS_10_stereo_right/CameraRight0785_R.png, Inference Time: 36.983
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 2
+SIFT detection with n=15 keypoints in 1.46674 ms
+SIFT detection with n=33 keypoints in 2.31329 ms
+SIFT detection with n=32 keypoints in 2.14448 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 2
+SIFT detection with n=7 keypoints in 2.05669 ms
+SIFT detection with n=6 keypoints in 1.54678 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0787_L.png, Inference Time: 40.9026
+Frame: ../../../../FPS_10_stereo_right/CameraRight0787_R.png, Inference Time: 39.7187
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 2
+SIFT detection with n=31 keypoints in 2.65586 ms
+SIFT detection with n=16 keypoints in 1.58736 ms
+SIFT detection with n=35 keypoints in 2.85749 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 3
+SIFT detection with n=7 keypoints in 2.2336 ms
+SIFT detection with n=4 keypoints in 1.80351 ms
+SIFT detection with n=4 keypoints in 2.34004 ms
+SIFT detection with n=7 keypoints in 1.64393 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0789_L.png, Inference Time: 41.9525
+Frame: ../../../../FPS_10_stereo_right/CameraRight0789_R.png, Inference Time: 30.1468
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 2
+SIFT detection with n=12 keypoints in 1.47491 ms
+SIFT detection with n=21 keypoints in 2.57373 ms
+SIFT detection with n=21 keypoints in 2.1889 ms
+Right Image
+Total Blue Cones: 1
+Total Yellow Cones: 2
+SIFT detection with n=5 keypoints in 1.62277 ms
+SIFT detection with n=4 keypoints in 1.76475 ms
+SIFT detection with n=6 keypoints in 2.20922 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0791_L.png, Inference Time: 39.0402
+Frame: ../../../../FPS_10_stereo_right/CameraRight0791_R.png, Inference Time: 41.4416
+Left Image
+Total Blue Cones: 1
+Total Yellow Cones: 1
+SIFT detection with n=34 keypoints in 2.00075 ms
+SIFT detection with n=35 keypoints in 3.10033 ms
+Right Image
+Total Blue Cones: 0
+Total Yellow Cones: 3
+SIFT detection with n=4 keypoints in 2.11591 ms
+SIFT detection with n=5 keypoints in 2.04335 ms
+SIFT detection with n=8 keypoints in 2.46799 ms
+Frame: ../../../../FPS_10_stereo_left/CameraLeft0792_L.png, Inference Time: 42.2813
+Frame: ../../../../FPS_10_stereo_right/CameraRight0792_R.png, Inference Time: 39.711
