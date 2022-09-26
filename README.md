@@ -1,3 +1,7 @@
+### Note
+
+The code you're looking for is in the directory `ObjectDetection-YOLO`.
+
 ### Download the Models
 
 Run the **getModels.sh** file from command line to download the needed model files
